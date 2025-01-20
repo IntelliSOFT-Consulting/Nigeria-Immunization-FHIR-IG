@@ -10,7 +10,7 @@
     <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="#">Concepts</a></li>
-      <li><a href="#">Generic Personas</a></li>
+      <li><a href="generic-personas.html">Generic Personas</a></li>
       <li><a href="#">User Scenarios</a></li>
       <li><a href="#">Business Processes</a></li>
       <li><a href="#">Decision Support Logic</a></li>

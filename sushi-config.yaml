@@ -52,8 +52,8 @@ pages:
   #   title: Business Requirements
   # concepts.md:
   #   title: Concepts
-  # generic-personas.md:
-  #   title: Generic Personas
+  generic-personas.md:
+    title: Generic Personas
   # user-scenarios.md:
   #   title: User Scenarios
   # business-processes.md:
