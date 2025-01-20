@@ -48,16 +48,16 @@ pages:
     title: Home
   # dependancies.md:
   #   title: Dependancies
-  # business-requirements.md:
-  #   title: Business Requirements
+  business-requirements.md:
+    title: Business Requirements
   # concepts.md:
   #   title: Concepts
   generic-personas.md:
     title: Generic Personas
   # user-scenarios.md:
   #   title: User Scenarios
-  # business-processes.md:
-  #   title: Business Processes
+  business-processes.md:
+    title: Business Processes
   # decision-support-logic.md:
   #   title: Decision Support Logic
   # functional-requirements.md:
