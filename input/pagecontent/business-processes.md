@@ -20,6 +20,7 @@ Workflows are a visual representation of the progression of activities (tasks, e
   </thead>
   <tbody>
    <tr>
+
       <td></td>
       <td>Title</td>
       <td>ID used to reference this process throughout the DAK</td>
@@ -29,6 +30,7 @@ Workflows are a visual representation of the progression of activities (tasks, e
     </tr>
 
    <tr>
+
     <td>A</td>
     <td>Vaccination Location Registration</td>
     <td>IMMZ.A</td>
@@ -47,6 +49,7 @@ Workflows are a visual representation of the progression of activities (tasks, e
     </td>
 
   </tr> <tr>
+
       <td>B</td>
       <td>Plan service delivery</td>
       <td>IMMZ.B</td>
@@ -172,20 +175,25 @@ Workflows are a visual representation of the progression of activities (tasks, e
         </ol>
       </td>
     </tr>
+
   </tbody>
   </table>
 
 #### Table 3: Business process symbols used in workflows
+
 <table border="1" class="dataframe table table-striped table-bordered">
   <thead>
+
     <tr>
       <th>Symbol</th>
       <th>Symbol Name</th>
       <th>Description</th>
     </tr>
+
   </thead>
   <tbody>
   <tr>
+
       <td><img src="swim-lane.png" alt="swim-lane" style="width:85%"/></td>
       <td>Swim lane</td>
       <td>Each individual or type of user is assigned to a swim lane, a designated area for noting the activities performed or expected of that specific actor. For example, a family planning health worker may have one swim lane; the supervisor would be in another swim lane; the clients/patients would be classified in another swim lane. If the activities can be performed by either actor, then those activities can be depicted overlapping the two relevant swim lanes.</td>
@@ -235,20 +243,73 @@ Workflows are a visual representation of the progression of activities (tasks, e
       <td>Loop Activity</td>
       <td>This “Loop Activity” or loop task symbolizes an activity or task that is repeated until it no longer needs to be repeated. For example, vaccine administration can happen as many times as the number of vaccines that need to be given.</td>
     </tr>
+
   </tbody>
   </table>
+
 ### Workflows
 
 #### Registration
 
+<b> Objective: </b> To start the client’s lifelong immunization record.
+
+<b>Figure:  Registration </b>
+ <div> 
+<img src="workflow-registration.png" alt="workflow-registration" style="width:85%"/>
+</div>
+<br>
+
 #### Vaccine administration
 
+<b> Objective: </b> To determine what vaccines a client needs, administer those, and record the data both in the system and on the client’s vaccination card.
+
+<b>Figure:  Vaccine administration </b>
+ <div> 
+<img src="workflow-vaccine-administration.png" alt="workflow-vaccine-administration" style="width:85%"/>
+</div>
+<br>
+
 #### AEFI Monitoring
+<b> Objective: </b>  To identify the vaccines that clients reacted to after administration for analysis and reporting.
+
+<b>Figure: AEFI Monitoring</b>
+ <div> 
+<img src="workflow-aefi-reporting.png" alt="workflow-aefi-reporting" style="width:85%"/>
+</div>
+<br>
 
 #### Client reminder 
+<b> Objective: </b> To send vaccination reminders to community health workers that certain clients are due for vaccination.
+
+<b>Figure: Client reminder </b>
+ <div> 
+<img src="workflow-client-reminder.png" alt="workflow-client-reminder" style="width:85%"/>
+</div>
+<br>
 
 #### Defaulter tracing
+<b> Objective: </b> To identify clients that are overdue for follow-up
+
+<b>Figure: Defaulter tracing</b>
+ <div> 
+<img src="workflow-defaulter-tracing.png" alt="workflow-defaulter-tracing" style="width:85%"/>
+</div>
+<br>
 
 #### Report generation
+<b> Objective: </b> To provide data access and analysis for decision-making
+
+<b>Figure: Report generation</b>
+ <div> 
+<img src="workflow-report-generation.png" alt="workflow-report-generation" style="width:85%"/>
+</div>
+<br>
 
 #### Stock management
+<b> Objective: </b> To track vaccine availability to avoid stockouts and shortages that could lead to missed vaccinations. This also help prevent vaccine wastage due to expiry and demand forecasting
+
+<b>Figure: Stock management</b>
+ <div> 
+<img src="workflow-stock-management.png" alt="workflow-stock-management" style="width:85%"/>
+</div>
+<br>
