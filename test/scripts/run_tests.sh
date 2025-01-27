@@ -39,8 +39,8 @@ function Loader() {
 if [ ! -d "${output}" ]; then
     echo "Build output directory does not exist. Running build scripts first..."
     ./_updatePublisher.sh
-    ./_updateCQFTooling.sh
-    ./_runcqf.sh
+    # ./_updateCQFTooling.sh
+    # ./_runcqf.sh
 else
     echo "Build output directory already exists."
 fi
