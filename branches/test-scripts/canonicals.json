@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "fhir.nigeriaImmunization",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.nigeriaImmunization",
+    "version" : "0.1.0",
+    "name" : "NigeriaimmunizationFHIRIG"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  }
+]
