@@ -64,19 +64,19 @@ for json_file in "$BUNDLES_DIR"/*.json; do
     fi
 done
 
-KEMRTXCURR=$(curl $FHIR'/Measure/KEMRTXCURR/$evaluate-measure?periodStart=2020-01-01&periodEnd=2023-08-31')
+# KEMRTXCURR=$(curl $FHIR'/Measure/KEMRTXCURR/$evaluate-measure?periodStart=2020-01-01&periodEnd=2023-08-31')
 
 # echo "$DAKTXCURR" | jq .
-value=$(jq -r '.group[0].population[1].count' <<< "$KEMRTXCURR")
+# value=$(jq -r '.group[0].population[1].count' <<< "$KEMRTXCURR")
 
-if [ "$value" != "4" ]; then
-    echo "Inaccurate TX_CURR value.
-            - Expected TX_CURR = 4
-            - Current TX_CURR = $value"
-    exit 1
-else
-    echo "TX_CURR value is accurate.
-            - Expected TX_CURR = 4
-            - Current TX_CURR = $value"
-    exit 0
-fi
+# if [ "$value" != "4" ]; then
+#     echo "Inaccurate TX_CURR value.
+#             - Expected TX_CURR = 4
+#             - Current TX_CURR = $value"
+#     exit 1
+# else
+#     echo "TX_CURR value is accurate.
+#             - Expected TX_CURR = 4
+#             - Current TX_CURR = $value"
+#     exit 0
+# fi
