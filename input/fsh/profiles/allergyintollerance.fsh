@@ -31,8 +31,8 @@ Description: "Defines constraints on the AllergyIntolerance resource for use in 
 Instance: allergy-intolerance-example
 InstanceOf: NEIRAllergyIntolerance
 Usage: #example
-* clinicalStatus = MyClinicalStatusCS#active
-* verificationStatus = MyVerificationStatusCS#confirmed
+* clinicalStatus = NEIRClinicalStatusCS#active
+* verificationStatus = NEIRVerificationStatusCS#confirmed
 * type = #allergy
 * category[0] = #food
 * criticality = #high
