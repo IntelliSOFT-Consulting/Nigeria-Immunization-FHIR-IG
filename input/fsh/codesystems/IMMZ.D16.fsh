@@ -1,5 +1,6 @@
 CodeSystem:   IMMZ.D16
 Title:        "IMMZ.D16 CodeSystem for Treat AEFI Data Elements"
+Id : IMMZ-D16
 Description:  "CodeSystem for IMMZ.D16 Treat AEFI Data Elements"
 
 * ^experimental = false
@@ -42,6 +43,14 @@ Description:  "CodeSystem for IMMZ.D16 Treat AEFI Data Elements"
 * #IMMZ.D16.DE34 "Certificate valid from"
 * #IMMZ.D16.DE35 "Certificate valid until"
 * #IMMZ.D16.DE36 "Certificate scheme version"
+
+//Additional for manifestation
+
+* #IMMZ.D16.DE37 "Fever - Elevated body temperature"
+* #IMMZ.D16.DE38 "Rash - Skin eruption or inflammation"
+* #IMMZ.D16.DE39 "Swelling - Localized or generalized swelling"
+* #IMMZ.D16.DE40 "Anaphylaxis - Severe allergic reaction requiring immediate intervention"
+* #IMMZ.D16.DE41 "Diarrhea - Frequent loose or watery stools"
 
 
 Instance: IMMZHTreatAEFI

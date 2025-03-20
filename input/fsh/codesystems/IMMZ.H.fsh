@@ -7,6 +7,7 @@ Description:  "CodeSystem for IMMZ.H Stock Management Data Elements"
 * ^name = "IMMZ_H"
 
 * #IMMZ.H.DE1   "BCG Vaccines"
+  * ^display = "BCG Vaccines"
 * #IMMZ.H.DE2   "Opening balance"
 * #IMMZ.H.DE3   "Received"
 * #IMMZ.H.DE4   "Doses Opened"
