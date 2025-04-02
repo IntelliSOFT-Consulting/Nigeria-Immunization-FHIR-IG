@@ -50,18 +50,18 @@ pages:
   #   title: Dependancies
   business-requirements.md:
     title: Business Requirements
-  # concepts.md:
-  #   title: Concepts
+  concepts.md:
+    title: Concepts
   generic-personas.md:
     title: Generic Personas
-  # user-scenarios.md:
-  #   title: User Scenarios
+  user-scenarios.md:
+    title: User Scenarios
   business-processes.md:
     title: Business Processes
-  # decision-support-logic.md:
-  #   title: Decision Support Logic
-  # functional-requirements.md:
-  #   title: Functional Requirements
+  decision-support-logic.md:
+    title: Decision Support Logic
+  functional-requirements.md:
+    title: Functional Requirements
   non-functional-requirements.md:
     title: Non-Functional Requirements
 #
@@ -116,8 +116,8 @@ pages:
 # it with the correct canonical when generating the IG JSON.
 #
 # global:
-#   Patient: http://example.org/fhir/StructureDefinition/my-patient-profile
-#   Encounter: http://example.org/fhir/StructureDefinition/my-encounter-profile
+#   Patient: http://example.org/fhir/StructureDefinition/neir-patient-profile
+#   Encounter: http://example.org/fhir/StructureDefinition/neir-encounter-profile
 #
 #
 # The resources property corresponds to IG.definition.resource.
@@ -142,7 +142,7 @@ pages:
 # look like:
 #
 # resources:
-#   Patient/my-example-patient:
+#   Patient/neir-example-patient:
 #     name: My Example Patient
 #     description: An example Patient
 #     exampleBoolean: true
