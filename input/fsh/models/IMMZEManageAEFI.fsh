@@ -1,4 +1,4 @@
-Alias: $CS = http://localhost:8000/fhir/CodeSystem/IMMZ-D16
+Alias: $CS = http://localhost:8000/fhir/CodeSystem/IMMZ_E
 
 
 
