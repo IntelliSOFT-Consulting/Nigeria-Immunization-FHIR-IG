@@ -100,12 +100,14 @@ pages:
 # contact directly and follow the format outlined in the ImplementationGuide resource and
 # ContactDetail.
 #
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
+contact:
+  - name: IntelliSOFT Consulting Kenya.
+    telecom:
+      - system: email # phone | fax | email | pager | url | sms | other
+        value: info@intellisoftkenya.com
+        use: work
+        
+jurisdiction: urn:iso:std:iso:3166#NG "Nigeria"        
 #
 #
 # The global property corresponds to the IG.global property, but it
