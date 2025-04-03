@@ -5,13 +5,15 @@
    <li class="dropdown">
     <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Concepts</a></li>
+      <li><a href="concepts.html">Concepts</a></li>
       <li><a href="generic-personas.html">Generic Personas</a></li>
-      <li><a href="#">User Scenarios</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
       <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
-      <li><a href="#">Decision Support Logic</a></li>
-      <li><a href="#">Functional Requirements</a></li>
-      <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+ 
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+ 
     </ul>
   </li>
    <li class="dropdown">
