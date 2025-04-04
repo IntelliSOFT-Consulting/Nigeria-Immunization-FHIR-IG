@@ -1,6 +1,9 @@
 A business process, or process, is a set of related activities or tasks performed together to achieve the objectives of the health Programme area, such as registration, counseling, and referrals. 
 Workflows are a visual representation of the progression of activities (tasks, events, and interactions) that are performed within the business process. The workflow provides a story for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders, and engineers.
 
+
+The business processes here have been informed by <a href="https://www.who.int/publications/i/item/9789240099456"> WHO Digital adaptation kit for immunizations.</a>
+
 ### Business Processes
 
 #### Table 2: Overview of Business Processes
@@ -247,69 +250,77 @@ Workflows are a visual representation of the progression of activities (tasks, e
   </tbody>
   </table>
 
+The overview of the business processes in this DAK captures all business processes at a high level.
+
+ <div> 
+<img src="summary-flow.png" alt="summary" style="width:85%"/>
+</div>
+
 ### Workflows
 
-#### Registration
+#### Health Facility Registration 
+
+<b> Objective: </b> To register and uniquely identify vaccination locations in order to administer vaccines and enable appropriate tracking of vaccine coverage and stock.
+ 
+ <div> 
+<img src="health-facility-registration.png" alt="health_facility_registration.png" style="width:85%"/>
+</div>
+<br>
+
+#### Plan Service delivery
+
+<b> Objective: </b> To prepare for an immunization session, either at the vaccination location or done at an outreach site.
+ 
+ <div> 
+<img src="plan-service-delivery.png" alt="plan-service-delivery.png" style="width:85%"/>
+</div>
+<br>
+
+#### Client registration
 
 <b> Objective: </b> To start the client’s lifelong immunization record.
-
-<b>Figure:  Registration </b>
+ 
  <div> 
-<img src="workflow-registration.png" alt="workflow-registration" style="width:85%"/>
+<img src="client-registration.png" alt="client-registration" style="width:85%"/>
 </div>
 <br>
 
 #### Vaccine administration
-
 <b> Objective: </b> To determine what vaccines a client needs, administer those, and record the data both in the system and on the client’s vaccination card.
-
-<b>Figure:  Vaccine administration </b>
  <div> 
-<img src="workflow-vaccine-administration.png" alt="workflow-vaccine-administration" style="width:85%"/>
+<img src="administer-vaccine.png" alt="administer-vaccine.png" style="width:85%"/>
 </div>
 <br>
 
-#### AEFI Monitoring
-<b> Objective: </b>  To identify the vaccines that clients reacted to after administration for analysis and reporting.
-
-<b>Figure: AEFI Monitoring</b>
+#### Manage AEFIs
+<b> Objective: </b> To manage caregiver reports or client presenting at health facilities with cases of AEFI based on set triggers.
+ 
  <div> 
-<img src="workflow-aefi-reporting.png" alt="workflow-aefi-reporting" style="width:85%"/>
+<img src="manage-aefi.png" alt="manage-aefi.png" style="width:85%"/>
 </div>
 <br>
 
 #### Client reminder 
 <b> Objective: </b> To send vaccination reminders to community health workers that certain clients are due for vaccination.
-
-<b>Figure: Client reminder </b>
+ 
  <div> 
-<img src="workflow-client-reminder.png" alt="workflow-client-reminder" style="width:85%"/>
+<img src="client-reminder.png" alt="client-reminder.png" style="width:85%"/>
 </div>
 <br>
 
 #### Defaulter tracing
 <b> Objective: </b> To identify clients that are overdue for follow-up
-
-<b>Figure: Defaulter tracing</b>
+ 
  <div> 
-<img src="workflow-defaulter-tracing.png" alt="workflow-defaulter-tracing" style="width:85%"/>
+<img src="defaulter-tracing.png" alt="defaulter-tracing.png" style="width:85%"/>
 </div>
 <br>
 
 #### Report generation
 <b> Objective: </b> To provide data access and analysis for decision-making
-
-<b>Figure: Report generation</b>
+ 
  <div> 
-<img src="workflow-report-generation.png" alt="workflow-report-generation" style="width:85%"/>
+<img src="report-generation.png" alt="report-generation.png" style="width:85%"/>
 </div>
 <br>
-
-#### Stock management
-<b> Objective: </b> To track vaccine availability to avoid stockouts and shortages that could lead to missed vaccinations. This also help prevent vaccine wastage due to expiry and demand forecasting
-
-<b>Figure: Stock management</b>
- <div> 
-<img src="workflow-stock-management.png" alt="workflow-stock-management" style="width:85%"/>
-</div>
-<br>
+ 
