@@ -5,12 +5,13 @@ User scenarios are narratives that describe how the different personas may inter
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead>
 <tr class="header">
-                <th>Key Personas</th>
+                <th style="vertical-align: top;">Key Personas</th>
                 <th colspan="2">
                 <ul>
                 <li>Caregiver (mother): Juliet</li>
                 <li>Child: Ann</li>
                 <li>Health worker: Lucy</li></ul>               
+
   </th></tr></thead> <tbody><tr><td colspan="3">
 <p>Juliet, a 21-year-old mother, lives in a small village near Igboland with her husband and their 6-week-old daughter, Ann. Despite having only completed primary school, Juliet is deeply committed to ensuring Ann’s health and well-being. </p>
 <p>Ann was born at home, and her birth was not registered.  Juliet took Ann to the local clinic shortly after birth for birth vaccines. At the Clinic, Juliet found Lucy who assessed Ann and deemed her eligible for vaccination. Lucy assigned Ann a unique identification number and issued Ann a child health card. She input Ann’s details including biodata, residential address, mother’s other children, vaccine schedule, weight and height.  Lucy administered  birth vaccines which included BCG 0.05ml intradermal, 2 drops of OPV0 orally, 0.5ml HepB intramuscular and recorded on the child health card the date of administration, batch number and date for next visit. Lucy then observed Ann for adverse events following immunization and discharged Juliet home with a reminder for the next visit.</p>
@@ -22,11 +23,9 @@ When Lucy, the nurse-in-charge, calls Juliet in, Juliet hands over Ann’s child
 <p>After the vaccinations, Lucy updates Ann’s digital record in the EIR and documents the details in the child health card. She explains to Juliet the importance of tracking both records to ensure continuity of care. Lucy then discusses the next steps, noting the date of Ann’s next immunization. She writes this information on the child health card and advises Juliet to aim for the suggested date, reassuring her that arriving within a day or two is still acceptable. Lucy also explains how to manage mild side effects, like fever, that Ann might experience after the vaccines. As a final step, Lucy tells Juliet that she will get a reminder notification a day before the due date for the upcoming vaccinations.</p>
 <p>Feeling reassured by Lucy’s guidance and support, Juliet leaves the clinic with Ann. She is confident in her ability to care for her daughter and is grateful for the well-organized services that help her keep Ann healthy. The clinic’s integrated system ensures that Ann’s immunization schedule is well-documented, and the SMS reminders will help Juliet stay on track for future visits.</p>
 
-</td>
-
-        </tr>
+</td>        </tr>
         <tr>
-        <td>Business Processes
+        <td style="vertical-align: top;">Business Processes
 
 </td>
 <td>
@@ -44,17 +43,13 @@ When Lucy, the nurse-in-charge, calls Juliet in, Juliet hands over Ann’s child
 <table border="1" class="dataframe table table-striped table-bordered">
  <thead>
  <tr class="header">
-
-    <th>Key Personas</th>
+    <th style="vertical-align: top;">Key Personas</th>
     <th><ul>
      <li>Health worker: Lucy</li>
-
-<li>Community health worker: Susan</li>
-<li>Client: Ann</li>
-<li>Caregiver: Juliet</li>
-
-     </ul>                
-
+     <li>Community health worker: Susan</li>
+     <li>Client: Ann</li>
+     <li>Caregiver: Juliet</li>
+     </ul>               
     </th>
     </tr>
 
@@ -85,7 +80,7 @@ When Lucy, the nurse-in-charge, calls Juliet in, Juliet hands over Ann’s child
 <table border="1" class="dataframe table table-striped table-bordered">
  <thead>
  <tr class="header">
- <th>Key Personas</th>
+ <th style="vertical-align: top;">Key Personas</th>
 <th><ul><li>EPI Manager: Dr. Sade</li><li>Nurse: Lydia</li><li>Community health worker: Anita</li><li>Caregiver: Martha</li><li>Client: Eric</li>
 </ul></th> </tr></thead>
 <tbody>
@@ -116,6 +111,7 @@ When Lucy, the nurse-in-charge, calls Juliet in, Juliet hands over Ann’s child
     <ul><li>State EPI- John</li></ul>
 
     </th>
+
     </tr>
 
 </thead>
@@ -138,21 +134,125 @@ When Lucy, the nurse-in-charge, calls Juliet in, Juliet hands over Ann’s child
 </tbody>
 </table>
 
+### Contraindication
+
+<table border="1" class="dataframe table table-striped table-bordered">
+ <thead>
+ <tr class="header">
+    <th style="vertical-align: top;">Key Personas</th>
+    <th>
+    <ul><li>Caregiver (mother): Chioma</li>
+    <li>Child: Favour</li>
+    <li>Health worker: Obi</li>
+    </ul>
+    </th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>Chioma is a hardworking 30-year-old businesswoman. Her child, Favour, is due for the 14-week vaccination. She wakes up early to prepare Favour for her clinic then rush back to her business. If she is late for the clinic, there will be a long queue, and Chioma does not wish to spend her day at the clinic. 
+At the health facility, she finds 2 mothers in the queue. She finds a seat and waits for her turn. Before long, it is Favour’s turn. Favour’s vaccination card was screened to determine what vaccines she is eligible for. As she prepares Favour for her vaccination, Obi asks her if Favour had any reaction after the last vaccination. Chioma casually mentions to Obi that after the last two vaccinations, Favour had a severe rash on her leg and Chioma had to rush her to the nearest private clinic. 
+Obi reassured her and documented it in the AEFI form, he also counselled Chioma that in the event of subsequent reactions, she should bring the child immediately back to the health facility for proper management and documentation. Obi administered the Penta 3, IPV2, Rota 3, PCV 3, OPV 3 antigens, updated Favour’s child health card,  documents in the relevant data tools and reminds Chioma of the next visit.
+Chioma is done with the clinic visit and leaves satisfied to attend to her business.
+
+</p>
+</td>
+</tr>
+<tr>
+   <td style="vertical-align: top;">Business Processes </td>
+   <td><ul>
+    <li>Register</li>
+    <li>Contraindicate</li></ul>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### AEFI
+
+<table border="1" class="dataframe table table-striped table-bordered">
+ <thead>
+ <tr class="header">
+    <th style="vertical-align: top;">Key Personas</th>
+    <th>
+    <ul><li>Caregiver (Mother); Hauwa</li>
+    <li>Child: Aisha</li>
+    <li>Immunization Officer: Zainab</li>
+    <li>Community health worker: Blessing</li></ul></th></tr>
+
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>
+It's a humid Wednesday afternoon, and Zainab has just finished vaccinating a group of infants when a distressed mother, Hauwa, rushes in carrying her 9-month-old daughter, Aisha. The baby received the Measles 1, MenA and Yellow fever vaccines a few hours before and now has a high fever and won't stop crying. Hauwa explains that Aisha has been unusually irritable and developed some swelling at the injection site.
+Zainab quickly noticed that the baby's right arm where she received the Yellow Fever vaccine injection was swollen and red, and felt very hot to the touch. The facility's only working thermometer showed 39.5°C. This is clearly an adverse event following immunization (AEFI) case
+Drawing from her experience, Zainab first tries to calm Hauwa while conducting a quick assessment. She notices that despite the fever and swelling, Aisha is still alert and taking breast milk.
+She gives Aisha paracetamol. This is the only medication available and she knows Hauwa does not have money to go to the nearest referral health facility which is 30 kilometers away. She gets information of where she lives to give to the community health worker to visit her at home the next day. She provides counseling to Hauwa on the management of the symptoms and reassures her that she did the right thing in coming to the health facility to report.
+Zainab asks for the child's immunization card only to discover that Hauwa, in her panic, left it at home. Zainab used the Immunization register to confirm Hauwa’s last clinic visit and the batch number of the vaccine administered - crucial information for AEFI reporting.
+In the facility's AEFI forms (reporting and line listing), Zainab documents everything she observes: Onset of symptoms, current temperature, size of injection site swelling, baby's alertness level. 
+Hauwa goes home and the next day the community health worker does a home visit. She finds Aisha’s fever has subsided and the swelling has also decreased. 
+
+</p>
+</td>
+</tr>
+ <tr>
+   <td style="vertical-align: top;">Business Processes </td>
+ <td>
+    <ul>
+    <li>Registration</li>
+    <li>AEFI reporting and Line listing</li></ul> </td></tr>
+</tbody>
+</table>
+
+### HIV client Immunization
+
+<table border="1" class="dataframe table table-striped table-bordered">
+ <thead>
+ <tr class="header">
+    <th style="vertical-align: top;">Key Personas</th>
+    <th>
+    <ul><li>Caregiver (Mother); Mrs. Adekunle</li>
+    <li>Child: Tunde</li>
+    <li>Routine Immunization Officer: Bola</li>
+    </ul></th></tr>
+
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>  It's Monday morning when Mrs. Adekunle quietly approaches Bola's immunization desk after most other mothers have left. She whispers Tunde is 9months, HIV positive and is due for the yellow fever vaccine.
+Bola pulls her aside and asks for Tunde’s child immunization card. She reviews Tunde's growth chart and notices he's been growing well. She looks for any signs of illness or severe thrush. Her assessment of Tunde shows that he is asymptomatic hence she can safely administer the vaccines. If Tunde had shown any HIV symptoms, then the yellow fever vaccine would not have been administered. Bola administered Yellow fever, and other co-administered vaccines at 9 months (Measles, and MenA).
+She records in the immunization register, tally sheet and the child health card as she reminded  Mrs Adekunle of the importance of keeping to the immunization schedule and advises her to always mention Tunde's HIV exposure status to healthcare workers.
+Mrs.Adekunle is happy with the advice and promises to do her best.
+
+</p>
+</td>
+</tr>
+<tr>
+   <td style="vertical-align: top;">Business Processes </td>
+   <td><ul>
+    <li>Registration</li>
+    <li>Administer vaccine</li>
+    </ul>
+   </td>
+</tr>
+</tbody>
+</table>
+
 ### Stock Management 
 
 <table border="1" class="dataframe table table-striped table-bordered">
  <thead>
  <tr class="header">
-
-    <th>Key Personas</th>
+    <th style="vertical-align: top;">Key Personas</th>
     <th><ul>
      <li>Health Worker- Mary</li>
-     <li>Vaccine depot staff- Helena</li> 
-
-     </ul>                
-
-    </th>
-    </tr>
+     <li>Vaccine depot staff- Helena</li>
+     </ul></th>    
+</tr>
 
 </thead>
 <tbody>
@@ -168,7 +268,9 @@ Mary, on the other hand, receives the vaccines and fills in the form indicating 
    </tr>
    <tr>
    <td>Business Processes</td>
-   <td><ul><li>Stock Management</li></ul></td></tr></tbody></table>
+   <td><ul><li>Stock Management</li>
+   </ul></td>
+</tr></tbody></table>
 
 ### User Scenario Interpretation for Functional Requirements
 
@@ -178,15 +280,19 @@ The table below provides an example of a breakdown of these three elements extra
 
 </p>
  
+
 #### Table 1: <i>Interpretation of the routine vaccination </i>
 
 <table border="1" class="dataframe table table-striped table-bordered">
  <thead>
  <tr class="header">
+
     <th>Data Elements to be collected</th>
     <th>Decision Logic to be embedded</th>
     <th>Functional and non-functional requirements
+
 </th>
+
     </tr>
 
 </thead>
@@ -236,6 +342,7 @@ The table below provides an example of a breakdown of these three elements extra
     <th>Data Elements to be collected</th>
     <th>Decision Logic to be embedded</th>
     <th>Functional and non-functional requirements</th>
+
     </tr>
 
 </thead>
@@ -261,7 +368,6 @@ The table below provides an example of a breakdown of these three elements extra
 
 <li>Determine any vaccine past due (by more than a set number of days)</li>
 
-
 </ul>
 </td>
 
@@ -286,10 +392,13 @@ The table below provides an example of a breakdown of these three elements extra
 <table border="1" class="dataframe table table-striped table-bordered">
  <thead>
  <tr class="header">
+
     <th>Data Elements to be collected</th>
     <th>Decision Logic to be embedded</th>
     <th>Functional and non-functional requirements
+
 </th>
+
     </tr>
 
 </thead>
