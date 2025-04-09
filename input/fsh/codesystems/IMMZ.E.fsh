@@ -1,11 +1,11 @@
 CodeSystem:   IMMZ.E
-Title:        "IMMZ.E CodeSystem for Treat AEFI Data Elements"
-Id : IMMZ-D16
+Title:        "IMMZ.E CodeSystem for Manage AEFI Data Elements"
+Id : IMMZ_E
 Description:  "CodeSystem for IMMZ.E Manage AEFI Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "IMMZ_D16"
+* ^name = "IMMZ_E"
 
 * #IMMZ.E.DE1  "Reaction date"
 * #IMMZ.E.DE2  "Reaction Observation ID"
@@ -57,10 +57,10 @@ Instance: IMMZHManageAEFI
 InstanceOf: CodeSystem
 Usage: #example
 Title: "IMMZ.E CodeSystem for Manage AEFI"
-Description: "CodeSystem for IMMZ.H Treat AEFI Data Elements"
+Description: "CodeSystem for IMMZ.H Manage AEFI Data Elements"
 
 * version = "1.0.0"
-* name = "IMMZ_D16"
+* name = "IMMZ_E"
 * status = #active
 * experimental = false
 * caseSensitive = false
