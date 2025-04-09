@@ -6,6 +6,7 @@ The table below provides an overview of the decision-support tables and algorith
 
 Table 7: Decision Support Logic Overview
 <table border="1" class="dataframe table table-striped table-bordered">
+
     <thead>
         <tr class="header">
             <th>Activity ID & Activity Name</th>
@@ -112,6 +113,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead>
 <tr class="header"> <th  >Decision ID</th>
+
             <th colspan="4">The name of the “decision” describing what algorithm or logic is represented (e.g. pre-eclampsia risk counselling). The Decision ID should correspond to the number in the overview table on "overview" tab</th>
             </tr>
             <tr class="header">
@@ -125,6 +127,7 @@ Each of the decision logic above have been elaborated on in decision support tab
               <thead>
 
 <tr class="header">
+
              <th colspan="2">Inputs</th>
             <th>Output</th>
             <th>Action</th>
@@ -133,6 +136,7 @@ Each of the decision logic above have been elaborated on in decision support tab
     </thead>
 
    <tbody>
+
         <tr>
             <td >These are the variables or conditions that need to be considered to determine the consequent actions or outputs.</td>
             <td >If there are multiple input entries on the same row (such as here), these different inputs are considered as “AND” – conditions that need to be in place at the same time.</td>
@@ -155,6 +159,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead>
 <tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"> IMMZ.DT.06.Yellow Fever</th>
             </tr>
             <tr class="header">
@@ -169,15 +174,17 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <tr class="header">
  <th colspan="2">Inputs</th>
+
             <th>Output</th>
             <th>Action</th>
             <th>Annotations</th>
             <th>Reference(s)</th>
         </tr>
     </thead>
-   <tbody>
- </tbody>
+
+   <tbody> 
 <tr>
+
     <td>"Number of doses administered" = 0</td>
     <td>"Age in Months" >= 9</td> 
     <td> Client vaccinated for Yellow Fever - No Doses</td>
@@ -186,6 +193,7 @@ Each of the decision logic above have been elaborated on in decision support tab
     <br>
     <strong>Note:</strong><br>
     This dose is applicable if the following scenarios are met:<br>
+
     - The country has a Yellow Fever endemic<br>
     - The individual is travelling to a Yellow Fever endemic area<br>
     - The child is 9 months old.<br>
@@ -193,9 +201,433 @@ Each of the decision logic above have been elaborated on in decision support tab
     </td>
     <td>
      <a href="https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables" target="_blank">WHO Recommendations for Routine Immunization</a><br>
+
    <br>
+
     Nigeria National Immunization Policy Draft
+
 </td>
 
 </tr>
+</tbody>
+</table>
+
+#### BCG
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5">IMMZ.DT.01.BCG</th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5">If child or person has not been vaccinated, give BCG vaccine as soon as possible after birth</th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> IMMZ.D2 Determine Required Vaccinations if any </th>
+            </tr>
+            </thead>
+    <thead>
+<tr class="header">
+ <th colspan="2">Inputs</th>
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Polio
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Yellow Fever
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Measles
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+#### Pneumococcal
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### DPT Hep B-Hib
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+#### Rotavirus
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+#### HPV
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Vitamin A
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Malaria
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+#### Covid 19
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+#### Meningococcal
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
+</table>
+
+#### Td for pregnant women
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+            <th  colspan="5"></th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5"></th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5"> </th>
+            </tr>
+            </thead>
+              <thead>
+
+<tr class="header">
+ <th colspan="2">Inputs</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+   <tbody> 
+<tr>
+</tr>
+</tbody>
 </table>
