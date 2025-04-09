@@ -396,7 +396,7 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
 <td> - </td>
 <td>Clinical judgement is required. Create clinical note. "Immunization recommendation status" = "Further evaluation needed"</td>
 <td>Should not vaccinate client with first BCG dose as client's TB infection test result is positive. Consider evaluating for TB disease or for TB preventive treatment (TPT) eligibility (once TB disease is ruled out).</td>
-<td></td>
+<td style="border-bottom: none; "></td>
 </tr><tr>
 <td></td>
 <td></td>
@@ -407,7 +407,7 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
 <td> - </td>
 <td>Client is overdue for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
 <td></td>
-<td></td>
+<td style="border-bottom: none; "></td>
 </tr><tr>
 <td></td>
 <td></td>
@@ -428,7 +428,7 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
 <td>Client is not clinically well "Clinically well" = FALSE</td>
 <td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
 <td>Should not vaccinate client with first BCG dose as client is not clinically well and/or immunologically stable and is overdue for first BCG dose</td>
-<td></td>
+<td style="border-bottom: none; "></td>
 </tr>
 <tr>
 <td></td>
@@ -445,6 +445,145 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
 </tr>
 </tbody>
 </table>
+<br>
+<hr>
+
+<table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Decision ID</th>
+
+            <th  colspan="5">IMMZ.D5.DT.BCG contraindications</th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="5">Check for contraindications before administering the vaccine(s) due</th>
+           </tr> <tr class="header">
+            <th>Trigger</th>
+            <th colspan="5">IMMZ.D5 Determine vaccine(s) to be administered based on contraindications</th>
+            </tr>
+            </thead>
+    <thead>
+
+<tr class="header">
+ <th colspan="2">Potential contraindications</th>
+
+            <th>Output</th>
+            <th>Action</th>
+            <th>Annotations</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+
+ <tbody> 
+ <tr>
+  <td>The client is pregnant<br>"Potential contraindications" = "Currently pregnant"</td>
+   <td>–</td>
+  <td>BCG vaccination is contraindicated<br>"Immunization recommendation status" = "Contraindicated"</td>
+  <td>Do not vaccinate client with BCG as BCG vaccination is not recommended during pregnancy</td>
+   <td>–</td>
+  <td>WHO recommendations for routine immunization – summary tables (January 2025) (1)</td>
+</tr>
+
+<tr>
+  <td>The client has history of severe allergic reactions<br>"Potential contraindications" = "Severe allergic reactions"</td>
+  <td>–</td>
+  <td>BCG vaccination could be contraindicated. Clinical judgement is required. Create a clinical note.<br>"Immunization recommendation status" = "Further evaluation needed"</td>
+  <td>Do not vaccinate client with BCG if the client had previous allergic reaction to any component of the vaccine</td>
+   <td>–</td>
+  <td style="border-bottom: none; ">BCG vaccines: WHO position paper (February 2018) (2)</td>
+</tr>
+
+<tr>
+  <td>The client has immunodeficiency syndromes<br>"Potential contraindications" = "Immunodeficiency syndromes"</td>
+   <td>–</td>
+  <td>BCG vaccination is contraindicated<br>"Immunization recommendation status" = "Contraindicated"</td>
+  <td>Do not vaccinate client with BCG as BCG vaccination is contraindicated for clients with immunodeficiency syndromes</td>
+  <td><b>WHO Recommendation:</b> BCG vaccination is contraindicated for persons with congenital cell-mediated or severe combined immunodeficiency, immunodeficiency syndromes (e.g. HIV/AIDS, known or suspected congenital immunodeficiency, leukaemia, lymphoma or other malignant disease)</td>
+  <td style="border-bottom: none; "></td>
+</tr>
+
+<tr>
+  <td style="border-bottom: none; ">The client is exposed to immunosuppressive treatment<br>"Potential contraindications" = "Exposed to immunosuppressive treatment"</td>
+  <td>Client's age is less than 1 year<br>"Age" &lt; 1 year</td>
+  <td>BCG vaccination is contraindicated<br>"Immunization recommendation status" = "Contraindicated"</td>
+  <td>Do not vaccinate client with BCG as BCG vaccination is contraindicated for clients undergoing immunosuppressive treatment</td>
+  <td><b>WHO Recommendation: </b>BCG vaccination is contraindicated for patients undergoing immunosuppressive treatment (e.g. corticosteroids, alkylating agents, biological response modifiers, antimetabolites, radiation). Infants exposed to immunosuppressive treatment in utero or via breastfeeding should not receive BCG vaccination</td>
+  <td style="border-bottom: none; "></td>
+</tr>
+
+<tr>
+<td></td> 
+  <td>BCG vaccination could be contraindicated. Clinical judgement is required. Create a clinical note.<br>"Immunization recommendation status" = "Further evaluation needed"</td>
+  <td>Do not vaccinate client with BCG if client is exposed to or receives immunosuppressive treatment</td>
+  
+  <td></td>
+  <td ></td>
+</tr>
+
+<tr>
+  <td colspan="6"><strong>Note:</strong> While vaccines are universally recommended, some clients may have contraindications to particular vaccines. Additional contraindications may be included in WHO position paper for the vaccine – BCG vaccines: WHO position paper (February 2018) (2).</td>
+</tr>
+
+ </tbody>
+ </table>
+
+ <hr>
+
+ <table border="1" class="dataframe table table-striped table-bordered">
+   <thead><tr class="header"> <th>Schedule ID</th>
+
+            <th colspan="11">IMMZ.D18.S.BCG schedule</th>
+            </tr>
+            <tr class="header">
+            <th>Business Rule</th>
+            <th colspan="11"></th>
+           </tr> 
+            </thead>
+            <thead>
+            <tr class="header">
+            <th>Service name </th> 
+            <th>Service description</th>
+            <th>Trigger event</th>
+            <th>Trigger date</th>
+            <th>Create condition</th>
+            <th>Due date</th>
+            <th>Overdue </th>
+            <th>Expiration </th>
+            <th>Completion</th>
+            <th>Comments</th>
+            <th>Reference(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+   <tr>
+      <th><i>The name of the service for which the schedule is relevant</i></th>
+      <th><i>Description of the service (to provide clarity)</i></th>
+      <th><i>What event signals the start of the service schedule?</i></th>
+      <th><i>What is the date of the signalling event that will be used to determine a service’s due date?</i></th>
+      <th><i>Are there any conditions that specify when a service should be given?</i></th>
+      <th><i>How is the due date of the service calculated?</i></th>
+      <th><i>When does the service become overdue?</i></th>
+      <th><i>When does the service expire?</i></th>
+      <th><i>How does the health worker complete the service?</i></th>
+      <th></th>
+      <th> </th>
+    </tr>
+     <tr>
+      <td>Bacille Calmette–Guérin (BCG) dose 1</td>
+      <td>Provision of the BCG dose</td>
+      <td>Child's birth</td>
+      <td>"Date of birth"</td>
+      <td>"BCG dose should be provided if the client has not received any BCG doses and is in a high incidence of tuberculosis (TB) and/or high leprosy burden. It should also be provided after a negative test result for tuberculin skin test (TST) or interferon-gamma release assay (IGRA) tests. The client should also receive vaccination if they are infected with HIV, on antiretroviral therapy (ART) and clinically well and immunologically stable. This dose also applies to neonates born to women with an unknown HIV status, as well as neonates with an unknown HIV status who were born to women infected with HIV. BCG dose should be provided up to 23 months, and during outbreaks/supplementary immunization activities up to 59 months of age."</td>
+      <td>"Date of birth"</td>
+      <td>To be determined by Nigeria MoH</td>
+      <td>To be determined by Nigeria MoH</td>
+      <td>"One BCG dose from the primary series was administered. The primary series has been completed
+        ""Completed the primary vaccination series"" = TRUE (where ""Vaccine type"" = ""BCG vaccines"")"</td>
+        <td></td>
+        <td>"WHO recommendations for routine immunization – summary tables (January 2025)<br>
+Nigeria - 2024 draft National Immunisation Policy v3"</td>
+    </tr>
+    </tbody>
+    </table>
 
 #### Polio
 
