@@ -216,19 +216,22 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
-            <th  colspan="5">IMMZ.DT.01.BCG</th>
+
+            <th  colspan="10">IMMZ.DT.01.BCG</th>
             </tr>
             <tr class="header">
             <th>Business Rule</th>
-            <th colspan="5">If child or person has not been vaccinated, give BCG vaccine as soon as possible after birth</th>
+            <th colspan="10">If child or person has not been vaccinated, give BCG vaccine as soon as possible after birth</th>
            </tr> <tr class="header">
             <th>Trigger</th>
-            <th colspan="5"> IMMZ.D2 Determine Required Vaccinations if any </th>
+            <th colspan="10"> IMMZ.D2 Determine Required Vaccinations if any </th>
             </tr>
             </thead>
     <thead>
+
 <tr class="header">
- <th colspan="2">Inputs</th>
+ <th colspan="7">Inputs</th>
+
             <th>Output</th>
             <th>Action</th>
             <th>Annotations</th>
@@ -236,17 +239,218 @@ Each of the decision logic above have been elaborated on in decision support tab
         </tr>
     </thead>
 
-   <tbody> 
+ <tbody> 
+
+    <tr>
+    <td style="width:10%">Number of BCG primary series doses administered Count of vaccines administered (where "Vaccine type" = "BCG vaccines" and "Type of dose" = "Primary series")</td>
+    <td>Client's age Today's date − "Date of birth"</td>
+    <td>Client's HIV status</td>
+    <td>Client's antiretroviral therapy (ART) status</td>
+    <td>Is client immunologically stable</td>
+    <td>Client's tuberculosis (TB) infection test result</td>
+    <td>Is client clinically well</td>
+    <td></td>
+     <td></td> <td></td> <td></td>
+    </tr>
+    <tr>
+    <td>No BCG primary series dose was administered Count of vaccines administered (where "Vaccine type" = "BCG vaccines" and "Type of dose" = "Primary series") = 0</td>
+    <td>Client's age is less than or equal to 28 days Today's date − "Date of birth" ≤ 28 days (Neonate)</td>
+    <td>Client's HIV status is negative or unknown "HIV status" ≠ "HIV-positive"</td>
+    <td> - </td>  <td> - </td>  <td> - </td>  <td> - </td>
+    <td>Client is due for BCG vaccination "Immunization recommendation status" = "Due"</td>
+    <td>Vaccinate client with first BCG dose as no BCG dose was administered, client is within age range, and HIV status is not positive Check for contraindications.</td>
+    <td><b>WHO Recommendation:</b> Neonates born to women of unknown HIV status should be vaccinated as the benefits of BCG vaccination outweigh the risks. Neonates of unknown HIV status born to HIV-infected women should be vaccinated if they have no clinical evidence suggestive of HIV infection.</td>
+    <td>WHO recommendations for routine immunization - summary tables: <a href="https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables" target="_blank">https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables</a></td>
+    </tr>
+
 <tr>
+<td></td><td></td>
+<td>Client's HIV status is positive "HIV status" = "HIV-positive"</td>
+<td>Client is currently receiving antiretroviral therapy "Currently on ART" = TRUE</td>
+<td>Client is immunologically stable "Immunologically stable" = TRUE </td>
+<td> - </td>
+<td> - </td>
+<td>Client is due for BCG vaccination "Immunization recommendation status" = "Due" </td>
+<td>Vaccinate client with first BCG dose as no BCG dose was administered, and client is immunologically stable. Check for contraindications. </td>
+<td><b>WHO Recommendation:</b> For neonates with HIV infection confirmed by early virological testing, BCG vaccination should be delayed until ART has been started and the infant confirmed to be immunologically stable (CD4 > 25%). Moderate-to-late preterm infants (gestational age > 31 weeks) and low-birth-weight infants (< 2500 g) who are healthy and clinically stable can receive BCG vaccination at birth, or at the latest, upon discharge.</td>
+<td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td>
+<td>Client is not immunologically stable "Immunologically stable"= FALSE</td>
+<td> - </td>
+<td> - </td>
+<td> Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered" </td>
+<td> Do not vaccinate client with first BCG dose as client is not immunologically stable. Check for any vaccines due and inform the caregiver of when to come back for the first BCG dose. </td>
+<td> <b>WHO Recommendation:</b> For neonates with HIV infection confirmed by early virological testing, BCG vaccination should be delayed until ART has been started and the infant confirmed to be immunologically stable (CD4 > 25%). </td>
+</tr>
+  
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Client is currently not receiving antiretroviral therapy "Currently on ART" = FALSE</td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+<td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td>Should not vaccinate client with first BCG dose as client is not currently receiving ART. Check for any vaccines due and inform the caregiver of when to come back for the first BCG dose.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Client's age is between 28 days and  11 months</td>
+<td>Client's HIV status is negative or unknown "HIV status" ≠ "HIV-positive"</td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is negative "TB infection test result" = "Negative"</td>
+<td> - </td>
+<td>Client is due for BCG vaccination "Immunization recommendation status" = "Due"</td>
+<td>Should vaccinate client with first BCG dose as no BCG dose was administered, and client's TB test result is negative. Check for contraindications.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is unknown (test not done or no result yet) "TB infection test result" IS NULL</td>
+<td> - </td>
+<td>Clinical judgement is required. Create clinical note."Immunization recommendation status" = "Further evaluation needed"</td>
+<td>Recommend the client to perform TB infection testing. Re-evaluate client once the test result is available.</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td></td>
+<td></td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is positive "TB infection test result" = "Positive"</td>
+<td> - </td>
+<td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td>Should not vaccinate client with first BCG dose as client's TB infection test result is positive. Consider evaluating for TB disease or for TB preventive treatment (TPT) eligibility (once TB disease is ruled out).</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td></td>
+<td>"Client's HIV status is positive
+""HIV status"" = ""HIV-positive"""
+
+</td>
+<td>Client is currently receiving antiretroviral therapy "Currently on ART" = TRUE</td>
+<td>Client is immunologically stable "Immunologically stable" = TRUE</td>
+<td> * </td>
+<td> Client is clinically well "Clinically well" = TRUE</td>
+<td>Client is due for BCG vaccination "Immunization recommendation status" = "Due"</td>
+<td>Vaccinate client with first BCG dose as no BCG dose was administered, client is receiving ART, clinically well and immunologically stable. Check for contraindications.</td>
+<td><b>WHO Recommendation:</b> If children infected with HIV are receiving ART and are clinically well and immunologically stable (CD4% > 25% for children aged under 5 years), they should be vaccinated with BCG.</td>
+</tr><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Client is not immunologically stable "Immunologically stable" = FALSE</td>
+<td> * </td>
+<td>Client is not clinically well "Clinically well" = FALSE</td>
+<td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td>Should not vaccinate client with first BCG dose as client is not clinically well and/or immunologically stable.
+Check for any vaccines due, and inform the caregiver of when to come back for the first BCG dose.</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>
+  Client is currently not receiving antiretroviral therapy<br>
+  "Currently on ART" = FALSE<br></td>
+  <td> - </td>
+<td> - </td>
+<td> * </td>
+ <td> Client is not due for BCG vaccination<br>
+  "Immunization recommendation status" = "Not Administered"<br></td>
+  <td>Should not vaccinate client with first BCG dose as client is not currently receiving ART.<br>
+  Check for any vaccines due and inform the caregiver of when to come back for the first BCG dose.
+</td>
+ 
+<td></td>
+</tr><tr>
+<td></td>
+<td>Client's age is more than 11months Today's date − ""Date of birth"" ≥ 11months </td>
+<td>Client's HIV status is negative or unknown "HIV status" ≠ "HIV-positive"
+</td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is negative "TB infection test result" = "Negative"</td>
+<td></td>
+<td>Client is overdue for BCG vaccination</td>
+<td>Should not vaccinate client with BCG dose as the Nigeria Immunization schedule has a limit of 11 months for BCG</td>
+<td><b>WHO Recommendation:</b> BCG vaccination is also recommended for unvaccinated older children, adolescents and adults negative for TST or IGRA who are in settings with high incidence of TB and/or high leprosy burden, those moving from low-to-high TB incidence/leprosy burden settings and persons at risk of occupational exposure in low and high TB incidence areas (e.g. health workers, laboratory workers, medical students, prison workers, other individuals with occupational exposure)</td>
+</tr><tr>
+<td></td>
+<td></td>
+<td></td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is unknown (test not done or no result yet) "TB infection test result"" IS NULL</td>
+<td> - </td>
+<td>Clinical judgement is required. Create clinical note. "Immunization recommendation status" = "Further evaluation needed"</td>
+<td>Should not vaccinate client with first BCG dose as client's TB infection test result is positive. Consider evaluating for TB disease or for TB preventive treatment (TPT) eligibility (once TB disease is ruled out).</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td></td>
+<td></td>
+<td> - </td>
+<td> - </td>
+<td>Client's TB infection test result is positive "TB infection test result" = "Positive"</td>
+<td> - </td>
+<td>Client is overdue for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td></td>
+<td></td>
+</tr><tr>
+<td></td>
+<td></td>
+<td>Client's HIV status is positive "HIV status" = "HIV-positive"</td>
+<td>Client is currently receiving antiretroviral therapy "Currently on ART" = TRUE
+</td>
+<td>Client is immunologically stable "Immunologically stable" = TRUE</td>
+<td> * </td>
+<td>Client is clinically well "Clinically well" = TRUE</td>
+<td>Client is overdue for BCG vaccination "Immunization recommendation status" = "Overdue"</td>
+<td>No BCG dose is administered, client is receiving ART, clinically well and immunologically stable.</td>
+<td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td>
+<td>Client is not immunologically stable "Immunologically stable" = FALSE</td>
+<td> * </td>
+<td>Client is not clinically well "Clinically well" = FALSE</td>
+<td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td>Should not vaccinate client with first BCG dose as client is not clinically well and/or immunologically stable and is overdue for first BCG dose</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Client is currently not receiving antiretroviral therapy "Currently on ART" = FALSE</td>
+<td> - </td>
+<td> * </td>
+<td> - </td>
+<td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
+<td>Should not vaccinate client with first BCG dose as client is not currently receiving ART and is overdue for  first BCG dose</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-
 
 #### Polio
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -274,12 +478,12 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tr>
 </tbody>
 </table>
-
 
 #### Yellow Fever
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -308,11 +512,11 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tbody>
 </table>
 
-
 #### Measles
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -345,6 +549,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -373,11 +578,11 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tbody>
 </table>
 
-
 #### DPT Hep B-Hib
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -410,6 +615,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -442,6 +648,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -469,12 +676,12 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tr>
 </tbody>
 </table>
-
 
 #### Vitamin A
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -503,11 +710,11 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tbody>
 </table>
 
-
 #### Malaria
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -540,6 +747,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -568,10 +776,11 @@ Each of the decision logic above have been elaborated on in decision support tab
 </tbody>
 </table>
 
-
 #### Meningococcal
+
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
@@ -604,6 +813,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
 <table border="1" class="dataframe table table-striped table-bordered">
    <thead><tr class="header"> <th>Decision ID</th>
+
             <th  colspan="5"></th>
             </tr>
             <tr class="header">
