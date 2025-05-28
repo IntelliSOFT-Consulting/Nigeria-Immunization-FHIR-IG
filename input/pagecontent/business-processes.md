@@ -308,7 +308,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To provide data access and analysis for decision-making
  
  <div> 
-<img src="report-generation.png" alt="report-generation.png" style="width:85%"/>
+<img src="workflow-report-generation.png" alt="workflow-report-generation.png" style="width:85%"/>
 </div>
 <br>
 
