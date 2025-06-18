@@ -1,6 +1,6 @@
 CodeSystem:   IMMZ.D
-Title:        "IMMZ.D CodeSystem for Administer Vaccine Data Elements"
-Description:  "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
+Title: "IMMZ.D CodeSystem for Administer Vaccine Data Elements"
+Description: "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
@@ -43,8 +43,8 @@ Description:  "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
 Instance: IMMZDAdministerVaccine
 InstanceOf: CodeSystem
 Usage: #example
-Title: "IMMZ.D CodeSystem for Administer Vaccine"
-Description: "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
+* title = "IMMZ.D CodeSystem for Administer Vaccine"
+* description = "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
 
 * version = "1.0.0"
 * name = "IMMZ_D"

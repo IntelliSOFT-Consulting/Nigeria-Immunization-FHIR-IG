@@ -1,3 +1,8 @@
+Alias: ShareableCodeSystem = http://hl7.org/fhir/StructureDefinition/shareablecodesystem
+
+
+
+
 CodeSystem:   IMMZ.C
 Title:        "IMMZ.C CodeSystem for Data Elements"
 Description:  "CodeSystem for IMMZ.C Data Elements"
@@ -51,17 +56,20 @@ Description:  "CodeSystem for IMMZ.C Data Elements"
 
 
 Instance: IMMZCRegisterClient
-InstanceOf: CodeSystem
+InstanceOf: ShareableCodeSystem
 Usage: #example
-Title: "IMMZ.C CodeSystem for Register Client"
-Description: "CodeSystem for IMMZ.C Register Client History Data Elements"
-
+* title = "IMMZ.C CodeSystem for Register Client"
+* description = "CodeSystem for IMMZ.C Register Client History Data Elements"
+* url = "http://fhir.nigeria.gov.ng/CodeSystem/IMMZCRegisterClient"
 * version = "1.0.0"
 * name = "IMMZ_C"
 * status = #active
-* experimental = false
+* experimental = false 
+* publisher = "Nigeria Ministry of Health"
 * caseSensitive = false
-* content = #complete
+* content = #complete 
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:2.16.840.1.113883.3.12345.1.1"
 
 
 

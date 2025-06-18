@@ -1,6 +1,6 @@
 CodeSystem:   IMMZ.C1
-Title:        "IMMZ.C1 CodeSystem for Update Client History"
-Description:  "CodeSystem for IMMZ.C1 Update Client History Data Elements"
+Title: "IMMZ.C1 CodeSystem for Update Client History"
+Description: "CodeSystem for IMMZ.C1 Update Client History Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
@@ -54,8 +54,8 @@ Description:  "CodeSystem for IMMZ.C1 Update Client History Data Elements"
 Instance: IMMZDUpdateClientHistory
 InstanceOf: CodeSystem
 Usage: #example
-Title: "IMMZ.C1 CodeSystem for Update Client History"
-Description: "CodeSystem for IMMZ.C1 Update Client History Data Elements"
+* title = "IMMZ.C1 CodeSystem for Update Client History"
+* description = "CodeSystem for IMMZ.C1 Update Client History Data Elements"
 
 * version = "1.0.0"
 * name = "IMMZ_C1"

@@ -2,7 +2,7 @@
 CodeSystem: NEIRServiceRequestCS
 Id: neir-service-request-cs
 Description: "A custom CodeSystem defining service requests."
-* ^url = "http://nigerian.org/fhir/CodeSystem/neir-service-request-cs"
+* ^url = "http://example.org/CodeSystem/neir-service-request-cs"
 * ^status = #active
 * ^content = #complete
 

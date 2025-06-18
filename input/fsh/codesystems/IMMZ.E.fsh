@@ -1,7 +1,7 @@
 CodeSystem:   IMMZ.E
-Title:        "IMMZ.E CodeSystem for Manage AEFI Data Elements"
 Id : IMMZ-E
-Description:  "CodeSystem for IMMZ.E Manage AEFI Data Elements"
+Title: "IMMZ.E CodeSystem for Manage AEFI Data Elements"
+Description: "CodeSystem for IMMZ.E Manage AEFI Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
@@ -56,8 +56,8 @@ Description:  "CodeSystem for IMMZ.E Manage AEFI Data Elements"
 Instance: IMMZHManageAEFI
 InstanceOf: CodeSystem
 Usage: #example
-Title: "IMMZ.E CodeSystem for Manage AEFI"
-Description: "CodeSystem for IMMZ.H Manage AEFI Data Elements"
+* title = "IMMZ.E CodeSystem for Manage AEFI"
+* description = "CodeSystem for IMMZ.H Manage AEFI Data Elements"
 
 * version = "1.0.0"
 * name = "IMMZ_E"
