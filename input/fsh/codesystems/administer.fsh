@@ -5,8 +5,9 @@ Description: "A custom CodeSystem defining facility types for administration doc
 * ^status = #active
 * ^content = #complete
 
-* #public "Public"
-* #private "Private" 
+* #IMMZ.D.DE3  "Public"
+* #IMMZ.D.DE4  "Private"
+* #IMMZ.D.DE5  "Faith-based"
 
 
 CodeSystem: NEIRSessionTypeCS

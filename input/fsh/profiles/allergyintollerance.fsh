@@ -1,5 +1,5 @@
 Alias: SCT = http://snomed.info/sct
-Alias: MySubstances = http://example.org/fhir/CodeSystem/my-substances
+Alias: MySubstances = http://example.org/CodeSystem/my-substances
 
 
 
