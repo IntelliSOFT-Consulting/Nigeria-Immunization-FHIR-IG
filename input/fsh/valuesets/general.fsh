@@ -25,10 +25,10 @@ Description: "Session type codes from the IMMZ.D CodeSystem"
 ValueSet: IMMZFVaccineType
 Id: IMMZFVaccineType
 Title: "Vaccine Type"
-Description: "Vaccine types from the IMMZ.F CodeSystem"
+Description: "Vaccine types from the IMMZ.D CodeSystem"
 * ^url = "http://example.org/ValueSet/IMMZFVaccineType"
-* http://example.org/CodeSystem/IMMZ.F#IMMZ.D.DE11
-* http://example.org/CodeSystem/IMMZ.F#IMMZ.D.DE12
+* http://example.org/CodeSystem/IMMZ.D#IMMZ.D.DE11
+* http://example.org/CodeSystem/IMMZ.D#IMMZ.D.DE12
 
 
 ValueSet: IMMZDContraindications

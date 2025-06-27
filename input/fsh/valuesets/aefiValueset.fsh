@@ -4,6 +4,7 @@ Id: neir-clinical-status-vs
 Description: "A ValueSet containing custom clinical statuses."
 * ^url = "http://example.org/ValueSet/neir-clinical-status-vs"
 * ^status = #active
+* ^experimental = false
 * include codes from system NEIRClinicalStatusCS
 
 
