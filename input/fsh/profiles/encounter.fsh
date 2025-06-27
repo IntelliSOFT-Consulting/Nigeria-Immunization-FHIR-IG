@@ -4,7 +4,7 @@ Profile: NEIREncounter
 Parent: Encounter
 Id: neir-encounter 
 Description: "A profile for encounters in the Nigerian Electronic Immunization Registry (NEIR), used to document immunization visits and related healthcare interactions."
-* ^url = "http://nigerian.org/fhir/StructureDefinition/neir-encounter"
+* ^url = "http://example.org/StructureDefinition/neir-encounter"
 * ^version = "1.0.0"
 * ^status = #active
 * ^publisher = "Nigerian Ministry of Health"
@@ -24,7 +24,7 @@ Instance: encounter-example
 InstanceOf: NEIREncounter 
 Usage: #example
 Description: "An example encounter in the Nigerian Electronic Immunization Registry (NEIR) for an outreach immunization visit."
-* status = #completed
+* status = #in-progress
 * class = V3ActCode#HH
 * subject.reference = "Patient/patient-example" 
 * participant.individual.reference = "Practitioner/practitioner-example"

@@ -1,6 +1,6 @@
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $atc = http://www.whocc.no/atc
-Alias: $ind = http://nigerian.org
+Alias: $ind = http://example.org
 
 
 ValueSet: NEIRImmunizationNotDoneReasonsVS
@@ -13,13 +13,13 @@ Description: "Reasons a Vaccine was not administered"
 ValueSet: NEIRFacilityTypeVS
 Id: neir-facility-types-vs 
 Description: "A ValueSet containing custom facility types"
-* ^url = "http://nigerian.org/fhir/ValueSet/neir-facility-types-vs"
+* ^url = "http://example.org/ValueSet/neir-facility-types-vs"
 * ^status = #active
 * include codes from system NEIRFacilityTypeCS
 
 ValueSet: NEIRSessionTypeVS
 Id: neir-session-types-vs 
 Description: "A ValueSet containing custom session types"
-* ^url = "http://nigerian.org/fhir/ValueSet/neir-session-types-vs"
+* ^url = "http://example.org/ValueSet/neir-session-types-vs"
 * ^status = #active
 * include codes from system NEIRSessionTypeCS

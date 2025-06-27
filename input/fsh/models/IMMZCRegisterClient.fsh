@@ -3,8 +3,9 @@ Id: register-client-model
 Title: "IMMZ.C Register Client"
 Description: "A logical model representing a client being registered in the immunization system."
 
-* identifier 1..1 string "Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others."
-  * ^code[+] = #DE1
+* identifier 1..1 Identifier "Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others."
+* identifier ^mapping[+].identity = "immz-c"
+* identifier ^mapping[=].map = "DE1"
 * name 1..1 BackboneElement "The full name of the client."
   * family 1..1 string "Client's family name or last name."
     * ^code[+] = #DE4
@@ -21,7 +22,11 @@ Description: "A logical model representing a client being registered in the immu
 * ageInYears 0..1 integer "The client's calculated age (number of years) based on the date of birth and the visit date."
   * ^code[+] = #DE11
 * weightAtBirth 0..1 Quantity "Client's weight at birth in Kg."
-  * ^code[+] = #DE12
+* weightAtBirth.unit = "kg"
+* weightAtBirth.system = "http://unitsofmeasure.org"
+* weightAtBirth.code = #kg
+
+
 * address 0..1 BackboneElement "Client's residential address."
   * residentialAddress 0..1 string "Child's residential address."
     * ^code[+] = #DE13
@@ -84,7 +89,7 @@ Usage: #example
 * weightAtBirth.value = 3.2
 * weightAtBirth.unit = "kg"
 * weightAtBirth.system = "http://unitsofmeasure.org"
-* weightAtBirth.code = #DE12
+* weightAtBirth.code = #kg
 
 * address.residentialAddress = "123 Health Street"
 * address.village = "ImmunoCity"
@@ -97,11 +102,11 @@ Usage: #example
 * contact[0].name.family = "Doe" 
 
 
-* contact[0].relationship.coding[0].system = "http://example.org/fhir/contact-relationship"
+* contact[0].relationship.coding[0].system = "http://example.org/contact-relationship"
 * contact[0].relationship.coding[0].code = #DE21
 * contact[0].relationship.coding[0].display = "Mother"
 
-* hivStatus.coding[0].system = "http://example.org/fhir/hiv-status"
+* hivStatus.coding[0].system = "http://example.org/hiv-status"
 * hivStatus.coding[0].code = #DE39
 * hivStatus.coding[0].display = "Negative"
 

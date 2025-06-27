@@ -20,7 +20,7 @@ InstanceOf: NEIRPractitioner
 Usage: #example
 Title: "NEIRPractitionerExample"
 Description: "An example of a Nigerian Practitioner" 
-* identifier.system = ""
+* identifier.system = "http://example.org/StructureDefinition/NEIRPractitioner"
 * identifier.use = #official
 * identifier.value = "123456"
 * name.given = "John"

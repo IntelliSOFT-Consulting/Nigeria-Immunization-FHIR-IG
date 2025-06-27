@@ -1,39 +1,51 @@
 Logical: DefaulterTracing
 Title: "IMMZ.F Defaulter Tracing"
 Description: "A logical model for tracking immunization defaulters."
+ 
 
 * clientName 1..1 string "Client's name" "The first and last name of the client."
-  * ^code[+] = #IMMZ.F.DE1
+
 * clientSex 1..1 CodeableConcept "Sex" "Biological sex of the client."
-  * ^code[+] = #IMMZ.F.DE2
-  * ^binding.strength = #required
-  * ^binding.valueSet = "#IMMZ.F.DE2"
+* clientSex ^binding.strength = #required
+* clientSex ^binding.valueSet = "http://example.org/ValueSet/IMMZ.F.DE2" // Replace with actual ValueSet canonical
+
 * clientAge 1..1 integer "Client's age" "Total number of months since the client was born."
-  * ^code[+] = #IMMZ.F.DE3
 
 * caregiverName 0..1 string "Caregiver's name" "Full name of the caregiver."
-  * ^code[+] = #IMMZ.F.DE4
+
 * caregiverPhone 0..1 string "Caregiver's phone number" "Mobile number of the caregiver."
-  * ^code[+] = #IMMZ.F.DE5
 
 * missedVaccine 1..* CodeableConcept "Immunization missed" "The type of vaccine missed."
-  * ^code[+] = #IMMZ.F.DE6
-  * ^binding.strength = #required
-  * ^binding.valueSet = "#IMMZ.F.DE6"
+* missedVaccine ^binding.strength = #required
+* missedVaccine ^binding.valueSet = "http://example.org/ValueSet/IMMZ.F.DE6" // Replace with actual ValueSet canonical
+
 * missedVaccineDate 1..1 date "Date of immunization missed" "The date immunization was due."
-  * ^code[+] = #IMMZ.F.DE7
-* missedReason 0..1 string "Reason" "Capture's the reason(s) for a missed vaccination appointment."
-  * ^code[+] = #IMMZ.F.DE8
+
+* missedReason 0..1 string "Reason" "Captures the reason(s) for a missed vaccination appointment."
+
 
 Instance: defaulter-tracing-example
 InstanceOf: DefaulterTracing
 Usage: #example
+Title: "Defaulter Tracing Example"
+Description: "An example of a defaulter tracing record."
+
 * clientName = "John Doe"
-* clientSex = #IMMZ.F.DE2 "Male"
+* clientSex.coding.system = "http://example.org/CodeSystem/IMMZ.F.DE2"
+* clientSex.coding.code = #male
+* clientSex.coding.display = "Male"
+
 * clientAge = 24
 * caregiverName = "Jane Doe"
 * caregiverPhone = "+2348012345678"
-* missedVaccine[+] = #IMMZ.F.DE6 "Measles"
-* missedVaccine[+] = #IMMZ.F.DE6 "Polio"
+
+* missedVaccine[0].coding.system = "http://example.org/CodeSystem/IMMZ.F.DE6"
+* missedVaccine[0].coding.code = #measles
+* missedVaccine[0].coding.display = "Measles"
+
+* missedVaccine[1].coding.system = "http://example.org/CodeSystem/IMMZ.F.DE6"
+* missedVaccine[1].coding.code = #polio
+* missedVaccine[1].coding.display = "Polio"
+
 * missedVaccineDate = "2025-02-15"
 * missedReason = "Caregiver forgot the appointment."

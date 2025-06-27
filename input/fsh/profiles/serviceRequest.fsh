@@ -30,13 +30,15 @@ Instance: neir-defaulter-tracing-request-example
 InstanceOf: NEIRDefaulterTracingRequest
 Usage: #example 
 Description: "An example of a defaulter tracing request"
-* identifier.system = "https://nigerian.org/fhir/serviceRequest"
+* identifier.system = "https://example.org/serviceRequest"
 * identifier.use = #official
 * identifier.value = "123456"
 * basedOn = Reference(ServiceRequest/service-request-example)
 * status = #active
 * intent = #order
-* category = #NGR-001
+* category.coding.system = "http://example.org/CodeSystem/neir-service-request"
+* category.coding.code = #NGR-001
+* category.coding.display = "Defaulter Tracing"
 * priority = #routine
 * subject.display = "John Doe"
 * subject = Reference(Patient/patient-example)

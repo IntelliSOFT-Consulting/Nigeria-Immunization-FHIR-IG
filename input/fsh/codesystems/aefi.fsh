@@ -1,9 +1,11 @@
 CodeSystem: NEIRClinicalStatusCS
 Id: neir-clinical-status 
 Description: "A custom CodeSystem defining clinical statuses for AEFI documentation."
-* ^url = "http://nigerian.org/fhir/CodeSystem/neir-clinical-status"
+* ^url = "http://example.org/CodeSystem/neir-clinical-status"
 * ^status = #active
 * ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
 
 * #active "Active"
 * #inactive "Inactive"
@@ -13,9 +15,11 @@ Description: "A custom CodeSystem defining clinical statuses for AEFI documentat
 CodeSystem: NEIRVerificationStatusCS
 Id: neir-verification-status 
 Description: "A custom CodeSystem defining clinical statuses for AEFI documentation."
-* ^url = "http://nigerian.org/fhir/CodeSystem/neir-verification-status"
+* ^url = "http://example.org/CodeSystem/neir-verification-status"
 * ^status = #active
 * ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
 
 * #confirmed "Confirmed"
 * #unconfirmed "Unconfirmed" 
