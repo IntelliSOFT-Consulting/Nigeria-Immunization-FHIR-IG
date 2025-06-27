@@ -35,3 +35,11 @@ Title: "IMMZ.F.DE6 – Missed Vaccines"
 * #measles "Measles"
 * #polio "Polio"
 
+CodeSystem: IMMZC1HivStatusCS
+Id: immzc1-hiv-status-cs
+Title: "IMMZ.C1 HIV Status Codes"
+* ^url     = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* ^status  = #active
+* #positive "Positive"
+* #negative "Negative"
+* #unknown  "Unknown"

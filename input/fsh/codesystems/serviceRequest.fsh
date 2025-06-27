@@ -1,14 +1,14 @@
 
 CodeSystem: NEIRServiceRequestCS
-Id: neir-service-request-cs
-Description: "A custom CodeSystem defining service requests."
-* ^url = "http://example.org/CodeSystem/neir-service-request-cs"
+Id: neir-service-request
+Title: "NEIR Service Request Codes"
+* ^url = "http://example.org/CodeSystem/neir-service-request"
 * ^status = #active
 * ^content = #complete
 
-* #NGR-001 "One"
-* #NGR-002 "Two"
-* #NGR-003 "Three"
-* #NGR-004 "Four"
-* #NGR-005 "Five"
-* #NGR-006 "Six"
+* #NGR-001 "Defaulter Tracing"
+* #NGR-002 "Laboratory procedure"
+* #NGR-003 "Imaging"
+* #NGR-004 "Counselling"
+* #NGR-005 "Education"
+* #NGR-006 "Surgical procedure"

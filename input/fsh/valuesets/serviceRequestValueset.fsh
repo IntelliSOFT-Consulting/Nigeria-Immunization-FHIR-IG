@@ -1,12 +1,9 @@
 
-ValueSet: NEIRServiceRequestVS 
-Description: "Service Requests to be used in Kenyan Context"
-Id: neir-service-request-vs 
+ValueSet: NEIRServiceRequestVS
+Id: neir-service-request-vs
+Title: "NEIR Service Request ValueSet"
 * ^url = "http://example.org/ValueSet/neir-service-request-vs"
-* ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
-* ^name = "NGTSSVSRQTS"
+* include codes from system http://example.org/CodeSystem/neir-service-request
 
-* include codes from system NEIRServiceRequestCS
 

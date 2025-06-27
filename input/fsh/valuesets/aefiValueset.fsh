@@ -1,19 +1,27 @@
 
 ValueSet: NEIRClinicalStatusVS
 Id: neir-clinical-status-vs 
-Description: "A ValueSet containing custom clinical statuses."
+Title: "NEIR Clinical Status"
+Description: "Subset of standard clinical statuses for allergy intolerance."
 * ^url = "http://example.org/ValueSet/neir-clinical-status-vs"
 * ^status = #active
-* ^experimental = false
-* include codes from system NEIRClinicalStatusCS
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#inactive
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#resolved
+
+
 
 
 
 ValueSet: NEIRVerificationStatusVS
-Id: neir-verification-status-vs 
-Description: "A ValueSet containing custom verification statuses."
-* ^title = "Verification Status"
+Id: neir-verification-status-vs
+Title: "NEIR Verification Status"
+Description: "Subset of allowed verification statuses for NEIR."
 * ^url = "http://example.org/ValueSet/neir-verification-status-vs"
 * ^status = #active
-* ^experimental = false
-* include codes from system NEIRVerificationStatusCS
+
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#unconfirmed
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#refuted
+* include http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#entered-in-error
+

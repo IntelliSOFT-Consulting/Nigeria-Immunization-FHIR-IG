@@ -78,6 +78,14 @@ Title: "IMMZ.F.DE6 ValueSet"
 * ^url = "http://example.org/ValueSet/IMMZ.F.DE6"
 * include codes from system IMMZFDE6
 
+ValueSet: IMMZC1HivStatusVS
+Id: immzc1-hiv-status-vs
+Title: "IMMZ.C1 HIV Status ValueSet"
+* ^url     = "http://example.org/ValueSet/immzc1-hiv-status-vs"
+* ^status  = #active
+* include codes from system IMMZC1HivStatusCS
+
+
 
 
 
