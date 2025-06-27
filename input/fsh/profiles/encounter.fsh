@@ -4,7 +4,7 @@ Profile: NEIREncounter
 Parent: Encounter
 Id: neir-encounter 
 Description: "A profile for encounters in the Nigerian Electronic Immunization Registry (NEIR), used to document immunization visits and related healthcare interactions."
-* ^url = "http://example.org/fhir/StructureDefinition/neir-encounter"
+* ^url = "http://example.org/StructureDefinition/neir-encounter"
 * ^version = "1.0.0"
 * ^status = #active
 * ^publisher = "Nigerian Ministry of Health"

@@ -6,18 +6,18 @@ Description: "A logical model for capturing vaccine administration details"
   * ^code[+] = #IMMZ.D.DE1
 
 * facilityType 1..1 CodeableConcept "Facility type" "The type of health facility. Uses the IMMZ.D CodeSystem."
-* facilityType from http://example.org/fhir/ValueSet/IMMZDFacilityType (required)
+* facilityType from http://example.org/ValueSet/IMMZDFacilityType (required)
 
 * sessionType 1..1 CodeableConcept "Session type" "Type of immunization session. Uses the IMMZ.D CodeSystem."
-* sessionType from http://example.org/fhir/ValueSet/IMMZDSessionType (required)
+* sessionType from http://example.org/ValueSet/IMMZDSessionType (required)
 
 * vaccineType 1..1 CodeableConcept "Vaccine type" "Type of vaccine administered. Uses IMMZ.F Vaccine Library codes."
-* vaccineType from http://example.org/fhir/ValueSet/IMMZFVaccineType (required)
+* vaccineType from http://example.org/ValueSet/IMMZFVaccineType (required)
 
 * contraindicated 0..1 boolean "Contraindicated" "Immunization not recommended due to contraindications."
 
 * contraindications 0..* CodeableConcept "Contraindications to immunization" "Specific situations where certain vaccines should not be administered. Uses the IMMZ.D CodeSystem."
-* contraindications from http://example.org/fhir/ValueSet/IMMZDContraindications (required)
+* contraindications from http://example.org/ValueSet/IMMZDContraindications (required)
 
 * vaccinationDateTime 1..1 dateTime "Date and time of vaccination" "The date and time the vaccine was administered."
 
@@ -28,10 +28,10 @@ Description: "A logical model for capturing vaccine administration details"
 * expirationDate 1..1 date "Expiration date" "Expiration date of the vaccine. Use last day of the month if only month is given."
 
 * siteAdministered 1..1 CodeableConcept "Site administered" "Body site where vaccine was administered. Uses the IMMZ.D CodeSystem."
-* siteAdministered from http://example.org/fhir/ValueSet/IMMZDSiteAdministered (required)
+* siteAdministered from http://example.org/ValueSet/IMMZDSiteAdministered (required)
 
 * routeOfAdministration 1..1 CodeableConcept "Route of administration" "Route of delivery of the vaccine. Uses the IMMZ.D CodeSystem."
-* routeOfAdministration from http://example.org/fhir/ValueSet/IMMZDRouteOfAdministration (required)
+* routeOfAdministration from http://example.org/ValueSet/IMMZDRouteOfAdministration (required)
 
 * doseQuantity 1..1 Quantity "Dose quantity" "Quantity of vaccine product administered."
 

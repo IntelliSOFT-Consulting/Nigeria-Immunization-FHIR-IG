@@ -102,11 +102,11 @@ Usage: #example
 * contact[0].name.family = "Doe" 
 
 
-* contact[0].relationship.coding[0].system = "http://example.org/fhir/contact-relationship"
+* contact[0].relationship.coding[0].system = "http://example.org/contact-relationship"
 * contact[0].relationship.coding[0].code = #DE21
 * contact[0].relationship.coding[0].display = "Mother"
 
-* hivStatus.coding[0].system = "http://example.org/fhir/hiv-status"
+* hivStatus.coding[0].system = "http://example.org/hiv-status"
 * hivStatus.coding[0].code = #DE39
 * hivStatus.coding[0].display = "Negative"
 
