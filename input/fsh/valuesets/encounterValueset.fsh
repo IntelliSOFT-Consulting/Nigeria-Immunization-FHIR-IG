@@ -8,6 +8,7 @@ Description: "A ValueSet defining encounter types for immunization services in t
 * ^url = "http://example.org/ValueSet/immunization-encounter-class-vs"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = false 
 * include V3ActCode#AMB "Ambulatory"
 * include V3ActCode#HH "Home Health"
 * include V3ActCode#FLD "Field"
