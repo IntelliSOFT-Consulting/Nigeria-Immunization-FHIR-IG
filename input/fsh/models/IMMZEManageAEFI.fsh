@@ -2,8 +2,7 @@ Alias: $IMMZ_E = http://example.org/CodeSystem/IMMZ_E
 
 
 
-Logical: ManageAEFI
-Id: manage-aefi
+Logical: ManageAEFI 
 Title: "IMMZ.E Manage AEFI"
 Description: "A logical model for recording and managing AEFI treatment."
 * reactionDate 1..1 date "Reaction Date" "The date when the adverse event or reaction started."
@@ -31,15 +30,31 @@ Description: "AEFI Management Example"
 Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"
-* complaint = "Severe headache and dizziness"
-* manifestation[+] = #IMMZ.E.DE37 "Fever"
-* manifestation[+] = #IMMZ.E.DE38 "Rash"
-* severity = #IMMZ.E.DE10 "Severe"
-* outcome = #IMMZ.E.DE10 "Recovered"
+* complaint = "Severe headache and dizziness" 
+* manifestation[+].coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* manifestation[=].coding[0].code = #IMMZ.E.DE37
+* manifestation[=].coding[0].display = "Fever - Elevated body temperature"
+
+* manifestation[+].coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* manifestation[=].coding[0].code = #IMMZ.E.DE38
+* manifestation[=].coding[0].display = "Rash - Skin eruption or inflammation"
+
+* severity.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* severity.coding[0].code = #IMMZ.E.DE7
+* severity.coding[0].display = "Severe"
+
+* outcome.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* outcome.coding[0].code = #IMMZ.E.DE11
+* outcome.coding[0].display = "Recovered with sequelae"
+
 * treatmentGiven[+] = "Administered antihistamines and IV fluids"
 * doseNumber = 2
 * totalDoses = 3
-* diseaseTargeted = #IMMZ.E.DE27 "Measles"
+
+* diseaseTargeted.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* diseaseTargeted.coding[0].code = #IMMZ.E.DE27 
+* diseaseTargeted.coding[0].display = "Measles"
+
 * nextDoseDueDate = "2025-06-20"
 * digitalCertificateNeeded = true
 * certificateIssuer = "Ministry of Health"

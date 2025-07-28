@@ -1,5 +1,4 @@
-Logical: RegisterClientModel
-Id: register-client-model
+Logical: RegisterClientModel 
 Title: "IMMZ.C Register Client"
 Description: "A logical model representing a client being registered in the immunization system."
 
@@ -100,14 +99,14 @@ Usage: #example
 
 * contact[0].name.given = "Jane"
 * contact[0].name.family = "Doe" 
+ 
 
-
-* contact[0].relationship.coding[0].system = "http://example.org/contact-relationship"
-* contact[0].relationship.coding[0].code = #DE21
+* contact[0].relationship.coding[0].system = "http://example.org/CodeSystem/client-relationship"
+* contact[0].relationship.coding[0].code = #mother
 * contact[0].relationship.coding[0].display = "Mother"
 
-* hivStatus.coding[0].system = "http://example.org/hiv-status"
-* hivStatus.coding[0].code = #DE39
+* hivStatus.coding[0].system = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* hivStatus.coding[0].code = #negative
 * hivStatus.coding[0].display = "Negative"
 
 * pregnancyStatus = false
