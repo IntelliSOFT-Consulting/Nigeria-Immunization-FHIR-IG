@@ -27,8 +27,10 @@ Usage: #example
 Title: "NEIRImmunizationRecommendationExample"
 Description: "An example of a Nigerian Immunization Recommendation"
 * identifier.use = #official
-* identifier.system = ""
+* identifier.system = "https://example.org/identifiers/nigeria-nin"
 * identifier.value = "1234567890"
+
+
 * patient = Reference(Patient/patient-example)
 * date = "2020-02-02"
 * authority = Reference(Organization/organization-example)
