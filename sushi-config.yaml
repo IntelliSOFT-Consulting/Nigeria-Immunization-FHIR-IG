@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.nigeriaImmunization
-canonical: http://example.org
+canonical: http://nhin.example.ng
 name: Nigeria-immunization-FHIR-IG
 title: Nigeria Immunization FHIR IG
 description: Nigeria Immunization FHIR IG
