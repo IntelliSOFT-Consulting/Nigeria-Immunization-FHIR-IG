@@ -63,6 +63,7 @@ Description: "A logical model for tracking client immunization history updates."
 
 Instance: update-client-history-example
 InstanceOf: UpdateClientHistory
+Description: "Example for Update Client History"
 Usage: #example
 
 * clientCompletedPrimarySeries = true

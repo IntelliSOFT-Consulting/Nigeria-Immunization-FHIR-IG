@@ -1,6 +1,7 @@
 ValueSet: NEIRSubstanceVS
 Id: neir-substance-vs
 Title: "Allowed Allergy Substances"
+Description: "NEIR Substance ValueSet"
 * ^url = "http://example.org/ValueSet/neir-substance-vs"
 * ^experimental = false
 * include codes from system MySubstances
@@ -69,18 +70,21 @@ Description: "Vaccine administration routes from IMMZ.D"
 ValueSet: IMMZFDE2VS
 Id: IMMZ.F.DE2
 Title: "IMMZ.F.DE2 ValueSet"
+Description: "IMMZFDE ValueSet"
 * ^url = "http://example.org/ValueSet/IMMZ.F.DE2"
 * include codes from system IMMZFDE2
 
 ValueSet: IMMZFDE6VS
 Id: IMMZ.F.DE6
 Title: "IMMZ.F.DE6 ValueSet"
+Description: "IMMZFDE ValueSet"
 * ^url = "http://example.org/ValueSet/IMMZ.F.DE6"
 * include codes from system IMMZFDE6
 
 ValueSet: IMMZC1HivStatusVS
 Id: immzc1-hiv-status-vs
 Title: "IMMZ.C1 HIV Status ValueSet"
+Description: "IMMZ HIV Status ValueSet"
 * ^url     = "http://example.org/ValueSet/immzc1-hiv-status-vs"
 * ^status  = #active
 * include codes from system IMMZC1HivStatusCS
