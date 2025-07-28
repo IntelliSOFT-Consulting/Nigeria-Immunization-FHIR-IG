@@ -3,23 +3,27 @@ Alias: $atc = http://www.whocc.no/atc
 Alias: $ind = http://example.org
 
 
-ValueSet: NEIRImmunizationNotDoneReasonsVS
-Id: NEIRImmunizationNotDoneReasonsVS
+ValueSet: NEIRImmunizationNotDoneReasonsVS 
 Title: "Reason Vaccine not administered"
 Description: "Reasons a Vaccine was not administered"
-* include codes from system $ind
-
-
-ValueSet: NEIRFacilityTypeVS
-Id: neir-facility-types-vs 
-Description: "A ValueSet containing custom facility types"
-* ^url = "http://example.org/ValueSet/neir-facility-types-vs"
+* ^url = "http://example.org/ValueSet/NEIRImmunizationNotDoneReasonsVS"
 * ^status = #active
+* ^experimental = false 
+* include codes from system NEIRImmunizationNotDoneReasonsCS
+
+
+ValueSet: NEIRFacilityTypeVS 
+Title: "Facility Types Valueset"
+Description: "A ValueSet containing custom facility types"
+* ^url = "http://example.org/ValueSet/NEIRFacilityTypeVS"
+* ^status = #active
+* ^experimental = false 
 * include codes from system NEIRFacilityTypeCS
 
-ValueSet: NEIRSessionTypeVS
-Id: neir-session-types-vs 
+ValueSet: NEIRSessionTypeVS 
+Title: "Session Type Valueset"
 Description: "A ValueSet containing custom session types"
-* ^url = "http://example.org/ValueSet/neir-session-types-vs"
+* ^url = "http://example.org/ValueSet/NEIRSessionTypeVS"
 * ^status = #active
+* ^experimental = false 
 * include codes from system NEIRSessionTypeCS

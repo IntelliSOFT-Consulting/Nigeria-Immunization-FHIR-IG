@@ -5,6 +5,7 @@ Description:  "CodeSystem for IMMZ.H Stock Management Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_H"
+* ^status = #active
 
 * #IMMZ.H.DE1   "BCG Vaccines"
   * ^display = "BCG Vaccines"

@@ -5,6 +5,7 @@ Description:  "CodeSystem for IMMZ.G Generate Report Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_G"
+* ^status = #active
 
 * #IMMZ.G.DE1  "Report Identification"
 * #IMMZ.G.DE2  "Report Status"

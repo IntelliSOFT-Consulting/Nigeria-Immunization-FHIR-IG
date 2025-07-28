@@ -6,6 +6,7 @@ Description: "CodeSystem for IMMZ.E Manage AEFI Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_E"
+* ^status = #active
 
 * #IMMZ.E.DE1  "Reaction date"
 * #IMMZ.E.DE2  "Reaction Observation ID"

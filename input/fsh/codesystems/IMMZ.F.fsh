@@ -5,6 +5,7 @@ Description:  "CodeSystem for IMMZ.F Defaulter Tracing Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_F"
+* ^status = #active
 
 * #IMMZ.F.DE1  "Client's name"
 * #IMMZ.F.DE2  "Sex"

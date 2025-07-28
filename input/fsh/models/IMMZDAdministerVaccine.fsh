@@ -45,16 +45,35 @@ Title: "Example Vaccine Administration Record"
 Description: "An example instance demonstrating the use of the Administer Vaccine Logical Model."
 
 * nameOfHealthFacility = "Sunrise Health Clinic"
-* facilityType = #IMMZ.D.DE4 "Private"
-* sessionType = #IMMZ.D.DE7 "Fixed"
-* vaccineType = #IMMZ.D.DE11 "Measles Vaccine"
+* facilityType.coding[0].system = "http://example.org/CodeSystem/IMMZ.D"
+* facilityType.coding[0].code = #IMMZ.D.DE4
+* facilityType.coding[0].display = "Private"
+
+* sessionType.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* sessionType.coding[0].code  = #IMMZ.D.DE7  
+* sessionType.coding[0].display  = "Fixed"
+
+* vaccineType.coding[0].system =   "http://example.org/CodeSystem/IMMZ.F.DE6"
+* vaccineType.coding[0].code = #measles  
+* vaccineType.coding[0].display = "Measles"
+
 * contraindicated = false
-* contraindications[+] = #IMMZ.D.DE14 "Severe AEFI"
+* contraindications[+].coding[0].system = "http://example.org/CodeSystem/IMMZ.D"
+* contraindications[=].coding[0].code = #IMMZ.D.DE14 
+* contraindications[=].coding[0].display = "Severe AEFI"
+
 * vaccinationDateTime = "2025-03-20T10:30:00Z"
 * vaccineAdministeringCenter = "Sunrise Health Clinic - Immunization Wing"
 * vaccineBatchNumber = "BATCH12345"
 * expirationDate = "2026-06-30"
-* siteAdministered = #IMMZ.D.DE23 "Left upper arm"
-* routeOfAdministration = #IMMZ.D.DE29 "Intramuscular"
+
+* siteAdministered.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* siteAdministered.coding[0].code  = #IMMZ.D.DE23  
+* siteAdministered.coding[0].display  = "Left upper arm"
+
+* routeOfAdministration.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* routeOfAdministration.coding[0].code  = #IMMZ.D.DE29 
+* routeOfAdministration.coding[0].display  = "Intradermal"
+
 * doseQuantity = 0.5 'mL' "Dose"
 * healthWorkerIdentifier = "HW-56789"

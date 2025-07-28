@@ -5,6 +5,7 @@ Description: "CodeSystem for IMMZ.C1 Update Client History Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_C1"
+* ^status = #active
 
 * #IMMZ.C1.DE1 "Client has completed vaccine primary series"
 * #IMMZ.C1.DE2 "HIV status"

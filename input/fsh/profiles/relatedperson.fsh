@@ -1,6 +1,5 @@
 Profile: NEIRMotherOtherChildren
-Parent: RelatedPerson
-Id: mother-other-children 
+Parent: RelatedPerson 
 Description: "Represents the mother's other children as RelatedPersons."
 
 * patient 1..1 MS
