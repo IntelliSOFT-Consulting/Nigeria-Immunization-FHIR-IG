@@ -1,10 +1,9 @@
 Profile: NEIRLocation
-Parent: Location
-Id: neir-location 
+Parent: Location 
 Title: "NEIR Location"
 Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
 
-* ^url = "http://example.org/StructureDefinition/neir-location"
+* ^url = "http://example.org/StructureDefinition/NEIRLocation"
 * ^version = "1.0.0"
 * ^status = #active
 

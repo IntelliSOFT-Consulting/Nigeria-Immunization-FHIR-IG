@@ -64,9 +64,18 @@ InstanceOf: NEIRImmunization
 Description: "Immunization Example"
 Usage: #example
 * status = #completed
-* vaccineCode.coding[0] = $cvx#20 "DTaP"
-* vaccineCode.coding[+] = $vaccines#V004
-* vaccineCode.coding[+] = $mms#XM1PB8
+* vaccineCode.coding[0].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[0].code = #110
+* vaccineCode.coding[0].display = "DTaP-hepatitis B and poliovirus vaccine"
+
+* vaccineCode.coding[+].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[=].code = #56
+* vaccineCode.coding[=].display = "dengue fever tetravalent"
+
+* vaccineCode.coding[+].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[=].code = #05
+* vaccineCode.coding[=].display = "measles virus vaccine"
+
 * patient = Reference(Patient/patient-example)
 * occurrenceDateTime = "2025-03-11T11:27:00+03:00"
 * recorded = "2025-03-11T11:29:00+03:00"

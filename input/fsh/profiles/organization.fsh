@@ -1,6 +1,5 @@
 Profile: NEIROrganization
-Parent: Organization
-Id: neir-organization 
+Parent: Organization 
 Description: "An organization profile for the Nigerian Electronic Immunization Registry (NEIR), representing healthcare facilities responsible for immunization services."
 
 

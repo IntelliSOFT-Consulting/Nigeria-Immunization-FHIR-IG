@@ -4,8 +4,7 @@ Alias: MySubstances = http://example.org/CodeSystem/my-substances
 
 
 Profile: NEIRAllergyIntolerance
-Parent: AllergyIntolerance
-Id: allergy-intolerance-profile 
+Parent: AllergyIntolerance 
 Description: "Defines constraints on the AllergyIntolerance resource for use in the FHIR Implementation Guide."
 
 * clinicalStatus 1..1 MS
