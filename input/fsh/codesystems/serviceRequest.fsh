@@ -6,6 +6,8 @@ Description: "Service Request CodeSystem"
 * ^url = "http://example.org/CodeSystem/neir-service-request"
 * ^status = #active
 * ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
 
 * #NGR-001 "Defaulter Tracing"
 * #NGR-002 "Laboratory procedure"
