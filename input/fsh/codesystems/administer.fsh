@@ -4,6 +4,8 @@ Description: "A custom CodeSystem defining facility types for administration doc
 * ^url = "http://example.org/CodeSystem/neir-facility-type"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
 
 * #IMMZ.D.DE3  "Public"
 * #IMMZ.D.DE4  "Private"
@@ -16,6 +18,8 @@ Description: "A custom CodeSystem defining session types for administration docu
 * ^url = "http://example.org/CodeSystem/neir-session-type"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = false
 
 * #fixed "Fixed"
 * #outreach "Outreach" 

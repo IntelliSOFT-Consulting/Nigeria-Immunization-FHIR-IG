@@ -22,9 +22,23 @@ Title: "IMMZ.F.DE2 – Client Sex"
 Description: "Client Sex CodeSystem"
 * ^url = "http://example.org/CodeSystem/IMMZ.F.DE2"
 * ^status = #active
+* ^caseSensitive = true
+* ^experimental = false
 
 * #male "Male"
 * #female "Female"
+
+CodeSystem: ClientRelationshipCS
+Id: client-relationship
+Title: "IMMZ.F.DE2 – Client Relationship"
+Description: "Client Relationship CodeSystem"
+* ^url = "http://example.org/CodeSystem/client-relationship"
+* ^status = #active
+* ^caseSensitive = true
+* ^experimental = false
+
+* #mother "Mother"
+* #father "Father"
 
 
 CodeSystem: IMMZFDE6
@@ -33,6 +47,8 @@ Title: "IMMZ.F.DE6 – Missed Vaccines"
 Description: "IMMZFDE6 Missed Vaccines CodeSystem"
 * ^url = "http://example.org/CodeSystem/IMMZ.F.DE6"
 * ^status = #active
+* ^caseSensitive = true
+* ^experimental = false
 
 * #measles "Measles"
 * #polio "Polio"
@@ -43,6 +59,9 @@ Title: "IMMZ.C1 HIV Status Codes"
 Description: "HIV Status Code System"
 * ^url     = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
 * ^status  = #active
+* ^caseSensitive = true
+* ^experimental = false
+
 * #positive "Positive"
 * #negative "Negative"
 * #unknown  "Unknown"
