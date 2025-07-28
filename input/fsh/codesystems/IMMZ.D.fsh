@@ -5,6 +5,7 @@ Description: "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_D"
+* ^status = #active
 
 * #IMMZ.D.DE1  "Name of health facility"
 * #IMMZ.D.DE2  "Facility type"

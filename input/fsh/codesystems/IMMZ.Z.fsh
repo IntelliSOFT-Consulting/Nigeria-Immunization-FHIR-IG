@@ -5,6 +5,7 @@ Description:  "CodeSystem for IMMZ.Z Vaccine Library Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_Z"
+* ^status = #active
 
 * #IMMZ.Z.DE1   "BCG birth dose"
 * #IMMZ.Z.DE2   "HepB birth dose"
