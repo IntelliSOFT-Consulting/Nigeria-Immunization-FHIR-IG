@@ -61,6 +61,7 @@ Expression:  "status != 'not-done' xor statusReason.exists()"
 
 Instance: NEIRImmunizationExample
 InstanceOf: NEIRImmunization
+Description: "Immunization Example"
 Usage: #example
 * status = #completed
 * vaccineCode.coding[0] = $cvx#20 "DTaP"

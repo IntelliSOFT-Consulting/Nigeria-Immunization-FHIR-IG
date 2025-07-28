@@ -28,6 +28,7 @@ Instance: organization-example
 InstanceOf: NEIROrganization
 Usage: #example
 Title: "NEIR Lagos Clinic"
+Description: "NEIR Organization Example"
 
 * identifier.system = "https://neir.gov.ng/facility-ids"
 * identifier.value = "LAG-12345"

@@ -172,6 +172,7 @@ Description: "A routine monthly immunization report summarizing vaccine stock an
 
 Instance: AEFI-Case-Report-202503
 InstanceOf: IMMZGGenerateReport
+Description: "AEFI Case Reports Example"
 Usage: #example
 * reportIdentification = "AEFI-CASE-202503"
 * reportStatus = #IMMZ.G.DE4
@@ -216,6 +217,7 @@ Usage: #example
 
 Instance: Vaccine-Stock-Report-202503
 InstanceOf: IMMZGGenerateReport
+Description: "Vaccine Stock Example"
 Usage: #example
 * reportIdentification = "VAX-STOCK-202503"
 * reportStatus = #IMMZ.G.DE3

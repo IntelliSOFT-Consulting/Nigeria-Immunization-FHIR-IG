@@ -27,6 +27,7 @@ Description: "A logical model for recording and managing AEFI treatment."
 
 Instance: manage-aefi-example
 InstanceOf: ManageAEFI
+Description: "AEFI Management Example"
 Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"
