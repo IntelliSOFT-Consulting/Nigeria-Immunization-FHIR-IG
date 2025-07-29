@@ -30,13 +30,13 @@ Instance: neir-defaulter-tracing-request-example
 InstanceOf: NEIRDefaulterTracingRequest
 Usage: #example 
 Description: "An example of a defaulter tracing request"
-* identifier.system = "https://example.org/serviceRequest"
+* identifier.system = NEIR_SERVICE_REQUEST
 * identifier.use = #official
 * identifier.value = "123456"
 * basedOn = Reference(ServiceRequest/service-request-example)
 * status = #active
 * intent = #order
-* category.coding.system = "http://example.org/CodeSystem/neir-service-request"
+* category.coding.system = NEIR_SERVICE_REQUEST
 * category.coding.code = #NGR-001
 * category.coding.display = "Defaulter Tracing"
 * priority = #routine

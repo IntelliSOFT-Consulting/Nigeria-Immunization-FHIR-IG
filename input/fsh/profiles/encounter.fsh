@@ -1,9 +1,7 @@
-Alias: V3ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
-
 Profile: NEIREncounter
 Parent: Encounter 
 Description: "A profile for encounters in the Nigerian Electronic Immunization Registry (NEIR), used to document immunization visits and related healthcare interactions."
-* ^url = "http://example.org/StructureDefinition/NEIREncounter"
+* ^url = NEIRENCOUNTER
 * ^version = "1.0.0"
 * ^status = #active
 * ^publisher = "Nigerian Ministry of Health"

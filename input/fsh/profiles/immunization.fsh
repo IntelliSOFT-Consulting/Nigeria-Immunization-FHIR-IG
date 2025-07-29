@@ -1,18 +1,3 @@
-Alias: $cvx = http://hl7.org/fhir/sid/cvx
-Alias: $vaccines = http://health.gov.tz/CodeSystems/VaccineCodes
-Alias: $mms = http://id.who.int/icd11/mms
-Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
-Alias: $kenya-healthworker-extension = https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/kenya-health-worker-extension
-Alias: $body-weight-extension = https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/body-weight-extension
-Alias: $contraindication-to-vaccine =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/contraindication-to-vaccine
-Alias: $vaccine-brand =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/vaccine-brand
-Alias: $certificate-Issued =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/certificate-Issued
-Alias: $certificate-Issue-Date =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/certificate-Issue-Date
-Alias: $validity-startdate-certificate =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/validity-startdate-certificate
-Alias: $validity-endDate-certificate =  https://chanjoke.intellisoftkenya.com/fhir/StructureDefinition/validity-endDate-certificate
-
-
-
 Profile: NEIRImmunization
 Parent: Immunization
 Description: "Nigerian Registry Profile for Immunization."
@@ -64,15 +49,15 @@ InstanceOf: NEIRImmunization
 Description: "Immunization Example"
 Usage: #example
 * status = #completed
-* vaccineCode.coding[0].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[0].system = $cvx
 * vaccineCode.coding[0].code = #110
 * vaccineCode.coding[0].display = "DTaP-hepatitis B and poliovirus vaccine"
 
-* vaccineCode.coding[+].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[+].system = $cvx
 * vaccineCode.coding[=].code = #56
 * vaccineCode.coding[=].display = "dengue fever tetravalent"
 
-* vaccineCode.coding[+].system = "http://hl7.org/fhir/sid/cvx"
+* vaccineCode.coding[+].system = $cvx
 * vaccineCode.coding[=].code = #05
 * vaccineCode.coding[=].display = "measles virus vaccine"
 

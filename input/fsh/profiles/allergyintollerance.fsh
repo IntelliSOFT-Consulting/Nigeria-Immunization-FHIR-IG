@@ -1,5 +1,4 @@
-Alias: SCT = http://snomed.info/sct
-Alias: MySubstances = http://example.org/CodeSystem/my-substances
+
 
 
 
@@ -48,7 +47,7 @@ Usage: #example
 * recordedDate = "2023-05-05T00:00:00Z"
 * recorder = Reference(Practitioner/practitioner-example)
 * lastOccurrence = "2025-03-11T00:00:00Z"
-* reaction.substance = MySubstances#1160593008 "Peanut protein"
+* reaction.substance = MY_SUBSTANCES#1160593008 "Peanut protein"
 * reaction.manifestation[0] = SCT#247472004 "Weal"
 * reaction.description = "Severe anaphylactic reaction requiring epinephrine."
 * reaction.onset = "2025-03-11T01:00:00Z"
