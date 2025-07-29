@@ -101,11 +101,11 @@ Usage: #example
 * contact[0].name.family = "Doe" 
  
 
-* contact[0].relationship.coding[0].system = "http://example.org/CodeSystem/client-relationship"
+* contact[0].relationship.coding[0].system = CLIENT_RELATIONSHIP
 * contact[0].relationship.coding[0].code = #mother
 * contact[0].relationship.coding[0].display = "Mother"
 
-* hivStatus.coding[0].system = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* hivStatus.coding[0].system = IMMZC1_HIV_STATUS_CS
 * hivStatus.coding[0].code = #negative
 * hivStatus.coding[0].display = "Negative"
 

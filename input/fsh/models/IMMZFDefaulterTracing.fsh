@@ -7,7 +7,7 @@ Description: "A logical model for tracking immunization defaulters."
 
 * clientSex 1..1 CodeableConcept "Sex" "Biological sex of the client."
 * clientSex ^binding.strength = #required
-* clientSex ^binding.valueSet = "http://example.org/ValueSet/IMMZ.F.DE2" // Replace with actual ValueSet canonical
+* clientSex ^binding.valueSet = IMMZFDE2_VS // Replace with actual ValueSet canonical
 
 * clientAge 1..1 integer "Client's age" "Total number of months since the client was born."
 
@@ -17,7 +17,7 @@ Description: "A logical model for tracking immunization defaulters."
 
 * missedVaccine 1..* CodeableConcept "Immunization missed" "The type of vaccine missed."
 * missedVaccine ^binding.strength = #required
-* missedVaccine ^binding.valueSet = "http://example.org/ValueSet/IMMZ.F.DE6" // Replace with actual ValueSet canonical
+* missedVaccine ^binding.valueSet = IMMZFDE6_VS // Replace with actual ValueSet canonical
 
 * missedVaccineDate 1..1 date "Date of immunization missed" "The date immunization was due."
 
@@ -31,7 +31,7 @@ Title: "Defaulter Tracing Example"
 Description: "An example of a defaulter tracing record."
 
 * clientName = "John Doe"
-* clientSex.coding.system = "http://example.org/CodeSystem/IMMZ.F.DE2"
+* clientSex.coding.system = IMMZFDE2
 * clientSex.coding.code = #male
 * clientSex.coding.display = "Male"
 
@@ -39,11 +39,11 @@ Description: "An example of a defaulter tracing record."
 * caregiverName = "Jane Doe"
 * caregiverPhone = "+2348012345678"
 
-* missedVaccine[0].coding.system = "http://example.org/CodeSystem/IMMZ.F.DE6"
+* missedVaccine[0].coding.system = IMMZFDE6
 * missedVaccine[0].coding.code = #measles
 * missedVaccine[0].coding.display = "Measles"
 
-* missedVaccine[1].coding.system = "http://example.org/CodeSystem/IMMZ.F.DE6"
+* missedVaccine[1].coding.system = IMMZFDE6
 * missedVaccine[1].coding.code = #polio
 * missedVaccine[1].coding.display = "Polio"
 
