@@ -3,7 +3,7 @@ CodeSystem: NEIRServiceRequestCS
 Id: neir-service-request
 Title: "NEIR Service Request Codes"
 Description: "Service Request CodeSystem"
-* ^url = "http://example.org/CodeSystem/neir-service-request"
+* ^url = NEIR_SERVICE_REQUEST
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

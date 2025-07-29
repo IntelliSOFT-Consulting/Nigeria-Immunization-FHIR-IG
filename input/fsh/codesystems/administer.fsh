@@ -2,7 +2,7 @@ CodeSystem: NEIRFacilityTypeCS
 Id: neir-facility-type 
 Title: "Facility Types CodeSystem"
 Description: "A custom CodeSystem defining facility types for administration documentation."
-* ^url = "http://example.org/CodeSystem/neir-facility-type"
+* ^url = NEIR_FACILITY_TYPE
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -17,7 +17,7 @@ CodeSystem: NEIRSessionTypeCS
 Id: neir-session-type 
 Title: "Session Types CodeSystem"
 Description: "A custom CodeSystem defining session types for administration documentation."
-* ^url = "http://example.org/CodeSystem/neir-session-type"
+* ^url = NEIR_SESSION_TYPE
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -32,7 +32,7 @@ CodeSystem: NEIRImmunizationNotDoneReasonsCS
 Id: neir-immunization-not-done 
 Title: "Reason Immunization Not Done  CodeSystem"
 Description: "A custom CodeSystem defining Reason Immunization Not Done  CodeSystem"
-* ^url = "http://example.org/CodeSystem/neir-immunization-not-done"
+* ^url = NEIR_IMMUNIZATION_NOT_DONE
 * ^status = #active
 * ^content = #complete
 * ^experimental = false

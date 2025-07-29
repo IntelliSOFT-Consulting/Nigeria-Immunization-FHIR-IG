@@ -2,7 +2,7 @@ CodeSystem: MySubstances
 Id: my-substances
 Title: "Custom Substance Codes"
 Description: "A local code system for documenting allergy-related substances."
-* ^url = "http://example.org/CodeSystem/my-substances"
+* ^url = MY_SUBSTANCES
 * ^version = "1.0.0"
 * ^status = #active
 * ^content = #complete
@@ -20,7 +20,7 @@ CodeSystem: IMMZFDE2
 Id: IMMZ.F.DE2
 Title: "IMMZ.F.DE2 – Client Sex"
 Description: "Client Sex CodeSystem"
-* ^url = "http://example.org/CodeSystem/IMMZ.F.DE2"
+* ^url = IMMZFDE2
 * ^status = #active
 * ^caseSensitive = true
 * ^experimental = false
@@ -32,7 +32,7 @@ CodeSystem: ClientRelationshipCS
 Id: client-relationship
 Title: "IMMZ.F.DE2 – Client Relationship"
 Description: "Client Relationship CodeSystem"
-* ^url = "http://example.org/CodeSystem/client-relationship"
+* ^url = CLIENT_RELATIONSHIP
 * ^status = #active
 * ^caseSensitive = true
 * ^experimental = false
@@ -45,7 +45,7 @@ CodeSystem: IMMZFDE6
 Id: IMMZ.F.DE6
 Title: "IMMZ.F.DE6 – Missed Vaccines"
 Description: "IMMZFDE6 Missed Vaccines CodeSystem"
-* ^url = "http://example.org/CodeSystem/IMMZ.F.DE6"
+* ^url = IMMZFDE6
 * ^status = #active
 * ^caseSensitive = true
 * ^experimental = false
@@ -57,7 +57,7 @@ CodeSystem: IMMZC1HivStatusCS
 Id: immzc1-hiv-status-cs
 Title: "IMMZ.C1 HIV Status Codes"
 Description: "HIV Status Code System"
-* ^url     = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* ^url     = IMMZC1_HIV_STATUS_CS
 * ^status  = #active
 * ^caseSensitive = true
 * ^experimental = false
