@@ -1,6 +1,8 @@
 Alias: CLIENT_RELATIONSHIP = http://nhin.example.ng/CodeSystem/client-relationship
 Alias: IMMZC1_HIV_STATUS_CS = http://nhin.example.ng/CodeSystem/immzc1-hiv-status-cs
+Alias: CLIENT_REGISTRATION = http://nhin.example.ng/CodeSystem/IMMZ.C
 Alias: IMMZD = http://nhin.example.ng/CodeSystem/IMMZ.D
+Alias: GENERATE_REPORT = http://nhin.example.ng/CodeSystem/IMMZ.G
 Alias: IMMZ_E = http://nhin.example.ng/CodeSystem/IMMZ-E
 Alias: IMMZFDE2 = http://nhin.example.ng/CodeSystem/IMMZ.F.DE2
 Alias: IMMZFDE6 = http://nhin.example.ng/CodeSystem/IMMZ.F.DE6 
@@ -38,7 +40,7 @@ Alias: ROLE_CODE = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $cvx = http://hl7.org/fhir/sid/cvx 
 Alias: NEIR_Identifier = https://nhin.example.ng/identifiers/nigeria-nin
 Alias: NEIR_PRACTITIONER = http://nhin.example.ng/StructureDefinition/NEIRPractitioner
-Alias: NEIRSERVICEREQUEST =  https://nhin.example.ng/serviceRequest
+Alias: NEIRSERVICEREQUEST =  https://neir.gov.ng/ids/defaulter-trace-request
 Alias: HL7_RECOMMENDATION = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
 Alias: $atc = http://www.whocc.no/atc
 Alias: $ind = http://nhin.example.ng

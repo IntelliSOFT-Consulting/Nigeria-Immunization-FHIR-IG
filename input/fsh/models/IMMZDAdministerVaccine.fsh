@@ -4,6 +4,7 @@ Description: "A logical model for capturing vaccine administration details"
 
 * nameOfHealthFacility 1..1 string "Name of health facility" "Name of the facility where the vaccination is taking place."
   * ^code[+] = #IMMZ.D.DE1
+  * ^code[=].system = IMMZD
 
 * facilityType 1..1 CodeableConcept "Facility type" "The type of health facility. Uses the IMMZ.D CodeSystem."
 * facilityType from IMMZDFACILITYTYPE (required)
