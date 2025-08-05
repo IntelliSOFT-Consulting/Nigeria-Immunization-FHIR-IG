@@ -1,4 +1,4 @@
-Profile: NEIRMotherOtherChildren
+Profile: NEIRRelatedPerson
 Parent: RelatedPerson 
 Title: "Related Person Profile - NEIR"
 Description: "Defines the RelatedPerson resource to represent parents, guardians, or caregivers associated with a child or dependent receiving immunization services in NEIR."
@@ -13,7 +13,7 @@ Description: "Defines the RelatedPerson resource to represent parents, guardians
 
 
 Instance: Child1
-InstanceOf: NEIRMotherOtherChildren
+InstanceOf: NEIRRelatedPerson
 Title: "Example RelatedPerson - Mother's Other Child"
 Description: "An example of a mother's other child as a RelatedPerson resource."
 

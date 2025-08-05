@@ -1,6 +1,6 @@
-Profile: NEIRDefaulterTracingRequest
+Profile: NEIRServiceRequest
 Parent: ServiceRequest
-Title: "ServiceRequest Profile - NEIR"
+Title: "ServiceRequest Profile - NEIR DefaulterTracingRequest"
 Description: "Profiles the ServiceRequest resource to represent planned or requested immunization services within NEIR, supporting scheduling, referral, and outreach planning."
 
 * identifier 0..1
@@ -28,7 +28,7 @@ Description: "An example of a service request"
 
 
 Instance: neir-defaulter-tracing-request-example
-InstanceOf: NEIRDefaulterTracingRequest
+InstanceOf: NEIRServiceRequest
 Usage: #example 
 Description: "An example of a defaulter tracing request"
 * identifier.system = NEIRSERVICEREQUEST
