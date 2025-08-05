@@ -1,6 +1,7 @@
 Profile: NEIREncounter
 Parent: Encounter 
-Description: "A profile for encounters in the Nigerian Electronic Immunization Registry (NEIR), used to document immunization visits and related healthcare interactions."
+Title: "Encounter Profile - NEIR"
+Description: "Profiles the Encounter resource to capture immunization-related visits in NEIR, including outreach sessions, facility visits, and mobile unit interactions linked to service delivery."
 * ^url = NEIRENCOUNTER
 * ^version = "1.0.0"
 * ^status = #active

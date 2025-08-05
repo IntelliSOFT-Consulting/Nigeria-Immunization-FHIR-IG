@@ -1,7 +1,9 @@
 
 Profile: NEIRPractitioner
 Parent: Practitioner
-Description: "Profile for a Nigerian Practitioner" 
+Title: "Practitioner Profile - NEIR"
+Description: "Constrains the Practitioner resource to represent healthcare workers and vaccinators involved in delivering immunization services recorded in NEIR." 
+
 * identifier 0..* MS
 * identifier.system 1..1
 * identifier.system ^short = "The namespace for the identifier value e.g a Registry URL"

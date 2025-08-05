@@ -1,5 +1,6 @@
 Profile: NEIRImmunizationRecommendation
 Parent: ImmunizationRecommendation
+Title: "ImmunizationRecommendation Profile - NEIR"
 Description: "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification."
 
 * identifier 1..1 MS

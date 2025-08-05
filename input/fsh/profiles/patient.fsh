@@ -1,7 +1,8 @@
-
 Profile: NEIRPatient
 Parent: Patient
-Description: "NEIR for Patient Profile"
+Title: "Patient Profile - NEIR"
+Description: "Constrains the Patient resource to represent individuals enrolled in NEIR for immunization, capturing identifiers, demographics, birth and parental information relevant to vaccination services."
+
 * identifier 1..1 MS 
 * name 1..* 
 * name.given 1..* MS 

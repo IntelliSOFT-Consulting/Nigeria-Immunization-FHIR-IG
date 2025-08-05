@@ -1,15 +1,7 @@
 Profile: NEIRImmunization
 Parent: Immunization
+Title: "Immunization Profile - NEIR"
 Description: "Nigerian Registry Profile for Immunization."
-//* extension contains 
-//    $kenya-healthworker-extension named healthWorker 0..1 and
-  //  $body-weight-extension named bodyWeight 0..1 and 
-    //$contraindication-to-vaccine named contraindicationToVaccine 0..1 and 
- //   $vaccine-brand named vaccineBrand 0..1 and 
-   // $certificate-Issued named certificateIssued 0..1 and 
-  //  $certificate-Issue-Date named CertificateIssueDate 0..1 and
-  //  $validity-startdate-certificate named certificateValidFrom  0..1 and 
-  //  $validity-endDate-certificate named CertificateValidUntil 0..1
 
 * identifier 0..0
 * location MS

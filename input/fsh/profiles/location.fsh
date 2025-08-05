@@ -1,7 +1,7 @@
 Profile: NEIRLocation
 Parent: Location 
-Title: "NEIR Location"
-Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
+Title: "Location Profile - NEIR"
+Description: "Defines constraints on the FHIR Location resource to represent immunization service delivery points in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units. Captures key attributes like type, address, coordinates, and managing organization to support accurate tracking and reporting."
 
 * ^url = NEIRLOCATION
 * ^version = "1.0.0"
