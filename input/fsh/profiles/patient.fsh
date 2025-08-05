@@ -8,19 +8,24 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 * name.given 1..* MS 
 * name.family 1..1 MS 
 * gender 1..1 MS 
+* gender from GenderVS
 * birthDate 1..1 MS
 * extension contains MotherHealthStatus named motherHealthStatus 0..1 
 * extension contains HivStatus named hivStatus 0..1 
 * extension contains PregnancyStatus named pregnancyStatus 0..1 
 * extension contains BirthWeigth named birthWeigth 0..1 
-* contact 0..* 
-* contact.name.given 1..* 
-* contact.telecom 0..* 
-* address 0..* 
-* address.line 1..*  
-* address.city 1..1  
-* address.district 1..1 
-* address.state 1..1 
+* contact 0..*  MS
+* contact.name.given 1..*  MS
+* contact.telecom 0..*  MS
+* address 0..*  MS
+* address.line 1..*  MS
+* address.line ^short = "The town or city where the client resides"
+* address.city 0..1  MS 
+* address.city ^short = "The ward where the client lives"
+* address.district 1..1 MS
+* address.district ^short = "Local Government Authority where the client lives"
+* address.state 1..1  MS
+* address.state ^short = "The state where the client lives"
 
 
 
