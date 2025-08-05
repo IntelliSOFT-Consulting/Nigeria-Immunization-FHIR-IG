@@ -1,6 +1,7 @@
 Profile: NEIRMotherOtherChildren
 Parent: RelatedPerson 
-Description: "Represents the mother's other children as RelatedPersons."
+Title: "Related Person Profile - NEIR"
+Description: "Defines the RelatedPerson resource to represent parents, guardians, or caregivers associated with a child or dependent receiving immunization services in NEIR."
 
 * patient 1..1 MS
 * patient only Reference(Patient)

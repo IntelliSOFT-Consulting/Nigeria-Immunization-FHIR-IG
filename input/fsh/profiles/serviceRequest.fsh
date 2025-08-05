@@ -1,6 +1,7 @@
 Profile: NEIRDefaulterTracingRequest
 Parent: ServiceRequest
-Description: "Service Request for defaulter tracing"
+Title: "ServiceRequest Profile - NEIR"
+Description: "Profiles the ServiceRequest resource to represent planned or requested immunization services within NEIR, supporting scheduling, referral, and outreach planning."
 
 * identifier 0..1
 * basedOn 

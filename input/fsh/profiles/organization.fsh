@@ -1,7 +1,7 @@
 Profile: NEIROrganization
 Parent: Organization 
-Description: "An organization profile for the Nigerian Electronic Immunization Registry (NEIR), representing healthcare facilities responsible for immunization services."
-
+Title: "Organization Profile - NEIR"
+Description: "Defines the Organization resource for representing entities within NEIR such as health facilities, administrative bodies, and implementing partners involved in immunization service delivery."
 
 * identifier 1..* MS
 * identifier.system 1..1

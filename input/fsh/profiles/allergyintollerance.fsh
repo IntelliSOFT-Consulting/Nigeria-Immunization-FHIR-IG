@@ -1,9 +1,6 @@
-
-
-
-
 Profile: NEIRAllergyIntolerance
 Parent: AllergyIntolerance 
+Title: "AllergyIntolerance Profile - NEIR"
 Description: "Defines constraints on the AllergyIntolerance resource for use in the FHIR Implementation Guide."
 
 * clinicalStatus 1..1 MS
