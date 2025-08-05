@@ -1,11 +1,9 @@
-Alias: V3ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
-
 
 ValueSet: EncounterClassVS
 Id: immunization-encounter-class-vs
 Title: "Immunization Encounter Class ValueSet"
 Description: "A ValueSet defining encounter types for immunization services in the Nigerian Electronic Immunization Registry (NEIR)."
-* ^url = "http://example.org/ValueSet/immunization-encounter-class-vs"
+* ^url = IMMUNIZATION_ENCOUNTER_CLASS_VS
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false 

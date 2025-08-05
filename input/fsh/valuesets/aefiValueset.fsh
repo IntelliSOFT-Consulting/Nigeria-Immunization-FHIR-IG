@@ -3,7 +3,7 @@ ValueSet: NEIRClinicalStatusVS
 Id: neir-clinical-status-vs 
 Title: "NEIR Clinical Status"
 Description: "Subset of standard clinical statuses for allergy intolerance."
-* ^url = "http://example.org/ValueSet/neir-clinical-status-vs"
+* ^url = NEIR_CLINICAL_STATUS_VS
 * ^status = #active 
 * ^experimental = false
 
@@ -19,7 +19,7 @@ ValueSet: NEIRVerificationStatusVS
 Id: neir-verification-status-vs
 Title: "NEIR Verification Status"
 Description: "Subset of allowed verification statuses for NEIR."
-* ^url = "http://example.org/ValueSet/neir-verification-status-vs"
+* ^url = NEIR_VERIFICATION_STATUS_VS
 * ^status = #active 
 * ^experimental = false
 

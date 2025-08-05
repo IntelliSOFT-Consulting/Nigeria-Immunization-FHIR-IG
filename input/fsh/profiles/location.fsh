@@ -3,7 +3,7 @@ Parent: Location
 Title: "NEIR Location"
 Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
 
-* ^url = "http://example.org/StructureDefinition/NEIRLocation"
+* ^url = NEIRLOCATION
 * ^version = "1.0.0"
 * ^status = #active
 
@@ -13,7 +13,7 @@ Description: "A profile for immunization service locations in the Nigerian Elect
 
 // Allow multiple types, and bind to the correct ValueSet
 * type 1..* MS
-* type from http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType (extensible)
+* type from ServiceDeliveryLocationRoleType (extensible)
 
 // Required address and fixed country code
 * address 1..1 MS
@@ -30,7 +30,7 @@ Usage: #example
 Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
 * status = #active
 * name = "Kofar Dukayuwa PHC" 
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* type.coding.system = ROLE_CODE
 * type.coding.code = #AMB
 * type.coding.display = "Ambulance"
 

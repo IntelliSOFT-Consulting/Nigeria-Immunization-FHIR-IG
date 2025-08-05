@@ -1,5 +1,3 @@
-Alias: ShareableCodeSystem = http://hl7.org/fhir/StructureDefinition/shareablecodesystem
-
 CodeSystem:   IMMZ.C
 Title:        "IMMZ.C CodeSystem for Data Elements"
 Description:  "CodeSystem for IMMZ.C Data Elements"

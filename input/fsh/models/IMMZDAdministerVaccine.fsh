@@ -4,20 +4,21 @@ Description: "A logical model for capturing vaccine administration details"
 
 * nameOfHealthFacility 1..1 string "Name of health facility" "Name of the facility where the vaccination is taking place."
   * ^code[+] = #IMMZ.D.DE1
+  * ^code[=].system = IMMZD
 
 * facilityType 1..1 CodeableConcept "Facility type" "The type of health facility. Uses the IMMZ.D CodeSystem."
-* facilityType from http://example.org/ValueSet/IMMZDFacilityType (required)
+* facilityType from IMMZDFACILITYTYPE (required)
 
 * sessionType 1..1 CodeableConcept "Session type" "Type of immunization session. Uses the IMMZ.D CodeSystem."
-* sessionType from http://example.org/ValueSet/IMMZDSessionType (required)
+* sessionType from IMMZDSESSIONTYPE (required)
 
 * vaccineType 1..1 CodeableConcept "Vaccine type" "Type of vaccine administered. Uses IMMZ.F Vaccine Library codes."
-* vaccineType from http://example.org/ValueSet/IMMZFVaccineType (required)
+* vaccineType from IMMZFVACCINETYPE (required)
 
 * contraindicated 0..1 boolean "Contraindicated" "Immunization not recommended due to contraindications."
 
 * contraindications 0..* CodeableConcept "Contraindications to immunization" "Specific situations where certain vaccines should not be administered. Uses the IMMZ.D CodeSystem."
-* contraindications from http://example.org/ValueSet/IMMZDContraindications (required)
+* contraindications from IMMZDCONTRAINDICATIONS (required)
 
 * vaccinationDateTime 1..1 dateTime "Date and time of vaccination" "The date and time the vaccine was administered."
 
@@ -28,10 +29,10 @@ Description: "A logical model for capturing vaccine administration details"
 * expirationDate 1..1 date "Expiration date" "Expiration date of the vaccine. Use last day of the month if only month is given."
 
 * siteAdministered 1..1 CodeableConcept "Site administered" "Body site where vaccine was administered. Uses the IMMZ.D CodeSystem."
-* siteAdministered from http://example.org/ValueSet/IMMZDSiteAdministered (required)
+* siteAdministered from IMMZDSITEADMINISTERED (required)
 
 * routeOfAdministration 1..1 CodeableConcept "Route of administration" "Route of delivery of the vaccine. Uses the IMMZ.D CodeSystem."
-* routeOfAdministration from http://example.org/ValueSet/IMMZDRouteOfAdministration (required)
+* routeOfAdministration from IMMZDROUTEOFADMINISTRATION (required)
 
 * doseQuantity 1..1 Quantity "Dose quantity" "Quantity of vaccine product administered."
 
@@ -45,20 +46,20 @@ Title: "Example Vaccine Administration Record"
 Description: "An example instance demonstrating the use of the Administer Vaccine Logical Model."
 
 * nameOfHealthFacility = "Sunrise Health Clinic"
-* facilityType.coding[0].system = "http://example.org/CodeSystem/IMMZ.D"
+* facilityType.coding[0].system = IMMZD
 * facilityType.coding[0].code = #IMMZ.D.DE4
 * facilityType.coding[0].display = "Private"
 
-* sessionType.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* sessionType.coding[0].system  = IMMZD
 * sessionType.coding[0].code  = #IMMZ.D.DE7  
 * sessionType.coding[0].display  = "Fixed"
 
-* vaccineType.coding[0].system =   "http://example.org/CodeSystem/IMMZ.F.DE6"
+* vaccineType.coding[0].system = IMMZFDE6
 * vaccineType.coding[0].code = #measles  
 * vaccineType.coding[0].display = "Measles"
 
 * contraindicated = false
-* contraindications[+].coding[0].system = "http://example.org/CodeSystem/IMMZ.D"
+* contraindications[+].coding[0].system = IMMZD
 * contraindications[=].coding[0].code = #IMMZ.D.DE14 
 * contraindications[=].coding[0].display = "Severe AEFI"
 
@@ -67,11 +68,11 @@ Description: "An example instance demonstrating the use of the Administer Vaccin
 * vaccineBatchNumber = "BATCH12345"
 * expirationDate = "2026-06-30"
 
-* siteAdministered.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* siteAdministered.coding[0].system  = IMMZD
 * siteAdministered.coding[0].code  = #IMMZ.D.DE23  
 * siteAdministered.coding[0].display  = "Left upper arm"
 
-* routeOfAdministration.coding[0].system  = "http://example.org/CodeSystem/IMMZ.D"
+* routeOfAdministration.coding[0].system  = IMMZD
 * routeOfAdministration.coding[0].code  = #IMMZ.D.DE29 
 * routeOfAdministration.coding[0].display  = "Intradermal"
 

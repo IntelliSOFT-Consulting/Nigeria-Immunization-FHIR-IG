@@ -1,7 +1,7 @@
 CodeSystem:   IMMZ.D
 Title: "IMMZ.D CodeSystem for Administer Vaccine Data Elements"
 Description: "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
-* ^url = "http://example.org/CodeSystem/IMMZ.D"
+* ^url = IMMZD
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_D"

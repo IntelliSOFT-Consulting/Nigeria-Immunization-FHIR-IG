@@ -1,7 +1,3 @@
-Alias: $IMMZ_E = http://example.org/CodeSystem/IMMZ_E
-
-
-
 Logical: ManageAEFI 
 Title: "IMMZ.E Manage AEFI"
 Description: "A logical model for recording and managing AEFI treatment."
@@ -31,19 +27,19 @@ Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"
 * complaint = "Severe headache and dizziness" 
-* manifestation[+].coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* manifestation[+].coding[0].system = IMMZ_E
 * manifestation[=].coding[0].code = #IMMZ.E.DE37
 * manifestation[=].coding[0].display = "Fever - Elevated body temperature"
 
-* manifestation[+].coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* manifestation[+].coding[0].system = IMMZ_E
 * manifestation[=].coding[0].code = #IMMZ.E.DE38
 * manifestation[=].coding[0].display = "Rash - Skin eruption or inflammation"
 
-* severity.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* severity.coding[0].system = IMMZ_E
 * severity.coding[0].code = #IMMZ.E.DE7
 * severity.coding[0].display = "Severe"
 
-* outcome.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* outcome.coding[0].system = IMMZ_E
 * outcome.coding[0].code = #IMMZ.E.DE11
 * outcome.coding[0].display = "Recovered with sequelae"
 
@@ -51,7 +47,7 @@ Usage: #example
 * doseNumber = 2
 * totalDoses = 3
 
-* diseaseTargeted.coding[0].system = "http://example.org/CodeSystem/IMMZ-E"
+* diseaseTargeted.coding[0].system = IMMZ_E
 * diseaseTargeted.coding[0].code = #IMMZ.E.DE27 
 * diseaseTargeted.coding[0].display = "Measles"
 

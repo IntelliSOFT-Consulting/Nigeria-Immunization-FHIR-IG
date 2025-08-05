@@ -12,7 +12,7 @@ Description: "A logical model for tracking client immunization history updates."
   "HIV Status"
   "The current HIV status of the client."
   * ^binding.strength = #required
-  * ^binding.valueSet = "http://example.org/ValueSet/immzc1-hiv-status-vs" // IMMZ.C1.DE2
+  * ^binding.valueSet = IMMZC1_HIV_STATUS_VS // IMMZ.C1.DE2
 
 // Vaccine Administration Dates
 * bcgDoseDate 0..1 date "Date BCG dose was administered" // IMMZ.C1.DE6
@@ -68,7 +68,7 @@ Usage: #example
 
 * clientCompletedPrimarySeries = true
 
-* hivStatus.coding.system  = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* hivStatus.coding.system  =  IMMZC1_HIV_STATUS_CS
 * hivStatus.coding.code    = #positive
 * hivStatus.coding.display = "Positive"
 

@@ -27,7 +27,7 @@ Usage: #example
 Title: "NEIRImmunizationRecommendationExample"
 Description: "An example of a Nigerian Immunization Recommendation"
 * identifier.use = #official
-* identifier.system = "https://example.org/identifiers/nigeria-nin"
+* identifier.system = NEIR_Identifier
 * identifier.value = "1234567890"
 
 
@@ -35,31 +35,31 @@ Description: "An example of a Nigerian Immunization Recommendation"
 * date = "2020-02-02"
 * authority = Reference(Organization/organization-example)
 
-* recommendation.vaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
+* recommendation.vaccineCode.coding.system = $cvx
 * recommendation.vaccineCode.coding.code = #143
 * recommendation.vaccineCode.coding.display = "Adenovirus types 4 and 7"
 * recommendation.vaccineCode.text = "Adenovirus types 4 and 7"
 
-* recommendation.targetDisease.coding.system = "http://snomed.info/sct"
+* recommendation.targetDisease.coding.system = SCT
 * recommendation.targetDisease.coding.code = #1857005
 * recommendation.targetDisease.coding.display = "Gestational rubella syndrome"
 * recommendation.targetDisease.text = "Gestational rubella syndrome"
 
-* recommendation.contraindicatedVaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
+* recommendation.contraindicatedVaccineCode.coding.system = $cvx
 * recommendation.contraindicatedVaccineCode.coding.code = #143
 * recommendation.contraindicatedVaccineCode.coding.display = "Adenovirus types 4 and 7"
 * recommendation.contraindicatedVaccineCode.text = "Adenovirus types 4 and 7"
 
-* recommendation.forecastStatus.coding.system = "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"
+* recommendation.forecastStatus.coding.system = HL7_RECOMMENDATION
 * recommendation.forecastStatus.coding.code = #due
 * recommendation.forecastStatus.coding.display = "Due"
 * recommendation.forecastStatus.text = "Due"
 
-* recommendation.forecastReason.coding.system = "http://snomed.info/sct"
+* recommendation.forecastReason.coding.system = SCT
 * recommendation.forecastReason.coding.code = #77176002
 * recommendation.forecastReason.coding.display = "Smoker"
 
-* recommendation.dateCriterion.code.coding.system = "http://loinc.org"
+* recommendation.dateCriterion.code.coding.system = LOINC
 * recommendation.dateCriterion.code.coding.code = #30981-5
 * recommendation.dateCriterion.code.coding.display = "Earliest date to give"
 * recommendation.dateCriterion.value = "2025-03-03"

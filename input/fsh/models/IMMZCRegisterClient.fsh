@@ -8,18 +8,25 @@ Description: "A logical model representing a client being registered in the immu
 * name 1..1 BackboneElement "The full name of the client."
   * family 1..1 string "Client's family name or last name."
     * ^code[+] = #DE4
+    * ^code[=].system = CLIENT_REGISTRATION
   * given 1..1 string "Client's first name or given name."
     * ^code[+] = #DE3
+    * ^code[=].system = CLIENT_REGISTRATION
 * sex 1..1 code "Sex" "Documentation of a specific instance of sex information for the client."
   * ^code[+] = #DE5
+  * ^code[=].system = CLIENT_REGISTRATION
 * dateOfBirth 1..1 date "Client's date of birth (DOB) if known. If unknown, use assigned DOB for administrative purposes."
   * ^code[+] = #DE8
+  * ^code[=].system = CLIENT_REGISTRATION
 * ageInWeeks 0..1 integer "The client's calculated age (number of weeks) based on the date of birth and the visit date."
   * ^code[+] = #DE9
+  * ^code[=].system = CLIENT_REGISTRATION
 * ageInMonths 0..1 integer "The client's calculated age (number of months) based on the date of birth and the visit date."
   * ^code[+] = #DE10
+  * ^code[=].system = CLIENT_REGISTRATION
 * ageInYears 0..1 integer "The client's calculated age (number of years) based on the date of birth and the visit date."
   * ^code[+] = #DE11
+  * ^code[=].system = CLIENT_REGISTRATION
 * weightAtBirth 0..1 Quantity "Client's weight at birth in Kg."
 * weightAtBirth.unit = "kg"
 * weightAtBirth.system = "http://unitsofmeasure.org"
@@ -29,18 +36,25 @@ Description: "A logical model representing a client being registered in the immu
 * address 0..1 BackboneElement "Client's residential address."
   * residentialAddress 0..1 string "Child's residential address."
     * ^code[+] = #DE13
+    * ^code[=].system = CLIENT_REGISTRATION
   * houseNumber 0..1 string "The number of the house where the client lives."
     * ^code[+] = #DE14
+    * ^code[=].system = CLIENT_REGISTRATION
   * village 0..1 string "The village where the client lives."
     * ^code[+] = #DE15
+    * ^code[=].system = CLIENT_REGISTRATION
   * town 0..1 string "The town or city where the client resides."
     * ^code[+] = #DE16
+    * ^code[=].system = CLIENT_REGISTRATION
   * ward 0..1 string "The ward where the client lives."
     * ^code[+] = #DE17
+    * ^code[=].system = CLIENT_REGISTRATION
   * lga 0..1 string "Local Government Authority where the client lives."
     * ^code[+] = #DE18
+    * ^code[=].system = CLIENT_REGISTRATION
   * state 0..1 string "The state where the client lives."
     * ^code[+] = #DE19
+    * ^code[=].system = CLIENT_REGISTRATION
 * contact 0..* BackboneElement "The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)."
   * name 1..1 BackboneElement "The full name of the caregiver."
     * family 1..1 string "Family name of the caregiver."
@@ -58,16 +72,22 @@ Description: "A logical model representing a client being registered in the immu
 * otherChildren 0..* BackboneElement "Any other children the mother has."
   * name 1..1 string "The full name of the mother's other children."
     * ^code[+] = #DE28
+    * ^code[=].system = CLIENT_REGISTRATION
   * birthYear 1..1 integer "The year the mother's children were born."
     * ^code[+] = #DE29
+    * ^code[=].system = CLIENT_REGISTRATION
   * sex 1..1 CodeableConcept "Biological characteristics that define humans as female or male."
     * ^code[+] = #DE30
+    * ^code[=].system = CLIENT_REGISTRATION
 * healthState 0..1 CodeableConcept "Overall physical, mental, and emotional well-being of the mother."
   * ^code[+] = #DE31
+  * ^code[=].system = CLIENT_REGISTRATION
 * hivStatus 0..1 CodeableConcept "HIV status of the client."
   * ^code[+] = #DE37
+  * ^code[=].system = CLIENT_REGISTRATION
 * pregnancyStatus 0..1 boolean "Confirms whether the client is pregnant or not."
   * ^code[+] = #DE41
+  * ^code[=].system = CLIENT_REGISTRATION
 
 
 
@@ -101,11 +121,11 @@ Usage: #example
 * contact[0].name.family = "Doe" 
  
 
-* contact[0].relationship.coding[0].system = "http://example.org/CodeSystem/client-relationship"
+* contact[0].relationship.coding[0].system = CLIENT_RELATIONSHIP
 * contact[0].relationship.coding[0].code = #mother
 * contact[0].relationship.coding[0].display = "Mother"
 
-* hivStatus.coding[0].system = "http://example.org/CodeSystem/immzc1-hiv-status-cs"
+* hivStatus.coding[0].system = IMMZC1_HIV_STATUS_CS
 * hivStatus.coding[0].code = #negative
 * hivStatus.coding[0].display = "Negative"
 
