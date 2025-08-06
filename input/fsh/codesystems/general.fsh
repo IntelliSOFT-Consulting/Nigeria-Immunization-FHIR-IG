@@ -65,3 +65,14 @@ Description: "HIV Status Code System"
 * #positive "Positive"
 * #negative "Negative"
 * #unknown  "Unknown"
+
+CodeSystem: IMMZC1StateofHealthofMothersOtherChildrenCS
+Id: state-ofHealth-ofmothersOtherChildren
+Title: "IMMZ.C.DE31 - Code System for State of Health of Mothers' Other Children)"
+Description: "Custom codes used in NEIR immunization registration for state of health observations."
+* ^url = "http://neir.org/fhir/CodeSystem/IMMZC1CustomCodes"
+
+* #DE32 "Alive"
+* #DE33 "Well"
+* #DE34 "Underlying disease (specify)"
+* #DE35 "Dead"
