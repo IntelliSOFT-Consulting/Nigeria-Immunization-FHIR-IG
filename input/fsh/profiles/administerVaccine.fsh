@@ -18,10 +18,10 @@ Description: "Profile for a transaction Bundle used to capture vaccine administr
     practitionerEntry 1..1 and
     organizationEntry 1..1
 
-* entry[patientEntry].resource only Patient
-* entry[immunizationEntry].resource only Immunization
-* entry[practitionerEntry].resource only Practitioner
-* entry[organizationEntry].resource only Organization
+* entry[patientEntry].resource only NEIRPatient
+* entry[immunizationEntry].resource only NEIRImmunization
+* entry[practitionerEntry].resource only NEIRPractitioner
+* entry[organizationEntry].resource only NEIROrganization
 
  
 * entry[patientEntry].resource.name 1..1
@@ -50,3 +50,8 @@ Description: "Profile for a transaction Bundle used to capture vaccine administr
 * entry[organizationEntry].resource.type from IMMZDFACILITYTYPE (required)
  
 * entry[practitionerEntry].resource.identifier 1..1
+
+
+
+ 
+ 
