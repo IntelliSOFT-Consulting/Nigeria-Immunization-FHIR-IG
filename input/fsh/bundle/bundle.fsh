@@ -1,8 +1,8 @@
 Profile: PatientCreationBundle
 Parent: Bundle
 Id: patient-creation-bundle
-Title: "Bundle - Add Patient & Registration Observation"
-Description: "This bundle contains all of the profiles needed to create a practitioner."
+Title: "Bundle - Add Patient Creation"
+Description: "A transaction bundle containing patient registration data, including related person details and registration observations collected at the point of care."
 * type = #transaction
 
 * entry 1..*
@@ -26,8 +26,8 @@ Description: "This bundle contains all of the profiles needed to create a practi
 
 Instance: ExamplePatientCreationBundle
 InstanceOf: PatientCreationBundle
-Title: "Example - Add New Patient Information"
-Description: "An example transaction bundle to create a new patient and the registration observations."
+Title: "Example - Patient Creation"
+Description: "An example transaction bundle containing patient registration data, including related person details and registration observations collected at the point of care."
 Usage: #example
 
 * type = #transaction
