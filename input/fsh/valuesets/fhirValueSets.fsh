@@ -10,7 +10,7 @@ Description: "ValueSet for gender aligned with FHIR administrative gender"
 
 ValueSet: RelatedPersonRelationshipTypeVS
 Id: relatedPersonRelationshiptype-vs
-Title: "Gender ValueSet"
+Title: "ValueSet - Related Person Relationship"
 Description: "ValueSet for gender aligned with FHIR administrative gender"
 * ^experimental = false
 * http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "father"
