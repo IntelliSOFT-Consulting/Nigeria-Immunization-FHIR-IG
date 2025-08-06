@@ -17,10 +17,10 @@ Description: "This bundle contains all of the profiles needed to create a practi
 * entry ^slicing.description = "Entry resources for capturing patient information."
 
 * entry contains
-    // patient 1..1 MS and
+    relatedPerson 1..1 MS and
     registrationObservation 1..1
 
-// * insert BundleEntry(NEIRPatient, patient)
+* insert BundleEntry(NEIRRelatedPerson, relatedPerson)
 * insert BundleEntry(NEIRRegistrationObservation, registrationObservation)
 
 
@@ -32,12 +32,12 @@ Usage: #example
 
 * type = #transaction
 
-// * entry[0].fullUrl = "urn:uuid:patient-1"
-// * entry[0].resource = patient-example
-// * entry[0].request.method = #POST
-// * entry[0].request.url = "Patient"
-
-* entry[0].fullUrl = "urn:uuid:patient-registration-obs-1"
-* entry[0].resource = ExampleNEIRRegistrationObservation
+* entry[0].fullUrl = "urn:uuid:relatedPerson-1"
+* entry[0].resource = ExampleNEIRRelatedPerson
 * entry[0].request.method = #POST
-* entry[0].request.url = "Observation"
+* entry[0].request.url = "RelatedPerson"
+
+* entry[1].fullUrl = "urn:uuid:patient-registration-obs-1"
+* entry[1].resource = ExampleNEIRRegistrationObservation
+* entry[1].request.method = #POST
+* entry[1].request.url = "Observation"
