@@ -1,3 +1,5 @@
+Alias: $SCT = http://snomed.info/sct
+
 ValueSet: NEIRSubstanceVS
 Id: neir-substance-vs
 Title: "Allowed Allergy Substances"
@@ -100,6 +102,23 @@ Description: "IMMZ HIV Status ValueSet"
 * ^status  = #active
 * ^experimental = false 
 * include codes from system IMMZC1HivStatusCS
+
+ValueSet: PregnancyStatusVS
+Id: pregnancy-status-vs
+Title: "Pregnancy Status ValueSet"
+Description: "ValueSet representing possible pregnancy statuses: Pregnant, Not Pregnant, and Unknown."
+* include codes from system http://snomed.info/sct where concept is-a #77386006 // Optional, broad inclusion
+* $SCT#77386006 "Pregnant"
+* $SCT#60001007 "Not pregnant"
+* $SCT#260413007 "Unknown"
+
+ValueSet: IMMZC1StateOfHealthOtherChildrenVS
+Id: state-of-health-of-other-children-vs
+Title: "IMMZC1 - ValueSet for State of Health of Mother's Other Children"
+Description: "ValueSet capturing the state of health of mother's other children during client record creation or update."
+* ^status = #active
+* ^experimental = false
+* include codes from system IMMZC1StateofHealthofMothersOtherChildrenCS
 
 
 
