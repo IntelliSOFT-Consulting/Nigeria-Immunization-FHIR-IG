@@ -9,7 +9,7 @@ Description: "Nigerian Registry Profile for Immunization."
 
 * location 1..1 MS
 * location only Reference(NEIRLocation)
-* location ^short = "Vaccination venue" 
+* location ^short = "Where Vaccination was administered" 
 
 * vaccineCode 1..1  MS
 * vaccineCode ^short = "Vaccine Administered"
@@ -37,12 +37,6 @@ Description: "Nigerian Registry Profile for Immunization."
 * performer.actor.display ^short = "Vaccinator Name" 
 * occurrence[x] only dateTime
 
-
-
-Invariant:   neir-imm-1
-Description: "If the status is not-done, a reason must be provided"
-Severity:    #error
-Expression:  "status != 'not-done' xor statusReason.exists()"
 
 
 Instance: NEIRImmunizationExample
