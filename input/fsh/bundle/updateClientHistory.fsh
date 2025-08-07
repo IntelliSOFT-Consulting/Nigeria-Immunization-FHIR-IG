@@ -48,17 +48,22 @@ Usage: #example
 * entry[0].fullUrl = "urn:uuid:immunization-1"
 * entry[0].resource = NEIRImmunizationExample
 * entry[0].request.method = #POST
-* entry[0].request.url = "NEIRImmunization" 
+* entry[0].request.url = "Immunization" 
 
-* entry[1].fullUrl = "urn:uuid:bcg-vaccine-stock-1"
-* entry[1].resource = ExampleBCGVaccineStockObservation
+* entry[1].fullUrl = "urn:uuid:a10fbc7e-f4e9-4a59-bc59-01d2d05f48cd"
+* entry[1].resource = NEIREncounterExample
 * entry[1].request.method = #POST
-* entry[1].request.url = "VaccineStockObservation"
+* entry[1].request.url = "Encounter"
 
-* entry[2].fullUrl = "urn:uuid:observation-1"
-* entry[2].resource = ExampleNEIRUpdateClientHistoryObservation
+* entry[2].fullUrl = "urn:uuid:bcg-vaccine-stock-1"
+* entry[2].resource = ExampleBCGVaccineStockObservation
 * entry[2].request.method = #POST
-* entry[2].request.url = "NEIRUpdateClientHistoryObservation" 
+* entry[2].request.url = "Observation"
+
+* entry[3].fullUrl = "urn:uuid:observation-1"
+* entry[3].resource = ExampleNEIRUpdateClientHistoryObservation
+* entry[3].request.method = #POST
+* entry[3].request.url = "Observation" 
 
  
 * signature.type[0].system = "urn:iso-astm:E1762-95:2013"

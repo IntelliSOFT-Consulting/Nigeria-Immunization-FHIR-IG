@@ -58,12 +58,36 @@ Usage: #example
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
 
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 50 'vial'
-* component[dosesOpened].valueQuantity = 60 'vial'
-* component[endingBalance].valueQuantity = 90 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 58 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 
 
@@ -76,12 +100,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE8 "BCG Diluents"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 80 'vial'
-* component[received].valueQuantity = 40 'vial'
-* component[dosesOpened].valueQuantity = 50 'vial'
-* component[endingBalance].valueQuantity = 70 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 48 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleHepBVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -92,12 +140,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE15 "Hep B vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 120 'vial'
-* component[received].valueQuantity = 30 'vial'
-* component[dosesOpened].valueQuantity = 40 'vial'
-* component[endingBalance].valueQuantity = 110 'vial'
-* component[quantityReturned].valueQuantity = 1 'vial'
-* component[emptyVialsReturned].valueQuantity = 39 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleOPVVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -108,12 +180,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE22 "OPV Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 90 'vial'
-* component[received].valueQuantity = 20 'vial'
-* component[dosesOpened].valueQuantity = 25 'vial'
-* component[endingBalance].valueQuantity = 85 'vial'
-* component[quantityReturned].valueQuantity = 3 'vial'
-* component[emptyVialsReturned].valueQuantity = 22 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExamplePENTAVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -140,12 +236,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE36 "PCV Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 110 'vial'
-* component[received].valueQuantity = 45 'vial'
-* component[dosesOpened].valueQuantity = 50 'vial'
-* component[endingBalance].valueQuantity = 105 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 48 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleIPVVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -156,12 +276,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE43 "IPV Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 50 'vial'
-* component[dosesOpened].valueQuantity = 60 'vial'
-* component[endingBalance].valueQuantity = 90 'vial'
-* component[quantityReturned].valueQuantity = 5 'vial'
-* component[emptyVialsReturned].valueQuantity = 55 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleRotavirusVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -172,12 +316,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE50 "Rotavirus Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 130 'vial'
-* component[received].valueQuantity = 70 'vial'
-* component[dosesOpened].valueQuantity = 80 'vial'
-* component[endingBalance].valueQuantity = 120 'vial'
-* component[quantityReturned].valueQuantity = 3 'vial'
-* component[emptyVialsReturned].valueQuantity = 77 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleMeaslesVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -188,12 +356,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE57 "Measles Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 50 'vial'
-* component[dosesOpened].valueQuantity = 60 'vial'
-* component[endingBalance].valueQuantity = 90 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 58 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleMeaslesDiluentStockObservation
 InstanceOf: VaccineStockObservation
@@ -204,12 +396,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE64 "Measles Diluents"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 95 'vial'
-* component[received].valueQuantity = 40 'vial'
-* component[dosesOpened].valueQuantity = 55 'vial'
-* component[endingBalance].valueQuantity = 80 'vial'
-* component[quantityReturned].valueQuantity = 1 'vial'
-* component[emptyVialsReturned].valueQuantity = 54 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleYellowFeverVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -220,12 +436,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE71 "Yellow Fever Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 60 'vial'
-* component[dosesOpened].valueQuantity = 70 'vial'
-* component[endingBalance].valueQuantity = 90 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 68 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleYellowFeverDiluentStockObservation
 InstanceOf: VaccineStockObservation
@@ -236,12 +476,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE78 "Yellow Fever Diluent"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 85 'vial'
-* component[received].valueQuantity = 30 'vial'
-* component[dosesOpened].valueQuantity = 40 'vial'
-* component[endingBalance].valueQuantity = 75 'vial'
-* component[quantityReturned].valueQuantity = 1 'vial'
-* component[emptyVialsReturned].valueQuantity = 39 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleMenAVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -252,12 +516,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE85 "Men A Vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 115 'vial'
-* component[received].valueQuantity = 50 'vial'
-* component[dosesOpened].valueQuantity = 55 'vial'
-* component[endingBalance].valueQuantity = 110 'vial'
-* component[quantityReturned].valueQuantity = 3 'vial'
-* component[emptyVialsReturned].valueQuantity = 52 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleMenADiluentStockObservation
 InstanceOf: VaccineStockObservation
@@ -268,12 +556,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE92 "Men A Diluents"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 40 'vial'
-* component[dosesOpened].valueQuantity = 45 'vial'
-* component[endingBalance].valueQuantity = 95 'vial'
-* component[quantityReturned].valueQuantity = 1 'vial'
-* component[emptyVialsReturned].valueQuantity = 44 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleHPVVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -284,12 +596,36 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE99 "HPV vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 105 'vial'
-* component[received].valueQuantity = 30 'vial'
-* component[dosesOpened].valueQuantity = 35 'vial'
-* component[endingBalance].valueQuantity = 100 'vial'
-* component[quantityReturned].valueQuantity = 1 'vial'
-* component[emptyVialsReturned].valueQuantity = 33 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 
 Instance: ExampleTDVaccineStockObservation
 InstanceOf: VaccineStockObservation
@@ -300,10 +636,34 @@ Usage: #example
 * code = VACCINE_STOCK#IMMZ.I.DE106 "Td vaccine"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
-* component[openingBalance].valueQuantity = 100 'vial'
-* component[received].valueQuantity = 50 'vial'
-* component[dosesOpened].valueQuantity = 55 'vial'
-* component[endingBalance].valueQuantity = 95 'vial'
-* component[quantityReturned].valueQuantity = 2 'vial'
-* component[emptyVialsReturned].valueQuantity = 53 'vial'
+* component[openingBalance].valueQuantity.value = 100
+* component[openingBalance].valueQuantity.unit = "vial"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{vial}
+
+* component[received].valueQuantity.value = 50
+* component[received].valueQuantity.unit = "vial"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{vial}
+
+* component[dosesOpened].valueQuantity.value = 60
+* component[dosesOpened].valueQuantity.unit = "vial"
+* component[dosesOpened].valueQuantity.system = "http://unitsofmeasure.org"
+* component[dosesOpened].valueQuantity.code = #{vial}
+
+* component[endingBalance].valueQuantity.value = 90
+* component[endingBalance].valueQuantity.unit = "vial"
+* component[endingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[endingBalance].valueQuantity.code = #{vial}
+
+* component[quantityReturned].valueQuantity.value = 2
+* component[quantityReturned].valueQuantity.unit = "vial"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{vial}
+
+* component[emptyVialsReturned].valueQuantity.value = 58
+* component[emptyVialsReturned].valueQuantity.unit = "vial"
+* component[emptyVialsReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[emptyVialsReturned].valueQuantity.code = #{vial}
+
 

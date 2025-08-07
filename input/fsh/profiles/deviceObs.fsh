@@ -1,6 +1,6 @@
 Profile: DeviceMaterialObservation
 Parent: Observation
-Id: immz-device-material-observation
+Id: DeviceMaterialObservation
 Title: "Device/Material Usage Observation"
 Description: "Tracks usage and stock of devices and materials used in immunization delivery over a reporting period."
 
@@ -159,16 +159,46 @@ Usage: #example
 * code = DEVICE_MATERIAL#vaccine-carrier "Vaccine Carrier"
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
+* component[openingBalance].valueQuantity.value = 15
+* component[openingBalance].valueQuantity.unit = "item"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #item
 
-* component[openingBalance].valueQuantity = 15 'item'
-* component[received].valueQuantity = 5 'item'
-* component[quantityUsed].valueQuantity = 4 'item'
-* component[closingBalance].valueQuantity = 16 'item'
-* component[quantityReturned].valueQuantity = 1 'item'
-* component[status].code = DEVICE_MATERIAL#functional "Functional"
-* component[status].valueCodeableConcept = DEVICE_MATERIAL#functional "Functional"
-* component[functional].valueQuantity = 14 'item'
-* component[nonFunctional].valueQuantity = 2 'item'
+* component[received].valueQuantity.value = 5
+* component[received].valueQuantity.unit = "item"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #item
+
+* component[quantityUsed].valueQuantity.value = 4
+* component[quantityUsed].valueQuantity.unit = "item"
+* component[quantityUsed].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityUsed].valueQuantity.code = #item
+
+* component[closingBalance].valueQuantity.value = 16
+* component[closingBalance].valueQuantity.unit = "item"
+* component[closingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[closingBalance].valueQuantity.code = #item
+
+* component[quantityReturned].valueQuantity.value = 1
+* component[quantityReturned].valueQuantity.unit = "item"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #item
+
+* component[status].valueCodeableConcept.coding.system = DEVICE_MATERIAL
+* component[status].valueCodeableConcept.coding.code = #functional
+* component[status].valueCodeableConcept.coding.display = "Functional"
+
+
+* component[functional].valueQuantity.value = 14
+* component[functional].valueQuantity.unit = "item"
+* component[functional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[functional].valueQuantity.code = #item
+
+* component[nonFunctional].valueQuantity.value = 2
+* component[nonFunctional].valueQuantity.unit = "item"
+* component[nonFunctional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[nonFunctional].valueQuantity.code = #item
+
 
 Instance: ExampleColdBoxesStockObservation
 InstanceOf: DeviceMaterialObservation
@@ -181,15 +211,45 @@ Usage: #example
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
 
-* component[openingBalance].valueQuantity = 10 'item'
-* component[received].valueQuantity = 2 'item'
-* component[quantityUsed].valueQuantity = 1 'item'
-* component[closingBalance].valueQuantity = 11 'item'
-* component[quantityReturned].valueQuantity = 0 'item'
-* component[status].code = DEVICE_MATERIAL#functional "Functional"
-* component[status].valueCodeableConcept = DEVICE_MATERIAL#functional "Functional"
-* component[functional].valueQuantity = 10 'item'
-* component[nonFunctional].valueQuantity = 1 'item'
+* component[openingBalance].valueQuantity.value = 10
+* component[openingBalance].valueQuantity.unit = "item"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{item}
+
+* component[received].valueQuantity.value = 2
+* component[received].valueQuantity.unit = "item"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{item}
+
+* component[quantityUsed].valueQuantity.value = 1
+* component[quantityUsed].valueQuantity.unit = "item"
+* component[quantityUsed].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityUsed].valueQuantity.code = #{item}
+
+* component[closingBalance].valueQuantity.value = 11
+* component[closingBalance].valueQuantity.unit = "item"
+* component[closingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[closingBalance].valueQuantity.code = #{item}
+
+* component[quantityReturned].valueQuantity.value = 0
+* component[quantityReturned].valueQuantity.unit = "item"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{item}
+
+* component[status].valueCodeableConcept.coding.system = DEVICE_MATERIAL 
+* component[status].valueCodeableConcept.coding.code = #functional
+* component[status].valueCodeableConcept.coding.display = "Functional"
+
+* component[functional].valueQuantity.value = 10
+* component[functional].valueQuantity.unit = "item"
+* component[functional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[functional].valueQuantity.code = #{item}
+
+* component[nonFunctional].valueQuantity.value = 1
+* component[nonFunctional].valueQuantity.unit = "item"
+* component[nonFunctional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[nonFunctional].valueQuantity.code = #{item}
+
 
 
 Instance: ExampleVaccineFridgesStockObservation
@@ -203,15 +263,44 @@ Usage: #example
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
 
-* component[openingBalance].valueQuantity = 5 'item'
-* component[received].valueQuantity = 1 'item'
-* component[quantityUsed].valueQuantity = 0 'item'
-* component[closingBalance].valueQuantity = 6 'item'
-* component[quantityReturned].valueQuantity = 0 'item'
-* component[status].code = DEVICE_MATERIAL#functional "Functional"
-* component[status].valueCodeableConcept = DEVICE_MATERIAL#functional "Functional"
-* component[functional].valueQuantity = 6 'item'
-* component[nonFunctional].valueQuantity = 0 'item'
+* component[openingBalance].valueQuantity.value = 10
+* component[openingBalance].valueQuantity.unit = "item"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{item}
+
+* component[received].valueQuantity.value = 2
+* component[received].valueQuantity.unit = "item"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{item}
+
+* component[quantityUsed].valueQuantity.value = 1
+* component[quantityUsed].valueQuantity.unit = "item"
+* component[quantityUsed].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityUsed].valueQuantity.code = #{item}
+
+* component[closingBalance].valueQuantity.value = 11
+* component[closingBalance].valueQuantity.unit = "item"
+* component[closingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[closingBalance].valueQuantity.code = #{item}
+
+* component[quantityReturned].valueQuantity.value = 0
+* component[quantityReturned].valueQuantity.unit = "item"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{item}
+
+* component[status].valueCodeableConcept.coding.system = DEVICE_MATERIAL 
+* component[status].valueCodeableConcept.coding.code = #functional
+* component[status].valueCodeableConcept.coding.display = "Functional"
+
+* component[functional].valueQuantity.value = 10
+* component[functional].valueQuantity.unit = "item"
+* component[functional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[functional].valueQuantity.code = #{item}
+
+* component[nonFunctional].valueQuantity.value = 1
+* component[nonFunctional].valueQuantity.unit = "item"
+* component[nonFunctional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[nonFunctional].valueQuantity.code = #{item}
 
 Instance: ExampleMUACStripesStockObservation
 InstanceOf: DeviceMaterialObservation
@@ -224,12 +313,41 @@ Usage: #example
 * effectiveDateTime = "2025-08-07"
 * encounter = Reference(NEIREncounterExample)
 
-* component[openingBalance].valueQuantity = 80 'item'
-* component[received].valueQuantity = 30 'item'
-* component[quantityUsed].valueQuantity = 20 'item'
-* component[closingBalance].valueQuantity = 90 'item'
-* component[quantityReturned].valueQuantity = 0 'item'
-* component[status].code = DEVICE_MATERIAL#functional "Functional"
-* component[status].valueCodeableConcept = DEVICE_MATERIAL#functional "Functional"
-* component[functional].valueQuantity = 88 'item'
-* component[nonFunctional].valueQuantity = 2 'item'
+* component[openingBalance].valueQuantity.value = 10
+* component[openingBalance].valueQuantity.unit = "item"
+* component[openingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[openingBalance].valueQuantity.code = #{item}
+
+* component[received].valueQuantity.value = 2
+* component[received].valueQuantity.unit = "item"
+* component[received].valueQuantity.system = "http://unitsofmeasure.org"
+* component[received].valueQuantity.code = #{item}
+
+* component[quantityUsed].valueQuantity.value = 1
+* component[quantityUsed].valueQuantity.unit = "item"
+* component[quantityUsed].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityUsed].valueQuantity.code = #{item}
+
+* component[closingBalance].valueQuantity.value = 11
+* component[closingBalance].valueQuantity.unit = "item"
+* component[closingBalance].valueQuantity.system = "http://unitsofmeasure.org"
+* component[closingBalance].valueQuantity.code = #{item}
+
+* component[quantityReturned].valueQuantity.value = 0
+* component[quantityReturned].valueQuantity.unit = "item"
+* component[quantityReturned].valueQuantity.system = "http://unitsofmeasure.org"
+* component[quantityReturned].valueQuantity.code = #{item}
+
+* component[status].valueCodeableConcept.coding.system = DEVICE_MATERIAL 
+* component[status].valueCodeableConcept.coding.code = #functional
+* component[status].valueCodeableConcept.coding.display = "Functional"
+
+* component[functional].valueQuantity.value = 10
+* component[functional].valueQuantity.unit = "item"
+* component[functional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[functional].valueQuantity.code = #{item}
+
+* component[nonFunctional].valueQuantity.value = 1
+* component[nonFunctional].valueQuantity.unit = "item"
+* component[nonFunctional].valueQuantity.system = "http://unitsofmeasure.org"
+* component[nonFunctional].valueQuantity.code = #{item}
