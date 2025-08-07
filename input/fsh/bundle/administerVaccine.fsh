@@ -1,6 +1,6 @@
 Profile: AdministerVaccineTransactionBundle
 Parent: Bundle 
-Title: "Administer Vaccine Bundle"
+Title: "Bundle - Administer Vaccine"
 Description: "Profile for a transaction Bundle used to capture vaccine administration details based on the AdministerVaccine logical model."
 * type = #transaction (exactly)
 
