@@ -13,7 +13,7 @@ Description: "Defines constraints on the FHIR Location resource to represent imm
 
 // Allow multiple types, and bind to the correct ValueSet
 * type 1..* MS
-* type from ServiceDeliveryLocationRoleType (extensible)
+* type from NEIRFacilityTypeVS
 
 // Required address and fixed country code
 * address 1..1 MS
