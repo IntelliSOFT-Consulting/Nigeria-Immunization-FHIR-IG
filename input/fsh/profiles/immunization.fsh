@@ -13,6 +13,7 @@ Description: "Nigerian Registry Profile for Immunization."
 
 * vaccineCode 1..1 
 * vaccineCode ^short = "Vaccine Administered"
+* vaccineCode from NEIRVaccineCodesVS
 * statusReason from NEIRImmunizationNotDoneReasonsVS (required)
 * status 1..1
 * manufacturer 1..1
