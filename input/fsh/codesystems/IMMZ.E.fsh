@@ -1,7 +1,7 @@
 CodeSystem:   IMMZ.E
 Id : IMMZ-E
-Title: "IMMZ.E CodeSystem for Manage AEFI Data Elements"
-Description: "CodeSystem for IMMZ.E Manage AEFI Data Elements"
+Title: "IMMZ.E CodeSystem for Manage and Report AEFI"
+Description: "CodeSystem for IMMZ.E Manage and Report AEFI Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false

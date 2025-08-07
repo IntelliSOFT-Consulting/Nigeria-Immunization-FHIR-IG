@@ -2,8 +2,8 @@ Alias: $SCT = http://snomed.info/sct
 
 ValueSet: NEIRSubstanceVS
 Id: neir-substance-vs
-Title: "Allowed Allergy Substances"
-Description: "NEIR Substance ValueSet"
+Title: "NEIR ValueSet for Allowed Allergy-related Substances"
+Description: "ValueSet for Allowed Allergy-related Substances from NEIR"
 * ^url = NEIR_SUBSTANCE_VS
 * ^experimental = false
 * ^status  = #active
@@ -11,8 +11,8 @@ Description: "NEIR Substance ValueSet"
 
 ValueSet: IMMZDFacilityType
 Id: IMMZDFacilityType
-Title: "Facility Type ValueSet"
-Description: "Includes codes from IMMZ.D related to facility types"
+Title: "IMMZ.D.DE2 ValueSet for Facility Type"
+Description: "ValueSet for Facility type for IMMZ.D.DE2"
 * ^url = IMMZDFACILITYTYPE
 * ^experimental = false
 * ^status  = #active
@@ -22,8 +22,8 @@ Description: "Includes codes from IMMZ.D related to facility types"
 
 ValueSet: IMMZDSessionType
 Id: IMMZDSessionType
-Title: "Session Type"
-Description: "Session type codes from the IMMZ.D CodeSystem"
+Title: "IMMZ.D.DE6 ValueSet for Session Type"
+Description: "ValueSet for Session Type for IMMZ.D.DE6"
 * ^url = IMMZDSESSIONTYPE
 * ^experimental = false
 * ^status  = #active
@@ -33,8 +33,8 @@ Description: "Session type codes from the IMMZ.D CodeSystem"
 
 ValueSet: IMMZFVaccineType
 Id: IMMZFVaccineType
-Title: "Vaccine Type"
-Description: "Vaccine types from the IMMZ.D CodeSystem"
+Title: "IMMZ.D.DE10 ValueSet for Vaccine Type"
+Description: "ValueSet for Vaccince Type for IMMZ.D.DE10"
 * ^url = IMMZFVACCINETYPE
 * ^experimental = false
 * ^status  = #active
@@ -44,8 +44,8 @@ Description: "Vaccine types from the IMMZ.D CodeSystem"
 
 ValueSet: IMMZDContraindications
 Id: IMMZDContraindications
-Title: "Contraindications"
-Description: "Contraindications from the IMMZ.D CodeSystem"
+Title: "IMMZ.D.DE11 ValueSet for Contraindications"
+Description: "ValueSet for Contradictions for IMMZ.D.DE11"
 * ^url = IMMZDCONTRAINDICATIONS
 * ^experimental = false
 * ^status  = #active
@@ -57,8 +57,8 @@ Description: "Contraindications from the IMMZ.D CodeSystem"
 
 ValueSet: IMMZDSiteAdministered
 Id: IMMZDSiteAdministered
-Title: "Site Administered"
-Description: "Body sites for vaccine administration from IMMZ.D"
+Title: "IMMZ.D.DE21 ValueSet for Site Administered"
+Description: "ValueSet for Site Administered for IMMZ.D.DE21"
 * ^url = IMMZDSITEADMINISTERED
 * ^experimental = false
 * ^status  = #active
@@ -71,8 +71,8 @@ Description: "Body sites for vaccine administration from IMMZ.D"
 
 ValueSet: IMMZDRouteOfAdministration
 Id: IMMZDRouteOfAdministration
-Title: "Route of Administration"
-Description: "Vaccine administration routes from IMMZ.D"
+Title: "IMMZ.D.DE27 ValueSet for Route of Administration"
+Description: "ValueSet for Route of Administration for IMMZ.D.DE27"
 * ^url = IMMZDROUTEOFADMINISTRATION
 * ^experimental = false
 * ^status  = #active 
@@ -85,8 +85,8 @@ Description: "Vaccine administration routes from IMMZ.D"
 
 ValueSet: IMMZFDE2VS
 Id: IMMZ.F.DE2
-Title: "IMMZ.F.DE2 ValueSet"
-Description: "IMMZFDE ValueSet"
+Title: "IMMZ.G.DE2 ValueSet for Client Sex"
+Description: "ValueSet for Client Sex for IMMZ.G.DE2"
 * ^url = IMMZFDE2_VS
 * ^experimental = false
 * ^status  = #active 
@@ -94,8 +94,8 @@ Description: "IMMZFDE ValueSet"
 
 ValueSet: IMMZFDE6VS
 Id: IMMZ.F.DE6
-Title: "IMMZ.F.DE6 ValueSet" 
-Description: "IMMZFDE ValueSet"
+Title: "IMMZ.G.DE6 ValueSet for missed immunization" 
+Description: "ValueSet for Missed Immunization for IMMZ.G.DE6"
 * ^url = IMMZFDE6_VS
 * ^experimental = false
 * ^status  = #active 
@@ -103,8 +103,8 @@ Description: "IMMZFDE ValueSet"
 
 ValueSet: IMMZC1HivStatusVS
 Id: immzc1-hiv-status-vs
-Title: "IMMZ.C1 HIV Status ValueSet"
-Description: "IMMZ HIV Status ValueSet"
+Title: "IMMZ.C.DE37 ValueSet for HIV Status"
+Description: "ValueSet for HIV Status for IMMZ.C.DE37"
 * ^url     = IMMZC1_HIV_STATUS_VS
 * ^status  = #active
 * ^experimental = false 
@@ -112,8 +112,8 @@ Description: "IMMZ HIV Status ValueSet"
 
 ValueSet: PregnancyStatusVS
 Id: pregnancy-status-vs
-Title: "Pregnancy Status ValueSet"
-Description: "ValueSet representing possible pregnancy statuses: Pregnant, Not Pregnant, and Unknown."
+Title: "IMMZ.C.DE41 ValueSet for Pregnancy Status"
+Description: "ValueSet for Pregnancy Status for IMMZ.C.DE41"
 * include codes from system http://snomed.info/sct where concept is-a #77386006 // Optional, broad inclusion
 * $SCT#77386006 "Pregnant"
 * $SCT#60001007 "Not pregnant"
@@ -121,8 +121,8 @@ Description: "ValueSet representing possible pregnancy statuses: Pregnant, Not P
 
 ValueSet: IMMZC1StateOfHealthOtherChildrenVS
 Id: state-of-health-of-other-children-vs
-Title: "IMMZC1 - ValueSet for State of Health of Mother's Other Children"
-Description: "ValueSet capturing the state of health of mother's other children during client record creation or update."
+Title: "IMMZ.C.DE31 ValueSet for State of Health of Mother's Other Children"
+Description: "ValueSet for state of health of mother's other children for IMMZ.C.DE31"
 * ^status = #active
 * ^experimental = false
 * include codes from system IMMZC1StateofHealthofMothersOtherChildrenCS

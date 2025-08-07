@@ -1,6 +1,6 @@
 CodeSystem:   IMMZ.F
-Title:        "IMMZ.F CodeSystem for Defaulter Tracing Data Elements"
-Description:  "CodeSystem for IMMZ.F Defaulter Tracing Data Elements"
+Title:        "IMMZ.G CodeSystem for Defaulter Tracking"
+Description:  "CodeSystem for IMMZ.G Defaulter Tracking Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false

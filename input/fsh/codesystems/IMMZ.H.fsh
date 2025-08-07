@@ -1,6 +1,6 @@
 CodeSystem:   IMMZ.H
-Title:        "IMMZ.H CodeSystem for Stock Management Data Elements"
-Description:  "CodeSystem for IMMZ.H Stock Management Data Elements"
+Title:        "IMMZ.I CodeSystem for Stock Management"
+Description:  "CodeSystem for IMMZ.I Stock Management Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false

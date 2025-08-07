@@ -1,6 +1,6 @@
 CodeSystem:   IMMZ.C
-Title:        "IMMZ.C CodeSystem for Data Elements"
-Description:  "CodeSystem for IMMZ.C Data Elements"
+Title:        "IMMZ.C CodeSystem for Register Client"
+Description:  "CodeSystem for IMMZ.C Client Register Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
