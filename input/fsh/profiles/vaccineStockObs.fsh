@@ -6,7 +6,7 @@ Description: "Tracks vaccine or diluent stock balances, receipts, and usage over
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#supply
 * code from VaccineDiluentVS (extensible)
-
+* encounter only Reference(NEIREncounter)
 * effective[x] only dateTime
 
 * component 6..6
@@ -56,6 +56,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE1 "BCG Vaccines"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 50 'vial'
@@ -74,6 +75,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE8 "BCG Diluents"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 80 'vial'
 * component[received].valueQuantity = 40 'vial'
 * component[dosesOpened].valueQuantity = 50 'vial'
@@ -89,6 +91,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE15 "Hep B vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 120 'vial'
 * component[received].valueQuantity = 30 'vial'
 * component[dosesOpened].valueQuantity = 40 'vial'
@@ -104,6 +107,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE22 "OPV Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 90 'vial'
 * component[received].valueQuantity = 20 'vial'
 * component[dosesOpened].valueQuantity = 25 'vial'
@@ -119,6 +123,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE29 "PENTA Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 140 'vial'
 * component[received].valueQuantity = 60 'vial'
 * component[dosesOpened].valueQuantity = 70 'vial'
@@ -134,6 +139,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE36 "PCV Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 110 'vial'
 * component[received].valueQuantity = 45 'vial'
 * component[dosesOpened].valueQuantity = 50 'vial'
@@ -149,6 +155,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE43 "IPV Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 50 'vial'
 * component[dosesOpened].valueQuantity = 60 'vial'
@@ -164,6 +171,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE50 "Rotavirus Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 130 'vial'
 * component[received].valueQuantity = 70 'vial'
 * component[dosesOpened].valueQuantity = 80 'vial'
@@ -179,6 +187,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE57 "Measles Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 50 'vial'
 * component[dosesOpened].valueQuantity = 60 'vial'
@@ -194,6 +203,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE64 "Measles Diluents"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 95 'vial'
 * component[received].valueQuantity = 40 'vial'
 * component[dosesOpened].valueQuantity = 55 'vial'
@@ -209,6 +219,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE71 "Yellow Fever Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 60 'vial'
 * component[dosesOpened].valueQuantity = 70 'vial'
@@ -224,6 +235,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE78 "Yellow Fever Diluent"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 85 'vial'
 * component[received].valueQuantity = 30 'vial'
 * component[dosesOpened].valueQuantity = 40 'vial'
@@ -239,6 +251,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE85 "Men A Vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 115 'vial'
 * component[received].valueQuantity = 50 'vial'
 * component[dosesOpened].valueQuantity = 55 'vial'
@@ -254,6 +267,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE92 "Men A Diluents"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 40 'vial'
 * component[dosesOpened].valueQuantity = 45 'vial'
@@ -269,6 +283,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE99 "HPV vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 105 'vial'
 * component[received].valueQuantity = 30 'vial'
 * component[dosesOpened].valueQuantity = 35 'vial'
@@ -284,6 +299,7 @@ Usage: #example
 * status = #final
 * code = VACCINE_STOCK#IMMZ.I.DE106 "Td vaccine"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 50 'vial'
 * component[dosesOpened].valueQuantity = 55 'vial'

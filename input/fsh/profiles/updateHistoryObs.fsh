@@ -15,6 +15,9 @@ Description: "A composite Observation profile capturing primary series, state, c
 * subject 1..1
 * subject only Reference(NEIRPatient)
 
+* encounter 1..1
+* encounter only Reference(NEIREncounter)
+
 * effective[x] 1..1
 
 // Define the three required components
@@ -59,7 +62,8 @@ Description: " An example instance indicating the update client history observat
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $SCT#123456 "NEIR Update Client History Observations" // Replace with actual code when created
-* subject = Reference(NEIRPatientExample) // Replace with actual patient reference
+* subject = Reference(NEIRPatientExample)
+* encounter = Reference(NEIREncounterExample)
 * effectiveDateTime = "2025-08-07T10:00:00+03:00"
 
  

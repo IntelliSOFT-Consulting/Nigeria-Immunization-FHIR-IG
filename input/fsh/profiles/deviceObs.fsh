@@ -7,7 +7,8 @@ Description: "Tracks usage and stock of devices and materials used in immunizati
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#supply
 * code from DeviceMaterialCodeVS (extensible) 
-
+* encounter 1..1
+* encounter only Reference(NEIREncounter)
 * effective[x] only dateTime
 
 * component 8..8
@@ -70,6 +71,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#bcg-syringes "BCG syringes"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample) 
 
 * component[openingBalance].valueQuantity = 100 'vial'
 * component[received].valueQuantity = 50 'vial'
@@ -91,6 +93,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#2ml-syringes "2ml Syringes"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 120 'item'
 * component[received].valueQuantity = 30 'item'
@@ -112,6 +115,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#ad-syringes "AD Syringes"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 200 'item'
 * component[received].valueQuantity = 100 'item'
@@ -132,6 +136,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#ice-packs "Ice Packs"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 60 'item'
 * component[received].valueQuantity = 20 'item'
@@ -153,6 +158,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#vaccine-carrier "Vaccine Carrier"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 15 'item'
 * component[received].valueQuantity = 5 'item'
@@ -173,6 +179,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#cold-boxes "Cold Boxes"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 10 'item'
 * component[received].valueQuantity = 2 'item'
@@ -194,6 +201,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#vaccine-fridges "Vaccine Fridges"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 5 'item'
 * component[received].valueQuantity = 1 'item'
@@ -214,6 +222,7 @@ Usage: #example
 * status = #final
 * code = DEVICE_MATERIAL#muac-stripes "MUAC Stripes"
 * effectiveDateTime = "2025-08-07"
+* encounter = Reference(NEIREncounterExample)
 
 * component[openingBalance].valueQuantity = 80 'item'
 * component[received].valueQuantity = 30 'item'

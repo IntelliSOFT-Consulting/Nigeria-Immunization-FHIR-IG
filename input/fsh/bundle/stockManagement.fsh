@@ -17,11 +17,15 @@ Description: "Transaction bundle used to capture stock level details based on th
 
 // Slice entries
 * entry contains 
+    encounter 1..1 MS and
     vaccineStockEntry 1..* MS and
     deviceStockEntry 1..*
  
 * insert BundleEntry(VaccineStockObservation, vaccineStockEntry)
+* insert BundleEntry(NEIREncounter, encounter)
 * insert BundleEntry(DeviceMaterialObservation, deviceStockEntry)
+
+
 
 
 Instance: ExampleStockManagementTransactionBundle
@@ -31,11 +35,12 @@ Description: "An example transaction bundle capturing immunization and vaccine s
 Usage: #example
 
 * type = #transaction 
- 
-* entry[0].fullUrl = "urn:uuid:bcg-vaccine-stock-1"
-* entry[0].resource = ExampleBCGVaccineStockObservation
+
+* entry[0].fullUrl = "urn:uuid:encounter-1"
+* entry[0].resource = NEIRLocationExample
 * entry[0].request.method = #POST
-* entry[0].request.url = "VaccineStockObservation"
+* entry[0].request.url = "Encounter" 
+
 
 * entry[1].fullUrl = "urn:uuid:bcg-diluent-stock-1"
 * entry[1].resource = ExampleBCGDiluentStockObservation
@@ -116,4 +121,9 @@ Usage: #example
 * entry[16].resource = ExampleBCGSyringesStockObservation
 * entry[16].request.method = #POST
 * entry[16].request.url = "DeviceMaterialObservation"
+
+* entry[17].fullUrl = "urn:uuid:bcg-vaccine-stock-1"
+* entry[17].resource = ExampleBCGVaccineStockObservation
+* entry[17].request.method = #POST
+* entry[17].request.url = "VaccineStockObservation"
 

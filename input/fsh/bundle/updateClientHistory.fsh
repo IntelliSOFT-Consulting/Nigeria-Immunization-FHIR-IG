@@ -26,9 +26,11 @@ Description: "Transaction bundle containing clinical resources representing an u
 
 
 * entry contains
+    encounter 1..1 MS and
     observationEntry 1..1 and
     immunizationEntry 0..*
  
+* insert BundleEntry(NEIREncounter, encounter)
 * insert BundleEntry(NEIRUpdateClientHistoryObservation, observationEntry)
 * insert BundleEntry(NEIRImmunization, immunizationEntry)
 
@@ -48,10 +50,15 @@ Usage: #example
 * entry[0].request.method = #POST
 * entry[0].request.url = "NEIRImmunization" 
 
-* entry[0].fullUrl = "urn:uuid:observation-1"
-* entry[0].resource = ExampleNEIRUpdateClientHistoryObservation
-* entry[0].request.method = #POST
-* entry[0].request.url = "NEIRUpdateClientHistoryObservation" 
+* entry[1].fullUrl = "urn:uuid:bcg-vaccine-stock-1"
+* entry[1].resource = ExampleBCGVaccineStockObservation
+* entry[1].request.method = #POST
+* entry[1].request.url = "VaccineStockObservation"
+
+* entry[2].fullUrl = "urn:uuid:observation-1"
+* entry[2].resource = ExampleNEIRUpdateClientHistoryObservation
+* entry[2].request.method = #POST
+* entry[2].request.url = "NEIRUpdateClientHistoryObservation" 
 
  
 * signature.type[0].system = "urn:iso-astm:E1762-95:2013"
