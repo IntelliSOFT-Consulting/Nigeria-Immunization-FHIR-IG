@@ -50,8 +50,8 @@ Usage: #example
 * patient = Reference(patient-example)
 * location = Reference(location-example)
 * occurrenceDateTime = "2025-07-30T10:30:00+03:00"
-* site = IMMZD#IMMZ.D.DE23 "Left Arm"
-* route = IMMZD#IMMZ.D.DE30 "Intramuscular"
+* site = IMMZD#DE23 "Left Arm"
+* route = IMMZD#DE30 "Intramuscular"
 * lotNumber = "BATCH-00123"
 * expirationDate = "2026-01-01"
 * doseQuantity.value = 0.5

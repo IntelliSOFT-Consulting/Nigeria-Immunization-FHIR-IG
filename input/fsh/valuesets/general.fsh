@@ -16,8 +16,8 @@ Description: "Includes codes from IMMZ.D related to facility types"
 * ^url = IMMZDFACILITYTYPE
 * ^experimental = false
 * ^status  = #active
-* IMMZD#IMMZ.D.DE4
-* IMMZD#IMMZ.D.DE5
+* IMMZD#DE4
+* IMMZD#DE5
 
 
 ValueSet: IMMZDSessionType
@@ -27,8 +27,8 @@ Description: "Session type codes from the IMMZ.D CodeSystem"
 * ^url = IMMZDSESSIONTYPE
 * ^experimental = false
 * ^status  = #active
-* IMMZD#IMMZ.D.DE7
-* IMMZD#IMMZ.D.DE8
+* IMMZD#DE7
+* IMMZD#DE8
 
 
 ValueSet: IMMZFVaccineType
@@ -49,8 +49,8 @@ Description: "Contraindications from the IMMZ.D CodeSystem"
 * ^url = IMMZDCONTRAINDICATIONS
 * ^experimental = false
 * ^status  = #active
-* IMMZD#IMMZ.D.DE13
-* IMMZD#IMMZ.D.DE14
+* IMMZD#DE13
+* IMMZD#DE14
 
 
 ValueSet: IMMZDSiteAdministered
@@ -60,11 +60,11 @@ Description: "Body sites for vaccine administration from IMMZ.D"
 * ^url = IMMZDSITEADMINISTERED
 * ^experimental = false
 * ^status  = #active
-* IMMZD#IMMZ.D.DE22
-* IMMZD#IMMZ.D.DE23
-* IMMZD#IMMZ.D.DE24
-* IMMZD#IMMZ.D.DE25
-* IMMZD#IMMZ.D.DE26
+* IMMZD#DE22
+* IMMZD#DE23
+* IMMZD#DE24
+* IMMZD#DE25
+* IMMZD#DE26
 
 
 ValueSet: IMMZDRouteOfAdministration
@@ -74,10 +74,10 @@ Description: "Vaccine administration routes from IMMZ.D"
 * ^url = IMMZDROUTEOFADMINISTRATION
 * ^experimental = false
 * ^status  = #active 
-* IMMZD#IMMZ.D.DE28
-* IMMZD#IMMZ.D.DE29
-* IMMZD#IMMZ.D.DE30
-* IMMZD#IMMZ.D.DE31
+* IMMZD#DE28
+* IMMZD#DE29
+* IMMZD#DE30
+* IMMZD#DE31
 
 
 
