@@ -62,6 +62,9 @@ Description: "Body sites for vaccine administration from IMMZ.D"
 * ^status  = #active
 * IMMZD#IMMZ.D.DE22
 * IMMZD#IMMZ.D.DE23
+* IMMZD#IMMZ.D.DE24
+* IMMZD#IMMZ.D.DE25
+* IMMZD#IMMZ.D.DE26
 
 
 ValueSet: IMMZDRouteOfAdministration
@@ -73,6 +76,8 @@ Description: "Vaccine administration routes from IMMZ.D"
 * ^status  = #active 
 * IMMZD#IMMZ.D.DE28
 * IMMZD#IMMZ.D.DE29
+* IMMZD#IMMZ.D.DE30
+* IMMZD#IMMZ.D.DE31
 
 
 
