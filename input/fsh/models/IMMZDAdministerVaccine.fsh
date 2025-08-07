@@ -43,7 +43,7 @@ Description: "A logical model for capturing vaccine administration details"
 Instance: vaccine-administration-example
 InstanceOf: AdministerVaccine
 Title: "Example Vaccine Administration Record"
-Description: "An example instance demonstrating the use of the Administer Vaccine Logical Model."
+Description: "Example of a vaccine administration record in a facility"
 
 * nameOfHealthFacility = "Sunrise Health Clinic"
 * facilityType.coding[0].system = IMMZD

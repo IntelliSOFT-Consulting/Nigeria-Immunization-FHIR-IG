@@ -27,8 +27,8 @@ Description: "A logical model for tracking immunization defaulters."
 Instance: defaulter-tracing-example
 InstanceOf: DefaulterTracing
 Usage: #example
-Title: "Defaulter Tracing Example"
-Description: "An example of a defaulter tracing record."
+Title: "Example of a Defaulter Tracing Record"
+Description: "Example of a defaulter tracking record."
 
 * clientName = "John Doe"
 * clientSex.coding.system = IMMZFDE2

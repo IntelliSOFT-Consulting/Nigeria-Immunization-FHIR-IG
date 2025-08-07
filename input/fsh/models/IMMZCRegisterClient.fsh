@@ -93,8 +93,8 @@ Description: "A logical model representing a client being registered in the immu
 
 Instance: example-register-client
 InstanceOf: RegisterClientModel
-Title: "Example Register Client"
-Description: "Example instance of a client being registered in the IMMZ system."
+Title: "Example QuestionniaireResponse for Register Client "
+Description: "Example of a QuestionnaireResponse for IMMZ.C Register Client"
 Usage: #example
 
 * identifier.value = "123456789"

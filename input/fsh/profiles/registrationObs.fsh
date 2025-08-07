@@ -57,8 +57,8 @@ Description: "A composite Observation profile capturing state of health, underly
 
 Instance: ExampleNEIRRegistrationObservation
 InstanceOf: NEIRRegistrationObservation
-Title: "Example Questionnaire Response for client Registration"
-Description: "Example Questionnaire Response for IMMZ.C Register Client."
+Title: "Example of client Registration observation"
+Description: "Example of a client registration observation"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history

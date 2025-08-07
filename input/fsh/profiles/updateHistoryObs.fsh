@@ -53,8 +53,8 @@ Description: "A composite Observation profile capturing primary series, state, c
 
 Instance: ExampleNEIRUpdateClientHistoryObservation
 InstanceOf: NEIRUpdateClientHistoryObservation
-Title: "Example Questionnaire Response for Update Client History "
-Description: " Example questionnarie response for IMMZ.C1 Update client history"
+Title: "Example of an update client history observation "
+Description: " Example of an update client history observation"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
