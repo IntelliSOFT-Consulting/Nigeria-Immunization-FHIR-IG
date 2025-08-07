@@ -11,7 +11,7 @@ Description: "This profile constrains the DetectedIssue resource to represent im
 * patient only Reference(NEIRPatient)
 
 
-Instance: example-neir-detectedissue
+Instance: NEIRDetectedIssueExample
 InstanceOf: NEIRDetectedIssue
 Title: "Example DetectedIssue - NEIR Contraindication"
 Description: "An example of a contraindication issue recorded in the NEIR system due to a vaccine allergy."
@@ -19,6 +19,6 @@ Usage: #example
 
 * status = #final
 * code = #DE13 "Allergy to vaccine component"
-* patient = Reference(patient-example)
+* patient = Reference(Patient/NEIRPatientExample)
 * identifier.system = "http://neir.nigeria.gov/detectedissue"
 * identifier.value = "DI-20250807-001"

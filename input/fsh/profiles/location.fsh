@@ -24,7 +24,7 @@ Description: "Defines constraints on the FHIR Location resource to represent imm
 
 
 
-Instance: location-example
+Instance: NEIRLocationExample
 InstanceOf: NEIRLocation
 Usage: #example
 Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
