@@ -213,6 +213,27 @@ Description: "ValueSet for Disaggregation Group options used in immunization rep
 
 
 
+ValueSet: VaccineDiluentVS
+Id: vaccine-diluent-vs
+Title: "IMMZI - ValueSet for Vacine Stock Levels"
+Description: "ValueSet displaying the vaccines and diluents in the stock management workflow"
+* ^status = #active
+* ^experimental = false
+* include codes from system VaccineStockCodes
+
+
+
+ValueSet: DeviceMaterialCodeVS
+Title: "Device Material ValueSet"
+Description: "ValueSet for Device Material for the stock management workflow"
+* ^status = #active
+* ^experimental = false
+* include codes from system DeviceMaterialCodes
+
+
+
+
+
 
 
 
