@@ -1,8 +1,8 @@
 
 ValueSet: EncounterClassVS
 Id: immunization-encounter-class-vs
-Title: "Immunization Encounter Class ValueSet"
-Description: "A ValueSet defining encounter types for immunization services in the Nigerian Electronic Immunization Registry (NEIR)."
+Title: "NEIR ValueSet for Immunization Encounter"
+Description: "ValueSet for immunization Encounter from NEIR"
 * ^url = IMMUNIZATION_ENCOUNTER_CLASS_VS
 * ^version = "1.0.0"
 * ^status = #active

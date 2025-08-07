@@ -83,8 +83,8 @@ Description: "ValueSet for Route of Administration for IMMZ.D.DE27"
 
 ValueSet: IMMZFDE2VS
 Id: IMMZ.F.DE2
-Title: "IMMZ.F.DE2 ValueSet"
-Description: "IMMZFDE ValueSet"
+Title: "IMMZ.G.DE2 ValueSet for Client Sex"
+Description: "ValueSet for Client Sex for IMMZ.G.DE2"
 * ^url = IMMZFDE2_VS
 * ^experimental = false
 * ^status  = #active 
@@ -92,8 +92,8 @@ Description: "IMMZFDE ValueSet"
 
 ValueSet: IMMZFDE6VS
 Id: IMMZ.F.DE6
-Title: "IMMZ.F.DE6 ValueSet" 
-Description: "IMMZFDE ValueSet"
+Title: "IMMZ.G.DE6 ValueSet for missed immunization" 
+Description: "ValueSet for Missed Immunization for IMMZ.G.DE6"
 * ^url = IMMZFDE6_VS
 * ^experimental = false
 * ^status  = #active 
