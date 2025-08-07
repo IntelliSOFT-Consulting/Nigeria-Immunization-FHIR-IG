@@ -26,8 +26,8 @@ Description: "A transaction bundle containing patient registration data, includi
 
 Instance: ExamplePatientCreationBundle
 InstanceOf: PatientCreationBundle
-Title: "Example - Patient Creation"
-Description: "An example transaction bundle containing patient registration data, including related person details and registration observations collected at the point of care."
+Title: "Example of a Patient Creation Bundle"
+Description: "Example of a patient creation transaction bundle"
 Usage: #example
 
 * type = #transaction

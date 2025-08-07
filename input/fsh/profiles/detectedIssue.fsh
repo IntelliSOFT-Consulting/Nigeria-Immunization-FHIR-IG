@@ -13,8 +13,8 @@ Description: "This profile constrains the DetectedIssue resource to represent im
 
 Instance: example-neir-detectedissue
 InstanceOf: NEIRDetectedIssue
-Title: "Example DetectedIssue - NEIR Contraindication"
-Description: "An example of a contraindication issue recorded in the NEIR system due to a vaccine allergy."
+Title: "Example of a DetectedIssue"
+Description: "Example of a contraindication issue recorded in the NEIR system"
 Usage: #example
 
 * status = #final

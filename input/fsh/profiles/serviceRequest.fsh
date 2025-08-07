@@ -21,7 +21,8 @@ Description: "Profiles the ServiceRequest resource to represent planned or reque
 Instance: service-request-example
 InstanceOf: ServiceRequest
 Usage: #example 
-Description: "An example of a service request"
+Title: "Example of a Service Request"
+Description: "Example of a service request"
 * status = #active
 * intent = #order
 * subject = Reference(Patient/patient-example)
@@ -30,8 +31,8 @@ Description: "An example of a service request"
 Instance: neir-defaulter-tracing-request-example
 InstanceOf: NEIRServiceRequest
 Usage: #example 
-Title: "Example QuestionnaireResponse for Defaulter Tracking"
-Description: "Example of a questionnaireResponse for Defaulter Tracking"
+Title: "Example Response for Defaulter Tracking Form"
+Description: "Example of a questionnaireResponse for IMMZ.G Defaulter Tracking"
 * identifier.system = NEIRSERVICEREQUEST
 * identifier.use = #official
 * identifier.value = "123456"

@@ -63,8 +63,8 @@ Description: "A logical model for tracking client immunization history updates."
 
 Instance: update-client-history-example
 InstanceOf: UpdateClientHistory
-Title: "Example QuestionnaireResponse for Update Client History"
-Description: "Example of a QuestionnaireResponse for IMMZ.C1 Update Client History"
+Title: "Example Response of an Update Client History Form"
+Description: "Example of a Response for IMMZ.C1 Update Client History"
 Usage: #example
 
 * clientCompletedPrimarySeries = true

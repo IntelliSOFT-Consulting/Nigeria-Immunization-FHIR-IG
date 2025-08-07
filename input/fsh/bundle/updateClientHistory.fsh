@@ -37,8 +37,8 @@ Description: "Transaction bundle containing clinical resources representing an u
 
 Instance: ExampleUpdateClientHistoryBundle
 InstanceOf: UpdateClientHistoryBundle
-Title: "Example - Update Client History"
-Description: "An example transaction bundle capturing details of updating client history"
+Title: "Example of an Update Client History Bundle"
+Description: "Example of updating client history transaction bundle"
 Usage: #example
 
 * type = #transaction

@@ -22,8 +22,8 @@ Description: "A logical model for recording and managing AEFI treatment."
 
 Instance: manage-aefi-example
 InstanceOf: ManageAEFI
-Title: "Example QuestionnaireResponse of an AEFI Treatment"
-Description: "Example QuestionnaireResponse for IMMZ.E Manage and Report AEFI"
+Title: "Example Response of an AEFI Treatment Form"
+Description: "Example Response for IMMZ.E Manage and Report AEFI"
 Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"

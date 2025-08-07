@@ -31,7 +31,7 @@ Description: "Defines constraints on the AllergyIntolerance resource for use in 
 Instance: allergy-intolerance-example
 InstanceOf: NEIRAllergyIntolerance
 Usage: #example
-Title: "Allergy To penicillin"
+Title: "Example of an Alllergy Intolerance "
 Description: "Example of an allergy intolerance: Allergy to penicillin"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
