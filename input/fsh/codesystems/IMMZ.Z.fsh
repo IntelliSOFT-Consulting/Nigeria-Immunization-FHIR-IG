@@ -2,6 +2,7 @@ CodeSystem:   IMMZ.Z
 Title:        "IMMZ.Z CodeSystem for Vaccine Library"
 Description:  "CodeSystem for IMMZ.Z Vaccine Library Data Elements"
 
+* ^url = IMMZZ
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "IMMZ_Z"

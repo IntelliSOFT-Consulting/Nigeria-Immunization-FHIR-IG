@@ -23,7 +23,7 @@ Description: "Profile for a transaction Bundle used to capture vaccine administr
 
 Instance: ExampleAdministerVaccineTransactionBundle
 InstanceOf: AdministerVaccineTransactionBundle
-Title: "Example - Patient Creation"
+Title: "Example - Vaccine Administration"
 Description: "An example transaction bundle capturing the administration of a vaccine."
 Usage: #example
 

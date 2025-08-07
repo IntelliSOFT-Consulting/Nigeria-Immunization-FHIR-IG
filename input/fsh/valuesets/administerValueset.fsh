@@ -22,3 +22,12 @@ Description: "A ValueSet containing custom session types"
 * ^status = #active
 * ^experimental = false 
 * include codes from system NEIRSessionTypeCS
+
+ValueSet: NEIRVaccineCodesVS 
+Title: "Vaccine Codes Valueset"
+Description: "A ValueSet containing custom vaccine code"
+
+* ^url = NEIRVaccineCodesVS
+* ^status = #active
+* ^experimental = false 
+* include codes from system IMMZ_Z
