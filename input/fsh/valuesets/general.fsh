@@ -51,6 +51,8 @@ Description: "Contraindications from the IMMZ.D CodeSystem"
 * ^status  = #active
 * IMMZD#DE13
 * IMMZD#DE14
+* IMMZD#DE15
+* IMMZD#DE16
 
 
 ValueSet: IMMZDSiteAdministered
