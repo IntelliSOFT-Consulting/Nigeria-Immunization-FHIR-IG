@@ -38,7 +38,7 @@ Usage: #example
 * category[0] = #food
 * criticality = #high
 * code = SCT#91936005 "Allergy to penicillin"
-* patient = Reference(Patient/patient-example)
+* patient = Reference(NEIRPatientExample)
 * encounter = Reference(Encounter/encounter-example)
 * onsetDateTime = "2023-05-01T00:00:00Z"
 * recordedDate = "2023-05-05T00:00:00Z"

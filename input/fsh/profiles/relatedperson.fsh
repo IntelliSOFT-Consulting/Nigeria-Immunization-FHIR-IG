@@ -24,7 +24,7 @@ InstanceOf: NEIRRelatedPerson
 Title: "Example RelatedPerson - Mother's Other Child"
 Description: "An example of a mother's other child as a RelatedPerson resource."
 
-* patient = Reference(patient-example)
+* patient = Reference(NEIRPatientExample)
 * name.given = "John Rocker"
 * name.family = "Doe"
 * birthDate = "2015-01-01"

@@ -63,7 +63,7 @@ Description: "Example instance capturing NEIR client registration details includ
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $SCT#123456 "NEIR Registration Observations" // Replace with actual code when created
-* subject = Reference(patient-example) // Replace with actual patient reference
+* subject = Reference(NEIRPatientExample) // Replace with actual patient reference
 * effectiveDateTime = "2025-08-05T10:00:00+03:00"
 
 // Component: State of Health

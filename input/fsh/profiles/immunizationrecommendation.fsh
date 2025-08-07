@@ -32,7 +32,7 @@ Description: "An example of a Nigerian Immunization Recommendation"
 * identifier.value = "1234567890"
 
 
-* patient = Reference(Patient/patient-example)
+* patient = Reference(NEIRPatientExample)
 * date = "2020-02-02"
 * authority = Reference(Organization/organization-example)
 
