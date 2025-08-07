@@ -19,8 +19,8 @@ Description: "Constrains the Practitioner resource to represent healthcare worke
 Instance: practitioner-example
 InstanceOf: NEIRPractitioner
 Usage: #example
-Title: "NEIRPractitionerExample"
-Description: "An example of a Nigerian Practitioner" 
+Title: "Jane Doe"
+Description: "Example of a Practitioner: Jane Doe" 
 * identifier.system = NEIR_PRACTITIONER
 * identifier.use = #official
 * identifier.value = "123456"

@@ -30,7 +30,8 @@ Description: "An example of a service request"
 Instance: neir-defaulter-tracing-request-example
 InstanceOf: NEIRServiceRequest
 Usage: #example 
-Description: "An example of a defaulter tracing request"
+Title: "Example QuestionnaireResponse for Defaulter Tracking"
+Description: "Example of a questionnaireResponse for Defaulter Tracking"
 * identifier.system = NEIRSERVICEREQUEST
 * identifier.use = #official
 * identifier.value = "123456"

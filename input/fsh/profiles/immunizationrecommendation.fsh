@@ -25,8 +25,8 @@ Description: "A patient's point-in-time set of recommendations (i.e. forecasting
 Instance: immunizationRecommendation-example
 InstanceOf: NEIRImmunizationRecommendation
 Usage: #example
-Title: "NEIRImmunizationRecommendationExample"
-Description: "An example of a Nigerian Immunization Recommendation"
+Title: "Example Immunization Reccomendation"
+Description: "Example of an Immunization Reccomendation"
 * identifier.use = #official
 * identifier.system = NEIR_Identifier
 * identifier.value = "1234567890"

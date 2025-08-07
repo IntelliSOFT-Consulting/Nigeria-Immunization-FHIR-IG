@@ -22,13 +22,14 @@ Description: "A logical model for recording and managing AEFI treatment."
 
 Instance: manage-aefi-example
 InstanceOf: ManageAEFI
-Description: "AEFI Management Example"
+Title: "Example QuestionnaireResponse of an AEFI Treatment"
+Description: "Example QuestionnaireResponse for IMMZ.E Manage and Report AEFI"
 Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"
 * complaint = "Severe headache and dizziness" 
 * manifestation[+].coding[0].system = IMMZ_E
-* manifestation[=].coding[0].code = #IMMZ.E.DE37
+* manifestation[=].coding[0].code = #IMMZ.AEFIE.DE37
 * manifestation[=].coding[0].display = "Fever - Elevated body temperature"
 
 * manifestation[+].coding[0].system = IMMZ_E

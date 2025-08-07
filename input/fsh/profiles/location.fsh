@@ -27,7 +27,8 @@ Description: "Defines constraints on the FHIR Location resource to represent imm
 Instance: location-example
 InstanceOf: NEIRLocation
 Usage: #example
-Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
+Title: "Kofar Dukayuwa PHC"
+Description: "Example of an immunization service location: Kofar Dukayuwa PHC"
 * status = #active
 * name = "Kofar Dukayuwa PHC" 
 * type.coding.system = ROLE_CODE
