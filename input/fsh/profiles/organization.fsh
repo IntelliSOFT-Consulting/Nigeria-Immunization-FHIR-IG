@@ -23,11 +23,11 @@ Description: "Defines the Organization resource for representing entities within
 
 
 
-Instance: organization-example
+Instance: NEIROrganizationExample
 InstanceOf: NEIROrganization
 Usage: #example
-Title: "NEIR Lagos Clinic"
-Description: "NEIR Organization Example"
+Title: "Lagos Clinic"
+Description: "Example of a Clinic: Lagos Clinic"
 
 * identifier.system = "https://neir.gov.ng/facility-ids"
 * identifier.value = "LAG-12345"

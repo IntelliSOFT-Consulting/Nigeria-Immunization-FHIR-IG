@@ -1,6 +1,6 @@
 Profile: NEIRLocation
 Parent: Location 
-Title: "Location Profile - NEIR"
+Title: "NEIRLocation Profile"
 Description: "Defines constraints on the FHIR Location resource to represent immunization service delivery points in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units. Captures key attributes like type, address, coordinates, and managing organization to support accurate tracking and reporting."
 
 * ^url = NEIRLOCATION
@@ -13,7 +13,7 @@ Description: "Defines constraints on the FHIR Location resource to represent imm
 
 // Allow multiple types, and bind to the correct ValueSet
 * type 1..* MS
-* type from ServiceDeliveryLocationRoleType (extensible)
+* type from NEIRFacilityTypeVS
 
 // Required address and fixed country code
 * address 1..1 MS
@@ -24,10 +24,11 @@ Description: "Defines constraints on the FHIR Location resource to represent imm
 
 
 
-Instance: location-example
+Instance: NEIRLocationExample
 InstanceOf: NEIRLocation
 Usage: #example
-Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
+Title: "Kofar Dukayuwa PHC"
+Description: "Example of an immunization service location: Kofar Dukayuwa PHC"
 * status = #active
 * name = "Kofar Dukayuwa PHC" 
 * type.coding.system = ROLE_CODE

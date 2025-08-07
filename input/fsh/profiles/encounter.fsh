@@ -9,6 +9,11 @@ Description: "Profiles the Encounter resource to capture immunization-related vi
 * status ^short = "Status of the immunization encounter"
 * class ^short = "Type of encounter (e.g., ambulatory, home visit)"
 * class from EncounterClassVS (required)
+* type 1..1 MS
+* type.coding.code 1..1 MS
+* type.coding.system 1..1 MS
+* type.coding.display 0..1 MS
+* type from NEIRSessionTypeVS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * participant 1..* MS
@@ -18,13 +23,17 @@ Description: "Profiles the Encounter resource to capture immunization-related vi
 * serviceProvider 1..1 MS
 * serviceProvider only Reference(Organization)
 
-Instance: encounter-example
+Instance: NEIREncounterExample
 InstanceOf: NEIREncounter 
 Usage: #example
-Description: "An example encounter in the Nigerian Electronic Immunization Registry (NEIR) for an outreach immunization visit."
+Title: "Outreach Immunization Visit"
+Description: "Example of an Encounter: Outreach Immunization Visit"
 * status = #in-progress
 * class = V3ActCode#HH
-* subject.reference = "Patient/patient-example" 
+* type.coding.code = #DE8
+* type.coding.system = "http://moh.nigeria/sessionType"
+* type.coding.display = "Outreach"
+* subject.reference = "Patient/NEIRPatientExample" 
 * participant.individual.reference = "Practitioner/practitioner-example"
-* location.location.reference = "Location/location-example"
-* serviceProvider.reference = "Organization/organization-example"
+* location.location.reference = "Location/NEIRLocationExample"
+* serviceProvider.reference = "Organization/NEIROrganizationExample"

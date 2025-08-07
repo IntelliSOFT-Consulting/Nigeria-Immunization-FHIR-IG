@@ -1,0 +1,66 @@
+structure QuestionnaireResponse as QR
+structure Immunization as Imm
+structure Observation as Obs
+structure Bundle as Bundle
+structure Patient as Patient
+
+map "IMMZ.C1.UpdateClientHistoryMap" = "http://example.org/StructureMap/IMMZ-C1-UpdateClientHistory"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
+
+group IMMZMap(source qr : QuestionnaireResponse, target bundle : Bundle) {
+  // Init bundle
+  bundle.type = 'collection',
+  qr.subject as subj then {
+    // HIV Status Observation
+    qr.item where(linkId = 'hivStatus') as hiv then {
+      bundle.entry as e, e.resource = create('Observation') as obs then {
+        obs.status = 'final',
+        obs.code = {
+          coding = {
+            system = 'http://loinc.org',
+            code = '8665-2', // Example LOINC for HIV status
+            display = 'HIV status'
+          }
+        },
+        obs.subject = subj,
+        obs.value = hiv.answer.valueCoding
+      }
+    }
+
+    // Completed Primary Series Observation
+    qr.item where(linkId = 'clientCompletedPrimarySeries') as cps then {
+      bundle.entry as e2, e2.resource = create('Observation') as obs2 then {
+        obs2.status = 'final',
+        obs2.code = {
+          coding = {
+            system = 'http://example.org/fhir/CodeSystem/IMMZ',
+            code = 'IMMZ.C1.DE1',
+            display = 'Client completed primary series'
+          }
+        },
+        obs2.subject = subj,
+        obs2.valueBoolean = cps.answer.valueBoolean
+      }
+    }
+
+    // Immunizations for each vaccine (example for BCG)
+    qr.item where(linkId = 'bcgDoseDate') as bcg then {
+      bundle.entry as e3, e3.resource = create('Immunization') as imm then {
+        imm.status = 'completed',
+        imm.vaccineCode = {
+          coding = {
+            system = 'http://snomed.info/sct',
+            code = '58100000', // Example SNOMED code for BCG vaccine
+            display = 'BCG vaccine'
+          }
+        },
+        imm.patient = subj,
+        imm.occurrenceDateTime = bcg.answer.valueDate
+      }
+    }
+
+    // Add similar rules for other vaccines...
+  }
+}

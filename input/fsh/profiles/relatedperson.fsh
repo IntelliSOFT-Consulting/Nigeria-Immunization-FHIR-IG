@@ -19,12 +19,12 @@ Description: "Defines the RelatedPerson resource to represent parents, guardians
 * relationship.coding.display 0..1 MS
 
 
-Instance: Child1
+Instance: ExampleNEIRRelatedPerson
 InstanceOf: NEIRRelatedPerson
-Title: "Example RelatedPerson - Mother's Other Child"
-Description: "An example of a mother's other child as a RelatedPerson resource."
+Title: "John Rocker Doe"
+Description: "Example of Mother's other child: John Rocker Doe"
 
-* patient = Reference(Patient/patient-example)
+* patient = Reference(Patient/NEIRPatientExample)
 * name.given = "John Rocker"
 * name.family = "Doe"
 * birthDate = "2015-01-01"

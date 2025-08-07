@@ -30,15 +30,16 @@ Description: "Defines constraints on the AllergyIntolerance resource for use in 
 
 Instance: allergy-intolerance-example
 InstanceOf: NEIRAllergyIntolerance
-Description: "NEIR AllergyIntolerance Example"
 Usage: #example
+Title: "Example of an Alllergy Intolerance "
+Description: "Example of an allergy intolerance: Allergy to penicillin"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * type = #allergy
 * category[0] = #food
 * criticality = #high
 * code = SCT#91936005 "Allergy to penicillin"
-* patient = Reference(Patient/patient-example)
+* patient = Reference(NEIRPatientExample)
 * encounter = Reference(Encounter/encounter-example)
 * onsetDateTime = "2023-05-01T00:00:00Z"
 * recordedDate = "2023-05-05T00:00:00Z"

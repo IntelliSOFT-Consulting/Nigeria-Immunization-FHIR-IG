@@ -165,8 +165,8 @@ Description:  "Data elements for the IMMZ.G Report Generation Data Dictionary."
 
 Instance: RoutineImmunizationReport
 InstanceOf: IMMZGGenerateReport
-Title: "Routine Immunization Report - Facility A"
-Description: "A routine monthly immunization report summarizing vaccine stock and usage for Facility A."
+Title: "Example Routine Immunization Report"
+Description: "Example of a routine Immunization Report at a Facility"
 
 * reportIdentification = "IMMZ-REP-202503"
 * reportStatus = #IMMZ.G.DE3
@@ -212,7 +212,8 @@ Description: "A routine monthly immunization report summarizing vaccine stock an
 
 Instance: AEFI-Case-Report-202503
 InstanceOf: IMMZGGenerateReport
-Description: "AEFI Case Reports Example"
+Title: "Example of an AEFI Case Report"
+Description: "Example of an AEFI Case Report of a Facility"
 Usage: #example
 * reportIdentification = "AEFI-CASE-202503"
 * reportStatus = #IMMZ.G.DE4
@@ -257,7 +258,8 @@ Usage: #example
 
 Instance: Vaccine-Stock-Report-202503
 InstanceOf: IMMZGGenerateReport
-Description: "Vaccine Stock Example"
+Title: "Example of a Vaccine Stock Report"
+Description: "Example of a Vaccine Stock Report of a Facility"
 Usage: #example
 * reportIdentification = "VAX-STOCK-202503"
 * reportStatus = #IMMZ.G.DE3

@@ -1,8 +1,8 @@
 
 ValueSet: NEIRClinicalStatusVS
 Id: neir-clinical-status-vs 
-Title: "NEIR Clinical Status"
-Description: "Subset of standard clinical statuses for allergy intolerance."
+Title: "NEIR ValueSet for Clinical Status"
+Description: "ValueSet for Clinical Status from NEIR"
 * ^url = NEIR_CLINICAL_STATUS_VS
 * ^status = #active 
 * ^experimental = false
@@ -17,8 +17,8 @@ Description: "Subset of standard clinical statuses for allergy intolerance."
 
 ValueSet: NEIRVerificationStatusVS
 Id: neir-verification-status-vs
-Title: "NEIR Verification Status"
-Description: "Subset of allowed verification statuses for NEIR."
+Title: "NEIR ValueSet for Verification Status"
+Description: "ValueSet for Verification status from NEIR"
 * ^url = NEIR_VERIFICATION_STATUS_VS
 * ^status = #active 
 * ^experimental = false

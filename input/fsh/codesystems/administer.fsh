@@ -1,37 +1,37 @@
 CodeSystem: NEIRFacilityTypeCS
 Id: neir-facility-type 
-Title: "Facility Types CodeSystem"
-Description: "A custom CodeSystem defining facility types for administration documentation."
+Title: "NEIR CodeSystem for Facility Type"
+Description: "CodeSystem for NEIR Facility Type"
 * ^url = NEIR_FACILITY_TYPE
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = false
 
-* #IMMZ.D.DE3  "Public"
-* #IMMZ.D.DE4  "Private"
-* #IMMZ.D.DE5  "Faith-based"
+* #DE3  "Public"
+* #DE4  "Private"
+* #DE5  "Faith-based"
 
 
 CodeSystem: NEIRSessionTypeCS
 Id: neir-session-type 
-Title: "Session Types CodeSystem"
-Description: "A custom CodeSystem defining session types for administration documentation."
+Title: "NEIR CodeSystem for Session Type"
+Description: "CodeSystem for NEIR Session Type"
 * ^url = NEIR_SESSION_TYPE
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = false
 
-* #fixed "Fixed"
-* #outreach "Outreach" 
-* #mobile "Mobile" 
+* #DE7 "Fixed"
+* #DE8 "Outreach" 
+* #DE9 "Mobile" 
 
 
 CodeSystem: NEIRImmunizationNotDoneReasonsCS
 Id: neir-immunization-not-done 
-Title: "Reason Immunization Not Done  CodeSystem"
-Description: "A custom CodeSystem defining Reason Immunization Not Done  CodeSystem"
+Title: "NEIR CodeSystem for Immunization Not Done"
+Description: "CodeSystem for NEIR Immunization Not Done"
 * ^url = NEIR_IMMUNIZATION_NOT_DONE
 * ^status = #active
 * ^content = #complete

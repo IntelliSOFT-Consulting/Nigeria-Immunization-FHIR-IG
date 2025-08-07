@@ -3,17 +3,40 @@ Parent: Patient
 Title: "Patient Profile - NEIR"
 Description: "Constrains the Patient resource to represent individuals enrolled in NEIR for immunization, capturing identifiers, demographics, birth and parental information relevant to vaccination services."
 
-* identifier 1..1 MS 
+* identifier 1..* MS
+
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+
+// STEP 2: Declare the slice
+* identifier contains 
+    NationalIDNo 0..1 MS and 
+    MedicalRecordsNumber 0..1 MS and  
+    ImmunizationRecordsNumber 0..1 MS and 
+    BirthCertificateNo 0..1 MS 
+
+
+// STEP 3: Add constraints to the slice
+* identifier[NationalIDNo].value 1..1
+* identifier[NationalIDNo].system = "http://moh.nigeria/identifier/nationalID-no"
+
+* identifier[MedicalRecordsNumber].value 1..1
+* identifier[MedicalRecordsNumber].system = "http://moh.nigeria/identifier/medicalrecord-no"
+
+* identifier[ImmunizationRecordsNumber].value 1..1
+* identifier[ImmunizationRecordsNumber].system = "http://moh.nigeria/identifier/immunization-no"
+
+* identifier[BirthCertificateNo].value 1..1
+* identifier[BirthCertificateNo].system = "http://moh.nigeria/identifier/birthCertificate-no"
+
 * name 1..* 
 * name.given 1..* MS 
 * name.family 1..1 MS 
 * gender 1..1 MS 
 * gender from GenderVS
 * birthDate 1..1 MS
-* extension contains MotherHealthStatus named motherHealthStatus 0..1 
-* extension contains HivStatus named hivStatus 0..1 
-* extension contains PregnancyStatus named pregnancyStatus 0..1 
-* extension contains BirthWeigth named birthWeigth 0..1 
 * contact 0..*  MS
 * contact.name.given 1..*  MS
 * contact.telecom 0..*  MS
@@ -29,20 +52,17 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 
 
 
-Instance: patient-example
+Instance: NEIRPatientExample
 InstanceOf: NEIRPatient
 Usage: #example
-Title: "NEIR Patient Example"
-Description: "An example patient registration instance based on the NEIR profile."
+Title: "John Doe"
+Description: "Example of a Patient: John Doe."
 * identifier.value = "NEIR-12345"
+* identifier.system = "http://moh.nigeria/identifier/nationalID-no"
 * name.given[0] = "John"
 * name.family = "Doe"
 * gender = #male
 * birthDate = "2020-06-18"
-* extension[motherHealthStatus].valueCodeableConcept.text = "Alive"
-* extension[hivStatus].valueCodeableConcept.text = "Negative"
-* extension[pregnancyStatus].valueBoolean = false
-* extension[birthWeigth].valueQuantity.value = 2500
 * address[0].line[0] = "123 Health Street"
 * address[0].city = "Lagos"
 * address[0].district = "Ikeja"
