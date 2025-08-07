@@ -34,7 +34,7 @@ Description: "An example of a Nigerian Immunization Recommendation"
 
 * patient = Reference(NEIRPatientExample)
 * date = "2020-02-02"
-* authority = Reference(Organization/organization-example)
+* authority = Reference(Organization/NEIROrganization)
 
 * recommendation.vaccineCode.coding.system = $cvx
 * recommendation.vaccineCode.coding.code = #143

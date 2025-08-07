@@ -47,8 +47,8 @@ Usage: #example
 
 * status = #completed
 * vaccineCode = IMMZFDE6#measles "Measles"
-* patient = Reference(NEIRPatientExample)
-* location = Reference(NEIRlocationExample)
+* patient = Reference(Patient/NEIRPatientExample)
+* location = Reference(Location/NEIRlocationExample)
 * occurrenceDateTime = "2025-07-30T10:30:00+03:00"
 * site = IMMZD#DE23 "Left Arm"
 * route = IMMZD#DE30 "Intramuscular"
@@ -64,7 +64,7 @@ Usage: #example
 * manufacturer.reference = "Organization/biovax-manufacturer"
 
 // Performer (vaccinator)
-* performer[0].actor = Reference(NEIRPractitionerExample)
+* performer[0].actor = Reference(Practitioner/NEIRPractitionerExample)
 * performer[0].actor.display = "Dr. Jane Mugo"
 
 // Protocol Applied

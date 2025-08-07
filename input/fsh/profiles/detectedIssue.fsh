@@ -19,6 +19,6 @@ Usage: #example
 
 * status = #final
 * code = #DE13 "Allergy to vaccine component"
-* patient = Reference(NEIRPatientExample)
+* patient = Reference(Patient/NEIRPatientExample)
 * identifier.system = "http://neir.nigeria.gov/detectedissue"
 * identifier.value = "DI-20250807-001"
