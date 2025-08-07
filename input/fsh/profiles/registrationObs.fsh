@@ -57,8 +57,8 @@ Description: "A composite Observation profile capturing state of health, underly
 
 Instance: ExampleNEIRRegistrationObservation
 InstanceOf: NEIRRegistrationObservation
-Title: "Example NEIR Registration Observation"
-Description: "Example instance capturing NEIR client registration details including state of health, pregnancy status, HIV status, and birth weight."
+Title: "Example of client Registration observation"
+Description: "Example of a client registration observation"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history

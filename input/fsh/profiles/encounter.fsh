@@ -26,7 +26,8 @@ Description: "Profiles the Encounter resource to capture immunization-related vi
 Instance: NEIREncounterExample
 InstanceOf: NEIREncounter 
 Usage: #example
-Description: "An example encounter in the Nigerian Electronic Immunization Registry (NEIR) for an outreach immunization visit."
+Title: "Outreach Immunization Visit"
+Description: "Example of an Encounter: Outreach Immunization Visit"
 * status = #in-progress
 * class = V3ActCode#HH
 * type.coding.code = #DE8

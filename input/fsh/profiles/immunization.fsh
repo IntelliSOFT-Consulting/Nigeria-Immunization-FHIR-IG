@@ -42,8 +42,9 @@ Description: "Nigerian Registry Profile for Immunization."
 
 Instance: NEIRImmunizationExample
 InstanceOf: NEIRImmunization
-Description: "Immunization Example"
 Usage: #example
+Title: "Measles Vaccine"
+Description: "Example of an Immunization: Measles Vaccine"
 
 * status = #completed
 * vaccineCode = IMMZFDE6#measles "Measles"

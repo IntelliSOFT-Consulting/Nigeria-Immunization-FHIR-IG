@@ -56,8 +56,8 @@ Description: "A composite Observation profile capturing primary series, state, c
 
 Instance: ExampleNEIRUpdateClientHistoryObservation
 InstanceOf: NEIRUpdateClientHistoryObservation
-Title: "Example NEIR Update Client History Observation"
-Description: " An example instance indicating the update client history observations"
+Title: "Example of an update client history observation "
+Description: " Example of an update client history observation"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history

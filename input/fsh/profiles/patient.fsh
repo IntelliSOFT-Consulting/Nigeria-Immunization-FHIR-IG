@@ -55,8 +55,8 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 Instance: NEIRPatientExample
 InstanceOf: NEIRPatient
 Usage: #example
-Title: "NEIR Patient Example"
-Description: "An example patient registration instance based on the NEIR profile."
+Title: "John Doe"
+Description: "Example of a Patient: John Doe."
 * identifier.value = "NEIR-12345"
 * identifier.system = "http://moh.nigeria/identifier/nationalID-no"
 * name.given[0] = "John"
