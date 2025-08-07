@@ -23,7 +23,7 @@ Description: "Defines the Organization resource for representing entities within
 
 
 
-Instance: organization-example
+Instance: NEIROrganizationExample
 InstanceOf: NEIROrganization
 Usage: #example
 Title: "NEIR Lagos Clinic"

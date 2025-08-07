@@ -1,8 +1,8 @@
 
 CodeSystem: NEIRServiceRequestCS
 Id: neir-service-request
-Title: "NEIR Service Request Codes"
-Description: "Service Request CodeSystem"
+Title: "NEIR CodeSystem for Service Requests"
+Description: "CodeSystem for Service Requests"
 * ^url = NEIR_SERVICE_REQUEST
 * ^status = #active
 * ^content = #complete

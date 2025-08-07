@@ -52,7 +52,7 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 
 
 
-Instance: patient-example
+Instance: NEIRPatientExample
 InstanceOf: NEIRPatient
 Usage: #example
 Title: "NEIR Patient Example"

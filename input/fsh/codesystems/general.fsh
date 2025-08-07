@@ -1,7 +1,7 @@
 CodeSystem: MySubstances
 Id: my-substances
-Title: "Custom Substance Codes"
-Description: "A local code system for documenting allergy-related substances."
+Title: "NEIR CodeSystem for Allergy-related Substance"
+Description: "CodeSystem for Allery-related Substance from NEIR"
 * ^url = MY_SUBSTANCES
 * ^version = "1.0.0"
 * ^status = #active
@@ -18,8 +18,8 @@ Description: "A local code system for documenting allergy-related substances."
 
 CodeSystem: IMMZFDE2
 Id: IMMZ.F.DE2
-Title: "IMMZ.F.DE2 – Client Sex"
-Description: "Client Sex CodeSystem"
+Title: "IMMZ.G.DE2 CodeSystem for Client Sex"
+Description: "CodeSytsem for IMMZ.G.DE2 Client Sex"
 * ^url = IMMZFDE2
 * ^status = #active
 * ^caseSensitive = true
@@ -30,8 +30,8 @@ Description: "Client Sex CodeSystem"
 
 CodeSystem: ClientRelationshipCS
 Id: client-relationship
-Title: "IMMZ.F.DE2 – Client Relationship"
-Description: "Client Relationship CodeSystem"
+Title: "IMMZ.F.DE2 CodeSystem for Client Relationship"
+Description: "CodeSystem for IMMZ.F.DE2 Client Relationship"
 * ^url = CLIENT_RELATIONSHIP
 * ^status = #active
 * ^caseSensitive = true
@@ -43,8 +43,8 @@ Description: "Client Relationship CodeSystem"
 
 CodeSystem: IMMZFDE6
 Id: IMMZ.F.DE6
-Title: "IMMZ.F.DE6 – Missed Vaccines"
-Description: "IMMZFDE6 Missed Vaccines CodeSystem"
+Title: "IMMZ.G.DE6 CodeSystem for Missed Vaccines"
+Description: "CodeSystem for IMMZ.G.DE6 Missed Vaccine"
 * ^url = IMMZFDE6
 * ^status = #active
 * ^caseSensitive = true
@@ -55,8 +55,8 @@ Description: "IMMZFDE6 Missed Vaccines CodeSystem"
 
 CodeSystem: IMMZC1HivStatusCS
 Id: immzc1-hiv-status-cs
-Title: "IMMZ.C1 HIV Status Codes"
-Description: "HIV Status Code System"
+Title: "IMMZ.C.DE37 CodeSystem for HIV Status"
+Description: "CodeSystems for IMMZ.C.DE37 HIV Status"
 * ^url     = IMMZC1_HIV_STATUS_CS
 * ^status  = #active
 * ^caseSensitive = true
@@ -68,8 +68,8 @@ Description: "HIV Status Code System"
 
 CodeSystem: IMMZC1StateofHealthofMothersOtherChildrenCS
 Id: state-ofHealth-ofmothersOtherChildren
-Title: "IMMZ.C.DE31 - Code System for State of Health of Mothers' Other Children"
-Description: "Custom codes used in NEIR immunization registration for state of health observations."
+Title: "IMMZ.C.DE31 CodeSystem for State of Health of Mothers' Other Children"
+Description: "CodeSystem for IMMZ.C.DE31 State of Health of Mothers' Other Children"
 * ^url = "http://neir.org/fhir/CodeSystem/IMMZC1CustomCodes"
 
 * #DE32 "Alive"

@@ -24,7 +24,7 @@ Usage: #example
 Description: "An example of a service request"
 * status = #active
 * intent = #order
-* subject = Reference(Patient/patient-example)
+* subject = Reference(NEIRPatientExample)
 
 
 Instance: neir-defaulter-tracing-request-example
@@ -42,7 +42,7 @@ Description: "An example of a defaulter tracing request"
 * category.coding.display = "Defaulter Tracing"
 * priority = #routine
 * subject.display = "John Doe"
-* subject = Reference(Patient/patient-example)
+* subject = Reference(Patient/NEIRPatientExample)
 * authoredOn = "2025-03-13"
 * requester.display = "John Doe"
-* requester = Reference(Practitioner/practitioner-example)
+* requester = Reference(Practitioner/NEIRPractitioner)
