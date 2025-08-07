@@ -15,7 +15,8 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
     NationalIDNo 0..1 MS and 
     MedicalRecordsNumber 0..1 MS and  
     ImmunizationRecordsNumber 0..1 MS and 
-    BirthCertificateNo 0..1 MS 
+    BirthCertificateNo 0..1 MS and 
+    PhoneNumberNo 0..1 MS 
 
 
 // STEP 3: Add constraints to the slice
@@ -30,6 +31,9 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.nigeria/identifier/birthCertificate-no"
+
+* identifier[PhoneNumberNo].value 1..1
+* identifier[PhoneNumberNo].system = "http://moh.nigeria/identifier/phoneNumber-no"
 
 * name 1..* 
 * name.given 1..* MS 
