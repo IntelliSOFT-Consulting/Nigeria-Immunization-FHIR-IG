@@ -1,5 +1,5 @@
 CodeSystem:   IMMZ.G
-Title:        "IMMZ.G CodeSystem for Generate Report Data Elements"
+Title:        "IMMZ.G CodeSystem for Generate Report"
 Description:  "CodeSystem for IMMZ.G Generate Report Data Elements"
 
 * ^experimental = false

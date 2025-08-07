@@ -1,7 +1,7 @@
 CodeSystem: NEIRClinicalStatusCS
 Id: neir-clinical-status 
-Title: "Clinical Status CodeSystem"
-Description: "A custom CodeSystem defining clinical statuses for AEFI documentation."
+Title: "NEIR CodeSystem for Clinical Status"
+Description: "CodeSystem for NEIR clinical status"
 * ^url = NEIR_CLINICAL_STATUS
 * ^status = #active
 * ^content = #complete
@@ -15,8 +15,8 @@ Description: "A custom CodeSystem defining clinical statuses for AEFI documentat
 
 CodeSystem: NEIRVerificationStatusCS
 Id: neir-verification-status 
-Title: "Clinical Verification Status CodeSystem"
-Description: "A custom CodeSystem defining clinical verification statuses for AEFI documentation."
+Title: "NEIR CodeSystem for Verification Status"
+Description: "CodeSystem for NEIR Verification Status"
 * ^url = NEIR_VERIFICATION_STATUS
 * ^status = #active
 * ^content = #complete

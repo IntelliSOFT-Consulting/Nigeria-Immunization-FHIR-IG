@@ -1,5 +1,5 @@
 CodeSystem:   IMMZ.D
-Title: "IMMZ.D CodeSystem for Administer Vaccine Data Elements"
+Title: "IMMZ.D CodeSystem for Administer Vaccine"
 Description: "CodeSystem for IMMZ.D Administer Vaccine Data Elements"
 * ^url = IMMZD
 * ^experimental = false

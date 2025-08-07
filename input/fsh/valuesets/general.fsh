@@ -2,8 +2,8 @@ Alias: $SCT = http://snomed.info/sct
 
 ValueSet: NEIRSubstanceVS
 Id: neir-substance-vs
-Title: "Allowed Allergy Substances"
-Description: "NEIR Substance ValueSet"
+Title: "NEIR ValueSet for Allowed Allergy-related Substances"
+Description: "ValueSet for Allowed Allergy-related Substances from NEIR"
 * ^url = NEIR_SUBSTANCE_VS
 * ^experimental = false
 * ^status  = #active
