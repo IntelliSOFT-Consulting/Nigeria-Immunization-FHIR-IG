@@ -3,36 +3,37 @@ Parent: Immunization
 Title: "Immunization Profile - NEIR"
 Description: "Nigerian Registry Profile for Immunization."
 
-* identifier 0..*
-* patient 1..1
+* identifier 0..* MS
+* patient 1..1 MS
 * patient only Reference(NEIRPatient)
 
-* location 1..1
+* location 1..1 MS
 * location only Reference(NEIRLocation)
 * location ^short = "Vaccination venue" 
 
-* vaccineCode 1..1 
+* vaccineCode 1..1  MS
 * vaccineCode ^short = "Vaccine Administered"
 * statusReason from NEIRImmunizationNotDoneReasonsVS (required)
-* status 1..1
-* manufacturer 1..1
-* manufacturer.display 1..1
+* status 1..1 MS
+* manufacturer 1..1 MS
+* manufacturer.display 1..1 MS
 * manufacturer.display ^short = "Name of the Manufacturer"
-* manufacturer.reference 1..1
+* manufacturer.reference 1..1 MS
 * manufacturer.reference ^short = "Manufacturer ID"
 
-* doseQuantity 1..1 
-* protocolApplied 0..* 
-* protocolApplied.targetDisease 1..1 
-* lotNumber 1..1 
+* doseQuantity 1..1 MS
+* protocolApplied 0..* MS
+* protocolApplied.targetDisease 1..1 MS
+* lotNumber 1..1 MS
 * lotNumber ^short = "Vaccine batch number"
-* expirationDate 1..1 
-* doseQuantity 
-* site 1..1
-* performer 1..* 
-* performer.actor 1..1 
+* expirationDate 1..1 MS
+* doseQuantity MS
+* site 1..1 MS
+* site from IMMZDSiteAdministered
+* performer 1..*  MS
+* performer.actor 1..1 MS
 * performer.actor only Reference(NEIRPractitioner)
-* performer.actor.display 
+* performer.actor.display MS
 * performer.actor.display ^short = "Vaccinator Name" 
 * occurrence[x] only dateTime
 
