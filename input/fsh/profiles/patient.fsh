@@ -1,7 +1,10 @@
 Profile: NEIRPatient
 Parent: Patient
+Id : neir-patient
 Title: "Patient Profile - NEIR"
 Description: "Constrains the Patient resource to represent individuals enrolled in NEIR for immunization, capturing identifiers, demographics, birth and parental information relevant to vaccination services."
+* obeys PatientIdentification-1
+* obeys MustHavePhoneNumber-1
 
 * identifier 1..* MS
 
@@ -16,7 +19,7 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
     MedicalRecordsNumber 0..1 MS and  
     ImmunizationRecordsNumber 0..1 MS and 
     BirthCertificateNo 0..1 MS and 
-    PhoneNumberNo 0..1 MS 
+    PhoneNumber 0..1 MS 
 
 
 // STEP 3: Add constraints to the slice
@@ -32,8 +35,8 @@ Description: "Constrains the Patient resource to represent individuals enrolled 
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.nigeria/identifier/birthCertificate-no"
 
-* identifier[PhoneNumberNo].value 1..1
-* identifier[PhoneNumberNo].system = "http://moh.nigeria/identifier/phoneNumber-no"
+* identifier[PhoneNumber].value 1..1
+* identifier[PhoneNumber].system = "http://moh.nigeria/identifier/phoneNumber"
 
 * name 1..* 
 * name.given 1..* MS 
